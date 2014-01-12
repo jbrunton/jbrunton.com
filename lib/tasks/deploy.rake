@@ -11,7 +11,9 @@ namespace :deploy do
   end
   
   task :run_migrations do
-    sh "heroku run rake db:migrate"
+    Bundler.with_clean_env do
+      sh "heroku run rake db:migrate"
+    end
   end
   
   desc "Deploy the current branch to the staging Heroku repository"
