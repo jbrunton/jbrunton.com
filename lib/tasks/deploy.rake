@@ -6,7 +6,11 @@ namespace :deploy do
     validate_repo('staging')
   end
   
-  task :push_changes do
+  task :validate_head do
+    validate_head(current_branch)
+  end
+  
+  task :push_changes => [:validate_head] do
     sh "git push staging #{current_branch}:master"
   end
   
