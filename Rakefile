@@ -4,11 +4,3 @@
 require File.expand_path('../config/application', __FILE__)
 
 JbruntonCom::Application.load_tasks
-
-namespace :deploy do
-  task :staging do
-    current_branch = `git rev-parse --abbrev-ref HEAD`
-    current_branch.strip!
-    sh "git push staging #{current_branch}:master"
-  end
-end
