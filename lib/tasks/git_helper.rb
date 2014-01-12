@@ -5,4 +5,9 @@ module GitHelper
       raise "Could not find remote repository '#{repo_name}'"
     end
   end
+  
+  def current_branch
+    current_branch = `git rev-parse --abbrev-ref HEAD`
+    current_branch.strip!
+  end
 end
