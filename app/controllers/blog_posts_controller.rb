@@ -31,8 +31,7 @@ class BlogPostsController < ApplicationController
         format.html { redirect_to @blog_post, notice: 'Blog post was successfully created.' }
         format.json { render action: 'show', status: :created, location: @blog_post }
       else
-        format.html { render action: 'new' }
-        format.json { render json: @blog_post.errors, status: :unprocessable_entity }
+        respond_with_action(format, 'new')
       end
     end
   end
@@ -45,8 +44,7 @@ class BlogPostsController < ApplicationController
         format.html { redirect_to @blog_post, notice: 'Blog post was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @blog_post.errors, status: :unprocessable_entity }
+        respond_with_action(format, 'edit')
       end
     end
   end
@@ -70,5 +68,10 @@ class BlogPostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def blog_post_params
       params.require(:blog_post).permit(:title, :content)
+    end
+    
+    def respond_with_action(format, action)
+      format.html { render action: action }
+      format.json { render json: @blog_post.errors, status: :unprocessable_entity }
     end
 end
