@@ -2,5 +2,7 @@ language: ruby
 rvm:
   - 2.0.0
 script:
-  - bundle exec rake db:test:prepare spec cucumber
+  - bundle exec rake db:test:prepare
+  - CODECLIMATE_REPO_TOKEN=47ef43b4fd5013624c745edda3a67fe1e210d1c8490266bdcaa52779e43362b6 bundle exec rake
+
   
