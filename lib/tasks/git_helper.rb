@@ -14,7 +14,7 @@ module GitHelper
     end
     
     # now, check the local branch isn't ahead
-    if `git log origin/#{branch_name}..#{branch_name}` then
+    unless `git log origin/#{branch_name}..#{branch_name}`.empty? then
       raise "Branch #{branch_name} is behind origin/#{branch_name}"
     end
   end
