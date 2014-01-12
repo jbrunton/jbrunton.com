@@ -40,6 +40,11 @@ group :development, :test do
   gem 'database_cleaner'
 end
 
+# Send coverage to Coveralls
+group :test do
+  gem 'coveralls', require: false
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
