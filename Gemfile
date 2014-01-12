@@ -34,6 +34,14 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+gem 'foundation-rails'
+
+# Serve assets on Heroku.
+# See https://devcenter.heroku.com/articles/ruby-support#static-assets
+group :production do
+  gem 'rails_serve_static_assets'
+end
+ 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'cucumber-rails', :require => false
