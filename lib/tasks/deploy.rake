@@ -6,10 +6,16 @@ namespace :deploy do
     validate_repo('staging')
   end
   
-  desc "Deploy the current branch to the staging Heroku repository"
-  task :staging => [:validate_staging] do
-    current_branch = `git rev-parse --abbrev-ref HEAD`
-    current_branch.strip!
+  task :push_changes do
     sh "git push staging #{current_branch}:master"
   end
+  
+  task :run_migrations do
+    Bundler.with_clean_env do
+      sh "heroku run rake db:migrate"
+    end
+  end
+  
+  desc "Deploy the current branch to the staging Heroku repository"
+  task :staging => [:validate_staging, :push_changes, :run_migrations]
 end
