@@ -71,7 +71,7 @@ namespace :deploy do
         else
           staging_app_name = config.checks.staged
         end
-        check_not_ahead(deploy_config.apps[staging_app_name].repository)
+        check_staged(deploy_config.apps[staging_app_name].repository, current_branch)
       end
       
       # push the current branch to master

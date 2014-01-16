@@ -14,12 +14,14 @@ module GitHelper
     end
     
     # now, check the local branch isn't ahead
-    check_not_ahead('origin', branch_name)
+    unless `git log origin/#{branch_name}..#{branch_name}`.empty? then
+      raise "Branch #{branch_name} is behind origin/#{branch_name}"
+    end
   end
   
-  def check_not_ahead(repo_name, branch_name)
-    unless `git log #{repo_name}/#{branch_name}..#{branch_name}`.empty? then
-      raise "Branch #{branch_name} is behind #{repo_name}/#{branch_name}"
+  def check_staged(repo_name, branch_name)
+    unless `git log #{repo_name}/master..#{branch_name}`.empty? then
+      raise "Changes not yet staged to #{repo_name}"
     end
   end
   
