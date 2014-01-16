@@ -53,6 +53,10 @@ namespace :deploy do
     task app_name do
       # do we have a remote repo by this name?
       check_repo(config.repository)
+      
+      if config.branches && config.branches != '*' then
+        check_branch(app_name, current_branch, config.branches)
+      end
 
       if config.checks.origin
         # have we pushed to origin?
