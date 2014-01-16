@@ -48,7 +48,8 @@ namespace :deploy do
     check_origin(current_branch)
   end
   
-  DeployConfig.new('.deploy.yml').apps.each do |app_name, config|
+  deploy_config = DeployConfig.new('.deploy.yml')
+  deploy_config.apps.each do |app_name, config|
     desc "Deploy to #{app_name}"
     task app_name do
       # do we have a remote repo by this name?
@@ -61,6 +62,16 @@ namespace :deploy do
       if config.checks.origin
         # have we pushed to origin?
         check_origin(current_branch)
+      end
+      
+      if config.checks.staged
+        # have we already staged HEAD?
+        if config.checks.staged == true
+          staging_app_name = 'staging'
+        else
+          staging_app_name = config.checks.staged
+        end
+        check_not_ahead(deploy_config.apps[staging_app_name].repository)
       end
       
       # push the current branch to master

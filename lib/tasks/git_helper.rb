@@ -14,8 +14,12 @@ module GitHelper
     end
     
     # now, check the local branch isn't ahead
-    unless `git log origin/#{branch_name}..#{branch_name}`.empty? then
-      raise "Branch #{branch_name} is behind origin/#{branch_name}"
+    check_not_ahead('origin', branch_name)
+  end
+  
+  def check_not_ahead(repo_name, branch_name)
+    unless `git log #{repo_name}/#{branch_name}..#{branch_name}`.empty? then
+      raise "Branch #{branch_name} is behind #{repo_name}/#{branch_name}"
     end
   end
   
