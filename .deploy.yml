@@ -1,0 +1,17 @@
+apps:
+  development:
+    server: jbrunton-com-development
+    branches: '*'
+
+  staging:
+    server: jbrunton-com-staging
+    branches: master
+    checks:
+      origin: true
+
+  production:
+    server: jbrunton-com
+    branches: master
+    checks:
+      origin: true
+      staged: true

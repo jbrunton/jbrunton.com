@@ -1,12 +1,12 @@
 module GitHelper
-  def validate_repo(repo_name)
+  def check_repo(repo_name)
     repos = `git remote`.strip.split(/\s+/)
     unless repos.include?(repo_name)
       raise "Could not find remote repository '#{repo_name}'"
     end
   end
   
-  def validate_head(branch_name)
+  def check_origin(branch_name)
     # first, confirm the branch is on the remote repo
     branches = `git branch -r`.strip.split(/\s+/)
     unless branches.include?("origin/#{branch_name}")

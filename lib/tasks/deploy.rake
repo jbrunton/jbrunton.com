@@ -1,25 +1,30 @@
 require_relative 'git_helper'
+require_relative 'heroku_helper'
+
 include GitHelper
+include HerokuHelper
 
 namespace :deploy do
-  task :validate_staging do
-    validate_repo('staging')
+  
+  task "check:origin" do
+    check_origin(current_branch)
   end
   
-  task :validate_head do
-    validate_head(current_branch)
-  end
-  
-  task :push_changes => [:validate_head] do
-    sh "git push staging #{current_branch}:master"
-  end
-  
-  task :run_migrations do
-    Bundler.with_clean_env do
-      sh "heroku run rake db:migrate"
+  YAML::load(File.open('.deploy.yml'))['apps'].each do |app_name, attrs|
+    desc "Deploy to #{app_name}"
+    task app_name do
+      repo_name = attrs['repository'] || app_name
+
+      # do we have a remote repo by this name?
+      check_repo(repo_name)
+      
+      # have we pushed to origin?
+      check_origin(current_branch)
+      
+      # push the current branch to master
+      push_to_master(repo_name, current_branch)
+      
+      run_migrations
     end
-  end
-  
-  desc "Deploy the current branch to the staging Heroku repository"
-  task :staging => [:validate_staging, :push_changes, :run_migrations]
+  end  
 end
