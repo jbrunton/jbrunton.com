@@ -1,25 +1,83 @@
 require_relative 'git_helper'
-include GitHelper
+require_relative 'heroku_helper'
 
-namespace :deploy do
-  task :validate_staging do
-    validate_repo('staging')
-  end
+include GitHelper
+include HerokuHelper
+
+class ChecksConfig
+  attr_reader :origin
+  attr_reader :staged
   
-  task :validate_head do
-    validate_head(current_branch)
+  def initialize(attrs)
+    attrs ||= {}
+    @origin = attrs['origin']
+    @staged = attrs['staged']
   end
+end
+
+class AppConfig
+  attr_reader :name
+  attr_reader :repository
+  attr_reader :server
+  attr_reader :branches
+  attr_reader :checks
   
-  task :push_changes => [:validate_head] do
-    sh "git push staging #{current_branch}:master"
+  def initialize(name, attrs)
+    @name = name
+    @repository = attrs['repository'] || name
+    @server = attrs['server']
+    @branches = attrs['branches'] || '*'
+    @checks = ChecksConfig.new(attrs['checks'])
   end
+end
+
+class DeployConfig
+  attr_reader :apps
   
-  task :run_migrations do
-    Bundler.with_clean_env do
-      sh "heroku run rake db:migrate"
+  def initialize(file_name)
+    @apps = YAML::load(File.open(file_name))['apps']
+    @apps.each do |app_name, attrs|
+      @apps[app_name] = AppConfig.new(app_name, attrs)
     end
   end
+end
+
+namespace :deploy do
   
-  desc "Deploy the current branch to the staging Heroku repository"
-  task :staging => [:validate_staging, :push_changes, :run_migrations]
+  task "check:origin" do
+    check_origin(current_branch)
+  end
+  
+  deploy_config = DeployConfig.new('.deploy.yml')
+  deploy_config.apps.each do |app_name, config|
+    desc "Deploy to #{app_name}"
+    task app_name do
+      # do we have a remote repo by this name?
+      check_repo(config.repository)
+      
+      if config.branches && config.branches != '*' then
+        check_branch(app_name, current_branch, config.branches)
+      end
+
+      if config.checks.origin
+        # have we pushed to origin?
+        check_origin(current_branch)
+      end
+      
+      if config.checks.staged
+        # have we already staged HEAD?
+        if config.checks.staged == true
+          staging_app_name = 'staging'
+        else
+          staging_app_name = config.checks.staged
+        end
+        check_staged(deploy_config.apps[staging_app_name].repository, current_branch)
+      end
+      
+      # push the current branch to master
+      push_to_master(config.repository, current_branch)
+      
+      run_migrations
+    end
+  end  
 end
