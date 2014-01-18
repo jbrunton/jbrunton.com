@@ -37,7 +37,7 @@ describe BlogPostsController do
       expect(assigns(:blog_posts)).to eq([blog_post])
     end
     
-    it "orders the blog_posts by creation date in descending order" do
+    it "orders the blog_posts by creation date in ascending order" do
       post_A = create(:blog_post, created_at: Date.today)
       post_B = create(:blog_post, created_at: 2.days.ago)
       post_C = create(:blog_post, created_at: 1.day.ago)

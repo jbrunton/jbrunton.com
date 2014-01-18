@@ -12,14 +12,21 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label :title %>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :content %><br>
-    <%= f.text_area :content %>
+    <%= f.label :content %>
+    <%= f.text_area :content, :class => 'fixed-width' %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="clearfix">
+    <div class="actions">
+      <% if @blog_post.new_record? %>
+        <%= f.submit 'Create', :class => 'small radius action button' %>
+      <% else %>
+        <%= link_to 'Cancel', @blog_post, :class => 'small radius cancel button' %>
+        <%= f.submit 'Save', :class => 'small radius button' %>
+      <% end %>
+    </div>
   </div>
 <% end %>

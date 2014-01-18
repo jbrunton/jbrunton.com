@@ -1,5 +1,5 @@
 <div class="content-full">
-  <% @blog_posts.each do |blog_post| %>
+  <% @blog_posts.reverse.each do |blog_post| %>
     <div class="blog-post">
       <h4 class="date right">
         <%= prettydate(blog_post.created_at) %>

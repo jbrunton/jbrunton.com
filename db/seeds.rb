@@ -6,6 +6,11 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-3.times do
-  BlogPost.create(title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph(8))
+3.times do |k|
+  Timecop.travel(DateTime.now - k) do
+    BlogPost.create(
+      title: Faker::Lorem.sentence,
+      content: Faker::Lorem.paragraph(8)
+    )
+  end
 end

@@ -19,14 +19,6 @@ Then(/^there should be a blog post "(.*?)"(?: with content "(.*?)")?$/) do |titl
   @subject = page.all('.blog-post', text: title).first
 end
 
-Given(/^a blog post "(.*?)" created yesterday$/) do |title|
-  create(:blog_post, title: title, created_at: DateTime.now.change(day: -1))
-end
-
-Given(/^a blog post "(.*?)" created today$/) do |title|
-  create(:blog_post, title: title, created_at: DateTime.now)
-end
-
 Given(/^a blog post "(.*?)" created on (\d+)\-(\d+)\-(\d+)$/) do |title, year, month, day|
   create(:blog_post, title: title, created_at: DateTime.new(year, month, day))
 end
