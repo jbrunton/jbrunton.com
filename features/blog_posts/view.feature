@@ -40,3 +40,8 @@ Feature: View Posts
     Then there should be a blog post "Some Post"
     And its date should be "1 May, 2013"
   
+  Scenario: Continue Reading
+    Given a blog post "Some Post"
+    When I am on the page for blog posts
+    Then there should be a blog post "Some Post"
+    And it should have a link "Continue Reading" which links to the blog post "Some Post"
