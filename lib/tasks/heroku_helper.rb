@@ -21,7 +21,7 @@ module HerokuHelper
   end
   
   def heroku_exec(cmd, app_name)
-    sh "heroku cmd --app #{app_name}"
+    sh "heroku #{cmd} --app #{app_name}"
   end
   
   def heroku_run(cmd, app_name)
