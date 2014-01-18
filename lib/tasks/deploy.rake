@@ -86,6 +86,10 @@ namespace :deploy do
       
       run_migrations
       
+      if config.tag then
+        `git tag -a #{DateTime.now.strftime(config.tag)} -m "Deployed #{current_branch} to #{app_name}"`
+      end
+      
       if config.push then
         `git push origin #{current_branch}:#{config.push}`
       end

@@ -12,6 +12,7 @@ apps:
   production:
     server: jbrunton-com
     branches: master
+    tag: 'RELEASE:%FT%T%:z'
     push: release
     checks:
       origin: true
