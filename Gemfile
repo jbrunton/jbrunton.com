@@ -44,6 +44,8 @@ end
 
 # for test/seed data
 gem 'faker'
+
+gem 'redcarpet'
  
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'

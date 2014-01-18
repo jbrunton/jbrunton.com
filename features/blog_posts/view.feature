@@ -16,3 +16,9 @@ Feature: View Posts
     Then I should see the post "First Post"
     And I should see the post "Second Post"
     And the first blog post should be "Second Post"
+    
+  Scenario: Markdown
+    Given a blog post "Some Post" with content "lorem _ipsum_"
+    When I am on the page for the blog post "Some Post"
+    Then there should be the html "<p>lorem <em>ipsum</em></p>"
+    
