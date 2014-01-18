@@ -20,12 +20,16 @@ class AppConfig
   attr_reader :repository
   attr_reader :server
   attr_reader :branches
+  attr_reader :merge
+  attr_reader :push
   attr_reader :checks
   
   def initialize(name, attrs)
     @name = name
     @repository = attrs['repository'] || name
     @server = attrs['server']
+    @merge = attrs['merge']
+    @push = attrs['push']
     @branches = attrs['branches'] || '*'
     @checks = ChecksConfig.new(attrs['checks'])
   end
@@ -58,6 +62,13 @@ namespace :deploy do
       if config.branches && config.branches != '*' then
         check_branch(app_name, current_branch, config.branches)
       end
+      
+      # make sure we're up to date
+      `git fetch`
+      
+      if config.merge then
+        `git merge origin/#{config.merge}`
+      end
 
       if config.checks.origin
         # have we pushed to origin?
@@ -74,10 +85,14 @@ namespace :deploy do
         check_staged(deploy_config.apps[staging_app_name].repository, current_branch)
       end
       
-      # push the current branch to master
+      # deploy the current branch to master on the heroku app
       push_to_master(config.repository, current_branch)
       
       run_migrations
+      
+      if config.push then
+        `git push origin #{config.push}`
+      end
     end
   end  
 end
