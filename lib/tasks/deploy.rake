@@ -21,6 +21,7 @@ class AppConfig
   attr_reader :server
   attr_reader :branches
   attr_reader :merge
+  attr_reader :push
   attr_reader :checks
   
   def initialize(name, attrs)
@@ -28,6 +29,7 @@ class AppConfig
     @repository = attrs['repository'] || name
     @server = attrs['server']
     @merge = attrs['merge']
+    @push = attrs['push']
     @branches = attrs['branches'] || '*'
     @checks = ChecksConfig.new(attrs['checks'])
   end
