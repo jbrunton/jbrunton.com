@@ -5,7 +5,7 @@ apps:
 
   staging:
     server: jbrunton-com-staging
-    branches: master
+    branches: staging
     checks:
       origin: true
 
