@@ -1,6 +1,10 @@
 <div class="content-full blog-post">
   <p id="notice"><%= notice %></p>
 
+  <h3 class="date right">
+    <%= prettydate(@blog_post.created_at) %>
+  </h3>
+  
   <h1 class="title">
     <%= @blog_post.title %>
   </h1>
