@@ -41,6 +41,9 @@ gem 'foundation-rails'
 group :production do
   gem 'rails_serve_static_assets'
 end
+
+# for test/seed data
+gem 'faker'
  
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
