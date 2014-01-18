@@ -4,7 +4,8 @@ describe "blog_posts/show" do
   before(:each) do
     @blog_post = assign(:blog_post, stub_model(BlogPost,
       :title => "Title",
-      :content => "MyText"
+      :content => "MyText",
+      :created_at => DateTime.now
     ))
   end
 
