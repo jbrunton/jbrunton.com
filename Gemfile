@@ -46,7 +46,9 @@ end
 gem 'faker'
 gem 'timecop'
 
+# markdown and html parsing
 gem 'redcarpet'
+gem 'nokogiri'
  
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'

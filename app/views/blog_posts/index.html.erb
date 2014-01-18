@@ -8,8 +8,11 @@
         <%= link_to blog_post.title, blog_post %>
       </h1>
       <div class="content">
-        <%= markdown(blog_post.content) %>
+        <%= preview(markdown(blog_post.content)) %>
       </div>
+      <p>
+        <%= link_to 'Continue Reading &rarr;'.html_safe, blog_post %>
+      </p>
     </div>
   <% end %>  
 </div>

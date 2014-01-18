@@ -43,3 +43,8 @@ end
 Then(/^its date should be "(.*?)"$/) do |date|
   expect(@subject.find('.date')).to have_text(date)
 end
+
+Then(/^it should have a link "(.*?)" which links to the blog post "(.*?)"$/) do |link_text, blog_post_title|
+  blog_post = BlogPost.where(title: blog_post_title).first
+  expect(@subject).to have_link(link_text, href: blog_post_path(blog_post))
+end
