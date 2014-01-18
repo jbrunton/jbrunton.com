@@ -5,14 +5,14 @@ apps:
 
   staging:
     server: jbrunton-com-staging
-    branches: staging
+    branches: master
     checks:
       origin: true
 
   production:
     server: jbrunton-com
-    branches: staging
-    push: master
+    branches: master
+    push: release
     checks:
       origin: true
       staged: true
