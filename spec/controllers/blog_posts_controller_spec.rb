@@ -36,6 +36,16 @@ describe BlogPostsController do
       get :index, {}, valid_session
       expect(assigns(:blog_posts)).to eq([blog_post])
     end
+    
+    it "orders the blog_posts by creation date in descending order" do
+      post_A = create(:blog_post, created_at: Date.today)
+      post_B = create(:blog_post, created_at: 2.days.ago)
+      post_C = create(:blog_post, created_at: 1.day.ago)
+      
+      get :index, {}, valid_session
+      
+      expect(assigns(:blog_posts)).to eq([post_B, post_C, post_A])
+    end
   end
 
   describe "GET show" do

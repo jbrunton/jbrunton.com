@@ -45,6 +45,7 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'factory_girl_rails'
+  gem 'timecop'
   gem 'cucumber-rails', :require => false
   gem 'database_cleaner'
 end
