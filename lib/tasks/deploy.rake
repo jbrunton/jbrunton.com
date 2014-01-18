@@ -65,10 +65,6 @@ namespace :deploy do
       
       # make sure we're up to date
       `git fetch`
-      
-      if config.merge then
-        `git merge origin/#{config.merge}`
-      end
 
       if config.checks.origin
         # have we pushed to origin?
