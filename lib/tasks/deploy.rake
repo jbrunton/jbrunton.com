@@ -21,6 +21,7 @@ class AppConfig
   attr_reader :server
   attr_reader :branches
   attr_reader :merge
+  attr_reader :tag
   attr_reader :push
   attr_reader :checks
   
@@ -29,6 +30,7 @@ class AppConfig
     @repository = attrs['repository'] || name
     @server = attrs['server']
     @merge = attrs['merge']
+    @tag = attrs['tag']
     @push = attrs['push']
     @branches = attrs['branches'] || '*'
     @checks = ChecksConfig.new(attrs['checks'])
