@@ -1,10 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0
-branches:
-  - only:
-    - master
-    - staging
 script:
   - bundle exec rake db:test:prepare spec cucumber
   
