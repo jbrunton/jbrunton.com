@@ -91,7 +91,7 @@ namespace :deploy do
       if config.tag then
         tag_name = DateTime.now.strftime(config.tag)
         `git tag -a #{tag_name} -m "Deployed #{current_branch} to #{app_name}"`
-        `git push origin git #{tag_name}`
+        `git push origin #{tag_name}`
       end
     end
   end  
