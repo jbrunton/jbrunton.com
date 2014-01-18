@@ -14,7 +14,10 @@ module HerokuHelper
   end
   
   def push_to_master(repo_name, branch_name)
-    sh "git push #{repo_name} #{branch_name}:master"
+    if ENV['force'] == 'true' then
+      opts = "--force"
+    end
+    sh "git push #{opts} #{repo_name} #{branch_name}:master"
   end
   
   def heroku_exec(cmd, app_name)
