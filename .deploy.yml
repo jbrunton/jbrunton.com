@@ -11,8 +11,7 @@ apps:
 
   production:
     server: jbrunton-com
-    branches: master
-    merge: staging
+    branches: staging
     push: master
     checks:
       origin: true

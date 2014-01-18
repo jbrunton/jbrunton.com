@@ -91,7 +91,7 @@ namespace :deploy do
       run_migrations
       
       if config.push then
-        `git push origin #{config.push}`
+        `git push origin #{current_branch}:#{config.push}`
       end
     end
   end  
