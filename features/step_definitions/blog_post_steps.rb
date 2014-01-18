@@ -33,3 +33,7 @@ end
 Then(/^the first blog post should be "(.*?)"$/) do |title|
   expect(page.all('.blog-post .title').first).to have_text(title)
 end
+
+Then(/^there should be the html "(.*?)"$/) do |html|
+  expect(page.html).to include(html)
+end

@@ -5,9 +5,9 @@
     <%= @blog_post.title %>
   </h1>
 
-  <p class="content">
-    <%= @blog_post.content %>
-  </p>
+  <div class="content">
+    <%= markdown(@blog_post.content) %>
+  </div>
 
   <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
   <%= link_to 'Back', blog_posts_path %>
