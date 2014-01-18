@@ -1,7 +1,7 @@
 JbruntonCom::Application.routes.draw do
   resources :blog_posts
 
-  root 'home#index'
+  root 'blog_posts#index'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
