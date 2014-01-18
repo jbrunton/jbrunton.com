@@ -58,3 +58,6 @@ Cucumber::Rails::Database.javascript_strategy = :truncation
 
 World(FactoryGirl::Syntax::Methods)
 
+Transform /^(-?\d+)$/ do |number|
+  number.to_i
+end

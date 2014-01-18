@@ -16,7 +16,7 @@ Then(/^there should be a blog post "(.*?)"(?: with content "(.*?)")?$/) do |titl
   unless content.nil?
     expect(page).to have_selector('.blog-post .content', text: content)
   end
-  @subject = page.all('.blog-post .title', text: title).first
+  @subject = page.all('.blog-post', text: title).first
 end
 
 Given(/^a blog post "(.*?)" created yesterday$/) do |title|
@@ -25,6 +25,10 @@ end
 
 Given(/^a blog post "(.*?)" created today$/) do |title|
   create(:blog_post, title: title, created_at: DateTime.now)
+end
+
+Given(/^a blog post "(.*?)" created on (\d+)\-(\d+)\-(\d+)$/) do |title, year, month, day|
+  create(:blog_post, title: title, created_at: DateTime.new(year, month, day))
 end
 
 When(/^I am on the page for blog posts$/) do
@@ -39,7 +43,11 @@ Then(/^there should be the html "(.*?)"$/) do |html|
   expect(page.html).to include(html)
 end
 
-Then(/^the title should be "(.*?)" and should link to the blog post "(.*?)"$/) do |expected_title, actual_title|
+Then(/^its title should be "(.*?)" and should link to the blog post "(.*?)"$/) do |expected_title, actual_title|
   blog_post = BlogPost.where(title: actual_title).first
-  expect(@subject).to have_link(expected_title, href: blog_post_path(blog_post))
+  expect(@subject.find('.title')).to have_link(expected_title, href: blog_post_path(blog_post))
+end
+
+Then(/^its date should be "(.*?)"$/) do |date|
+  expect(@subject.find('.date')).to have_text(date)
 end

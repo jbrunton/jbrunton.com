@@ -11,5 +11,10 @@ require 'spec_helper'
 #   end
 # end
 describe BlogPostsHelper do
-  pending "add some examples to (or delete) #{__FILE__}"
+  describe "#prettydate" do
+    it "formats the date" do
+      date = DateTime.new(2013, 5, 1)
+      expect(helper.prettydate(date)).to eq("1 May, 2013")
+    end
+  end
 end

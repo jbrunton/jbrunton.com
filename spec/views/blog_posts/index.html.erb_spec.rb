@@ -5,11 +5,13 @@ describe "blog_posts/index" do
     assign(:blog_posts, [
       stub_model(BlogPost,
         :title => "Title",
-        :content => "MyText"
+        :content => "MyText",
+        :created_at => DateTime.now
       ),
       stub_model(BlogPost,
         :title => "Title",
-        :content => "MyText"
+        :content => "MyText",
+        :created_at => DateTime.now
       )
     ])
   end
