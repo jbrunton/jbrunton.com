@@ -70,23 +70,6 @@ textarea.fixed-width {
 
 
 /*
- * Code
- */
-
-.codify {
-  font-family: Consolas, "Liberation Mono", Courier, monospace;
-  font-size: 14px;
-}
-
-pre.codify {
-  @include panel($bg:#fafafa);
-  
-  border-left-width: $panel-padding / 2;
-  overflow-x: scroll;
-}
-
-
-/*
  * Tabs
  */
 
@@ -117,4 +100,39 @@ pre.codify {
   border: 1px solid $tabs-navigation-border-color;
   border-bottom-color: transparent;
   color: $tabs-navigation-font-color;
+}
+
+
+/*
+ * Code
+ */
+ 
+pre code, blockquote {
+  margin: 0 0 26px 0;
+  padding: 20px;
+  border-left: solid 5px #DDD;
+  box-shadow: 1px 1px 8px rgba(127, 127, 127, .6);
+  background-color: #F9F9F9;
+}
+
+pre code {
+  display: block;
+  width: 100%;
+  color: #999;
+  overflow-x: auto;
+}
+
+pre code ol {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+code.prettyprint ol {
+  margin-bottom: 0;
+}
+
+code.prettyprint li {
+  line-height: inherit;
+  font-size: inherit;
 }
