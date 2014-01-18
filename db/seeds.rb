@@ -10,7 +10,7 @@
   Timecop.travel(DateTime.now - k) do
     BlogPost.create(
       title: Faker::Lorem.sentence,
-      content: Faker::Lorem.paragraph(8)
+      content: 3.times.map { Faker::Lorem.paragraph(5) }.join("\n\n")
     )
   end
 end
