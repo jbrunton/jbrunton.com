@@ -1,5 +1,9 @@
-Given(/^a blog post "(.*?)" with content "(.*?)"$/) do |title, content|
-  create(:blog_post, title: title, content: content)
+Given(/^a blog post "(.*?)"(?: with content "(.*?)")?$/) do |title, content|
+  if content then
+    create(:blog_post, title: title, content: content)
+  else
+    create(:blog_post, title: title)
+  end    
 end
 
 When(/^I am on the page for the blog post "(.*?)"$/) do |title|
