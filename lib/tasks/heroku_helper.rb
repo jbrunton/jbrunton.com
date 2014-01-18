@@ -1,7 +1,7 @@
 module HerokuHelper
-  def run_migrations
+  def run_migrations(app_name)
     Bundler.with_clean_env do
-      sh "heroku run rake db:migrate"
+      heroku_run("rake db:migrate", app_name)
     end
   end
   
@@ -15,5 +15,13 @@ module HerokuHelper
   
   def push_to_master(repo_name, branch_name)
     sh "git push #{repo_name} #{branch_name}:master"
+  end
+  
+  def heroku_exec(cmd, app_name)
+    sh "heroku cmd --app #{app_name}"
+  end
+  
+  def heroku_run(cmd, app_name)
+    heroku_exec("run #{cmd}", app_name)
   end
 end
