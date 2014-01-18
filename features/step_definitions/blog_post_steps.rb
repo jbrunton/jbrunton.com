@@ -11,11 +11,12 @@ When(/^I am on the page for the blog post "(.*?)"$/) do |title|
   visit url_for(blog_post)
 end
 
-Then(/^I should see the post "(.*?)"(?: with content "(.*?)")?$/) do |title, content|
+Then(/^there should be a blog post "(.*?)"(?: with content "(.*?)")?$/) do |title, content|
   expect(page).to have_selector('.blog-post .title', text: title)
   unless content.nil?
     expect(page).to have_selector('.blog-post .content', text: content)
   end
+  @subject = page.all('.blog-post .title', text: title).first
 end
 
 Given(/^a blog post "(.*?)" created yesterday$/) do |title|
@@ -36,4 +37,9 @@ end
 
 Then(/^there should be the html "(.*?)"$/) do |html|
   expect(page.html).to include(html)
+end
+
+Then(/^the title should be "(.*?)" and should link to the blog post "(.*?)"$/) do |expected_title, actual_title|
+  blog_post = BlogPost.where(title: actual_title).first
+  expect(@subject).to have_link(expected_title, href: blog_post_path(blog_post))
 end

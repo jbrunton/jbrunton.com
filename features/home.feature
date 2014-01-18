@@ -5,4 +5,4 @@ Feature: Home Page
   Scenario:
     Given a blog post "Some Post"
     When I am on the home page
-    Then I should see the post "Some Post"
+    Then there should be a blog post "Some Post"
