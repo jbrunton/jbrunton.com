@@ -1,18 +1,17 @@
 apps:
   development:
-    server: jbrunton-com-development
-    branches: '*'
+    heroku: jbrunton-com-development
 
   staging:
-    server: jbrunton-com-staging
-    branches: master
+    heroku: jbrunton-com-staging
     checks:
-      origin: true
+      pushed: true
+      branch: master
 
   production:
-    server: jbrunton-com
-    branches: master
+    heroku: jbrunton-com
     tag: 'RELEASE_%Y%m%dT%H%M%S%z'
     checks:
-      origin: true
+      pushed: true
+      branch: master
       staged: true
