@@ -51,7 +51,7 @@ gem 'redcarpet'
 gem 'nokogiri'
  
 group :development, :test do
-  gem "heroploy", :git => 'git@github.com:jbrunton/heroploy.git'
+  gem "heroploy"
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'factory_girl_rails'
   gem 'cucumber-rails', :require => false
