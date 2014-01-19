@@ -86,7 +86,7 @@ namespace :deploy do
       # deploy the current branch to master on the heroku app
       push_to_master(config.repository, current_branch)
       
-      run_migrations
+      run_migrations(config.server || app_name)
       
       if config.tag then
         tag_name = DateTime.now.strftime(config.tag)
