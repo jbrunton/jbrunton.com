@@ -1,5 +1,6 @@
-PATH
-  remote: ../heroploy
+GIT
+  remote: git@github.com:jbrunton/heroploy.git
+  revision: 7ccbe5438f4d19fdaf08f6d1a87ef4d6150dc748
   specs:
     heroploy (0.0.1)
       bundler (~> 1.3)
