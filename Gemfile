@@ -49,6 +49,8 @@ gem 'timecop'
 # markdown and html parsing
 gem 'redcarpet'
 gem 'nokogiri'
+
+gem "heroploy", :path => "../heroploy"
  
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
