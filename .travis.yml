@@ -1,8 +1,6 @@
 language: ruby
 rvm:
   - 2.0.0
-before_script:
-  - echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 script:
   - bundle exec rake db:test:prepare cucumber spec
   
