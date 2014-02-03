@@ -1,4 +1,4 @@
-apps:
+environments:
   development:
     heroku: jbrunton-com-development
 
