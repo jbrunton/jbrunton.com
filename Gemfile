@@ -37,6 +37,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'foundation-rails'
 
 gem 'devise'
+gem 'omniauth-facebook'
 
 # Serve assets on Heroku.
 # See https://devcenter.heroku.com/articles/ruby-support#static-assets
