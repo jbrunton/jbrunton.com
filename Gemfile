@@ -36,6 +36,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'foundation-rails'
 
+gem 'devise'
+
 # Serve assets on Heroku.
 # See https://devcenter.heroku.com/articles/ruby-support#static-assets
 group :production do
