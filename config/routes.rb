@@ -1,5 +1,5 @@
 JbruntonCom::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :omniauth_callbacks => "auth" }
   resources :blog_posts
 
   root 'blog_posts#index'
