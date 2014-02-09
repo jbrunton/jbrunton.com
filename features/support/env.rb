@@ -58,6 +58,22 @@ Cucumber::Rails::Database.javascript_strategy = :truncation
 
 World(FactoryGirl::Syntax::Methods)
 
+World(Devise::TestHelpers)
+
+OmniAuth.config.test_mode = true
+
+OmniAuth.config.mock_auth[:facebook] = OmniAuth::AuthHash.new({
+  :provider => 'facebook',
+  :uid => 'abc123',
+  :info => { :name => "Joe Bloggs" }
+  # etc.
+})
+
+Before do 
+#  request.env["devise.mapping"] = Devise.mappings[:user] 
+  #request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook] 
+end
+
 Transform /^(-?\d+)$/ do |number|
   number.to_i
 end

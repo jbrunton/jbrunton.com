@@ -1,5 +1,4 @@
 FactoryGirl.define do
-  puts "*** defining blog_post factory"
   factory :blog_post do
     sequence(:title) { |n| "Blog Post #{n}" }
     content "Lorem Ipsum"

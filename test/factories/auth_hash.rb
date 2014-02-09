@@ -3,7 +3,6 @@ FactoryGirl.define do
     initialize_with { OmniAuth::AuthHash::InfoHash.new }
   end
   
-  puts "*** defining auth_hash factory"
   factory :auth_hash, :class => OmniAuth::AuthHash do
     uid "abc123"
     info { build(:info_hash) }
