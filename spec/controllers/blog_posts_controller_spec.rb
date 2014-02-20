@@ -44,7 +44,7 @@ describe BlogPostsController do
       
       get :index, {}, valid_session
       
-      expect(assigns(:blog_posts)).to eq([post_B, post_C, post_A])
+      expect(assigns(:blog_posts)).to eq([post_B, post_C])
     end
   end
 
