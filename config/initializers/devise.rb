@@ -4,8 +4,8 @@ Devise.setup do |config|
   # try to read the facebook API and secret keys from the Heroku config vars.
   # if that fails, assume we're running locally, and use the localhost key and secret.
   facebook_app_id = ENV['facebook_app_id'] || "1400932756832068"
-  facebook_secret_key = ENV['facebook_secret_key'] || "3148e45364e47e7ed83091bee6445ca4"
-  config.omniauth :facebook, facebook_app_id, facebook_secret_key
+  facebook_app_secret = ENV['facebook_app_secret'] || "3148e45364e47e7ed83091bee6445ca4"
+  config.omniauth :facebook, facebook_app_id, facebook_app_secret
   
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
