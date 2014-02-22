@@ -1,17 +1,33 @@
+travis_repo: jbrunton/jbrunton.com
+
+load_configs:
+  private_keys:
+    repository: git@github.com:jbrunton/jbrunton.com-config.git
+    file: config/heroploy.yml
+
+common:
+  required:
+    - facebook_app_id
+    - facebook_app_secret
+
 environments:
   development:
-    heroku: jbrunton-com-development
+    app: jbrunton-com-development
+    variables:
+      facebook_app_id: 523872661065702
 
   staging:
-    heroku: jbrunton-com-staging
+    app: jbrunton-com-staging
     checks:
       pushed: true
       branch: master
+      travis: true
 
   production:
-    heroku: jbrunton-com
+    app: jbrunton-com
     tag: 'RELEASE_%Y%m%dT%H%M%S%z'
     checks:
       pushed: true
       branch: master
       staged: true
+      travis: true
