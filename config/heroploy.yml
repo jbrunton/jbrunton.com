@@ -18,6 +18,8 @@ environments:
 
   staging:
     app: jbrunton-com-staging
+    variables:
+      facebook_app_id: 1408788939378363
     checks:
       pushed: true
       branch: master
