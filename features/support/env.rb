@@ -69,9 +69,16 @@ OmniAuth.config.mock_auth[:facebook] = OmniAuth::AuthHash.new({
   # etc.
 })
 
+World(Warden::Test::Helpers)
+Warden.test_mode!
+
 Before do 
 #  request.env["devise.mapping"] = Devise.mappings[:user] 
   #request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook] 
+end
+
+After do
+  Warden.test_reset!
 end
 
 Transform /^(-?\d+)$/ do |number|
