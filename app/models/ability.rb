@@ -6,7 +6,6 @@ class Ability
     if user.admin?
       can :manage, :all
     else
-      # can view any profile page
       can :read, BlogPost
     end
   end

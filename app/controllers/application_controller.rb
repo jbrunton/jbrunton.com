@@ -8,8 +8,8 @@ class ApplicationController < ActionController::Base
   end
   
   before_filter do
-    # see https://github.com/ryanb/cancan/issues/835#issuecomment-18663815 for
-    # why this is necessary
+    # for why this is necessary, see:
+    # https://github.com/ryanb/cancan/issues/835#issuecomment-18663815
     resource = controller_name.singularize.to_sym
     method = "#{resource}_params"
     params[resource] &&= send(method) if respond_to?(method, true)
