@@ -8,6 +8,7 @@ class AuthController < Devise::OmniauthCallbacksController
   
   def facebook
     @user = User.find_for_facebook_oauth(auth_hash)
+    @user.apply_roles
 
     if @user.admin?
       if @user.persisted?

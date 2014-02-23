@@ -30,19 +30,7 @@ describe BlogPostsController do
   # BlogPostsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
   
-  let(:user) { create(:user, uid: "123") }
-
-  before do
-    sign_in user
-  end
-  
-  before do
-    # for testing purposes, we have to tell Devise which mapping to use for routing
-    request.env["devise.mapping"] = Devise.mappings[:user]
-    request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook_admin]
-  end
-  
-  before { allow(User).to receive(:admin_uids).and_return(["123"]) }
+  before { sign_in create(:user, :admin) }
 
   describe "GET index" do
     it "assigns all blog_posts as @blog_posts" do

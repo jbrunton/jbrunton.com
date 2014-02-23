@@ -24,7 +24,7 @@ describe User do
     end
   end
   
-  describe ".admin_users" do
+  describe ".admin_uids" do
     it "returns a list of admin uids based on the ADMIN_USERS environment variable" do
       expect(ENV).to receive('[]').with('ADMIN_USERS').and_return("123, 456")
       admin_uids = User.admin_uids
@@ -33,17 +33,39 @@ describe User do
     end
   end
   
-  describe "#admin?" do
-    before { allow(User).to receive(:admin_uids).and_return(["123"]) }
-
-    it "returns true if the uid is listed in ADMIN_USERS" do
-      user.uid = "123"
-      expect(user.admin?).to eq(true)
+  describe "#apply_roles" do
+    context "if the uid is listed in ADMIN_USERS" do
+      before { allow(User).to receive(:admin_uids).and_return([user.uid]) }
+      
+      it "makes the user an admin" do
+        expect(user).to receive(:add_role).with(:admin)
+        user.apply_roles
+      end
     end
+    
+    context "if the uid isn't listed in ADMIN_USERS" do
+      before { allow(User).to receive(:admin_uids).and_return([]) }
 
-    it "returns false otherwise" do
-      user.uid = "456"
-      expect(user.admin?).to eq(false)
+      it "doesn't make the user an admin" do
+        expect(user).to_not receive(:add_role)
+        user.apply_roles
+      end
+    end
+  end
+  
+  describe "#admin?" do  
+    context "if the user has the :admin role" do
+      before { user.add_role(:admin) }
+      
+      it "returns true" do
+        expect(user.admin?).to eq(true)
+      end
+    end
+    
+    context "if the user doesn't have the :admin role" do
+      it "returns false" do
+        expect(user.admin?).to eq(false)
+      end
     end
   end
 end
