@@ -33,6 +33,13 @@
     
     <%= render 'shared/menu' %>
         
+    <% if flash[:alert] %>
+      <div data-alert class="alert-box alert radius">
+        <%= flash[:alert] %>
+        <a href="#" class="close">&times;</a>
+      </div>
+    <% end %>
+    
     <% if flash[:notice] %>
       <div data-alert class="alert-box info radius">
         <%= flash[:notice] %>

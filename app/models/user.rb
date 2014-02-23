@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  rolify
   devise :omniauthable, :omniauth_providers => [:facebook]
 
   
@@ -15,7 +16,15 @@ class User < ActiveRecord::Base
       .map{ |s| s.strip }
   end
   
+  def apply_roles
+    if User.admin_uids.include?(uid)
+      add_role :admin
+    else
+      remove_role :admin
+    end
+  end
+  
   def admin?
-    User.admin_uids.include?(uid.to_s)
+    has_role? :admin
   end
 end

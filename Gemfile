@@ -11,6 +11,7 @@ end
 # Use Postgres on Heroku
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Use SCSS for stylesheets
@@ -38,6 +39,11 @@ gem 'foundation-rails'
 
 gem 'devise'
 gem 'omniauth-facebook'
+gem 'cancan'
+
+# Can't deploy to Heroku using latest Rolify.
+# See: http://stackoverflow.com/a/21897887
+gem 'rolify', '~> 3.2.0'
 
 # Serve assets on Heroku.
 # See https://devcenter.heroku.com/articles/ruby-support#static-assets

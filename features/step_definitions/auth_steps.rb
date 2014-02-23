@@ -1,5 +1,9 @@
-Given(/^I am authenticated$/) do
-  login_as(create(:user), :scope => :user)
+Given(/^I am authenticated( as an admin)?$/) do |admin|
+  user = create(:user)
+  if admin
+    user.add_role :admin
+  end
+  login_as user    
 end
 
 Given(/^I am an admin$/) do
