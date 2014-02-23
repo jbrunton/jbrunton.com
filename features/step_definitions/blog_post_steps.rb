@@ -48,3 +48,11 @@ Then(/^it should have a link "(.*?)" which links to the blog post "(.*?)"$/) do 
   blog_post = BlogPost.where(title: blog_post_title).first
   expect(@subject).to have_link(link_text, href: blog_post_path(blog_post))
 end
+
+When(/^I compose a blog post with title "(.*?)"$/) do |title|
+  visit "/blog_posts/new"
+  within("form#new_blog_post") do
+    fill_in 'blog_post[title]', :with => title
+  end
+  click_button 'Create'
+end

@@ -1,5 +1,8 @@
-Given(/^I am authenticated$/) do
-  login_as(create(:user), :scope => :user)
+Given(/^I am authenticated( as an admin)?$/) do |admin|
+  if admin
+    ENV['ADMIN_USERS'] = OmniAuth.config.mock_auth[:facebook].uid
+  end
+  login_as(create(:user, uid: OmniAuth.config.mock_auth[:facebook].uid), :scope => :user)
 end
 
 Given(/^I am an admin$/) do

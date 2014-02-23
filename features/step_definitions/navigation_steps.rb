@@ -2,7 +2,7 @@ Given(/^I navigate to "(.*?)"$/) do |url|
   visit url
 end
 
-Given(/^I am on the homepage$/) do
+Given(/^I (?:am on|go to) the homepage$/) do
   visit root_url
 end
 

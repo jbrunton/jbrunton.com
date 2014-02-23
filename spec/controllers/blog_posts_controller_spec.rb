@@ -29,11 +29,25 @@ describe BlogPostsController do
   # in order to pass any filters (e.g. authentication) defined in
   # BlogPostsController. Be sure to keep this updated too.
   let(:valid_session) { {} }
+  
+  let(:user) { create(:user, uid: "123") }
+
+  before do
+    sign_in user
+  end
+  
+  before do
+    # for testing purposes, we have to tell Devise which mapping to use for routing
+    request.env["devise.mapping"] = Devise.mappings[:user]
+    request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook_admin]
+  end
+  
+  before { allow(User).to receive(:admin_uids).and_return(["123"]) }
 
   describe "GET index" do
     it "assigns all blog_posts as @blog_posts" do
       blog_post = BlogPost.create! valid_attributes
-      get :index, {}, valid_session
+      get :index
       expect(assigns(:blog_posts)).to eq([blog_post])
     end
     
@@ -42,7 +56,7 @@ describe BlogPostsController do
       post_B = create(:blog_post, created_at: 2.days.ago)
       post_C = create(:blog_post, created_at: 1.day.ago)
       
-      get :index, {}, valid_session
+      get :index
       
       expect(assigns(:blog_posts)).to eq([post_B, post_C, post_A])
     end
@@ -51,7 +65,7 @@ describe BlogPostsController do
   describe "GET show" do
     it "assigns the requested blog_post as @blog_post" do
       blog_post = BlogPost.create! valid_attributes
-      get :show, {:id => blog_post.to_param}, valid_session
+      get :show, {:id => blog_post.to_param}
       expect(assigns(:blog_post)).to eq(blog_post)
     end
   end
@@ -66,7 +80,7 @@ describe BlogPostsController do
   describe "GET edit" do
     it "assigns the requested blog_post as @blog_post" do
       blog_post = BlogPost.create! valid_attributes
-      get :edit, {:id => blog_post.to_param}, valid_session
+      get :edit, {:id => blog_post.to_param}
       expect(assigns(:blog_post)).to eq(blog_post)
     end
   end
@@ -80,13 +94,13 @@ describe BlogPostsController do
       end
 
       it "assigns a newly created blog_post as @blog_post" do
-        post :create, {:blog_post => valid_attributes}, valid_session
+        post :create, {:blog_post => valid_attributes}
         expect(assigns(:blog_post)).to be_a(BlogPost)
         expect(assigns(:blog_post)).to be_persisted
       end
 
       it "redirects to the created blog_post" do
-        post :create, {:blog_post => valid_attributes}, valid_session
+        post :create, {:blog_post => valid_attributes}
         expect(response).to redirect_to(BlogPost.last)
       end
     end
@@ -95,14 +109,14 @@ describe BlogPostsController do
       it "assigns a newly created but unsaved blog_post as @blog_post" do
         # Trigger the behavior that occurs when invalid params are submitted
         BlogPost.any_instance.stub(:save).and_return(false)
-        post :create, {:blog_post => { "title" => "invalid value" }}, valid_session
+        post :create, {:blog_post => { "title" => "invalid value" }}
         expect(assigns(:blog_post)).to be_a_new(BlogPost)
       end
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         BlogPost.any_instance.stub(:save).and_return(false)
-        post :create, {:blog_post => { "title" => "invalid value" }}, valid_session
+        post :create, {:blog_post => { "title" => "invalid value" }}
         expect(response).to render_template("new")
       end
     end
@@ -117,18 +131,18 @@ describe BlogPostsController do
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
         expect_any_instance_of(BlogPost).to receive(:update).with({ "title" => "MyString" })
-        put :update, {:id => blog_post.to_param, :blog_post => { "title" => "MyString" }}, valid_session
+        put :update, {:id => blog_post.to_param, :blog_post => { "title" => "MyString" }}
       end
 
       it "assigns the requested blog_post as @blog_post" do
         blog_post = BlogPost.create! valid_attributes
-        put :update, {:id => blog_post.to_param, :blog_post => valid_attributes}, valid_session
+        put :update, {:id => blog_post.to_param, :blog_post => valid_attributes}
         expect(assigns(:blog_post)).to eq(blog_post)
       end
 
       it "redirects to the blog_post" do
         blog_post = BlogPost.create! valid_attributes
-        put :update, {:id => blog_post.to_param, :blog_post => valid_attributes}, valid_session
+        put :update, {:id => blog_post.to_param, :blog_post => valid_attributes}
         expect(response).to redirect_to(blog_post)
       end
     end
@@ -138,7 +152,7 @@ describe BlogPostsController do
         blog_post = BlogPost.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         BlogPost.any_instance.stub(:save).and_return(false)
-        put :update, {:id => blog_post.to_param, :blog_post => { "title" => "invalid value" }}, valid_session
+        put :update, {:id => blog_post.to_param, :blog_post => { "title" => "invalid value" }}
         expect(assigns(:blog_post)).to eq(blog_post)
       end
 
@@ -146,7 +160,7 @@ describe BlogPostsController do
         blog_post = BlogPost.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         BlogPost.any_instance.stub(:save).and_return(false)
-        put :update, {:id => blog_post.to_param, :blog_post => { "title" => "invalid value" }}, valid_session
+        put :update, {:id => blog_post.to_param, :blog_post => { "title" => "invalid value" }}
         expect(response).to render_template("edit")
       end
     end
@@ -156,13 +170,13 @@ describe BlogPostsController do
     it "destroys the requested blog_post" do
       blog_post = BlogPost.create! valid_attributes
       expect {
-        delete :destroy, {:id => blog_post.to_param}, valid_session
+        delete :destroy, {:id => blog_post.to_param}
       }.to change(BlogPost, :count).by(-1)
     end
 
     it "redirects to the blog_posts list" do
       blog_post = BlogPost.create! valid_attributes
-      delete :destroy, {:id => blog_post.to_param}, valid_session
+      delete :destroy, {:id => blog_post.to_param}
       expect(response).to redirect_to(blog_posts_url)
     end
   end
