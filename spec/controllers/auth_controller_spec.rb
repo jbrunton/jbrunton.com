@@ -51,10 +51,9 @@ describe AuthController do
       expect(controller.current_user).to eq(assigns(:user))
     end
     
-    it "should redirect" do
-      pending
-      # TODO: doesn't seem to redirect
-      # expect(response).to redirect_to(assigns(:user))
+    pending "should redirect" do
+      # TODO: why doesn't this redirect?
+      expect(response).to redirect_to(assigns(:user))
     end
     
     it "should specify a message in the flash" do
