@@ -23,7 +23,8 @@ describe AuthController do
   # This should return the minimal set of attributes required to create a valid
   # BlogPost. As you add validations to BlogPost, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "uid" => "abc123", "info" => { "name" => "Bob" } } }
+  let(:admin_uid) { "123" }
+  let(:valid_attributes) { { "uid" => admin_uid, "info" => { "name" => "Alice" } } }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -34,38 +35,41 @@ describe AuthController do
     before do
       # for testing purposes, we have to tell Devise which mapping to use for routing
       request.env["devise.mapping"] = Devise.mappings[:user]
-      request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook]
-      
+      request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook_admin]
     end
+    
+    context "if the user is an admin" do
+      before { allow(User).to receive(:admin_uids).and_return([admin_uid]) }
 
-    it "should create a new user, if none exists" do
-      expect { get :facebook }.to change(User, :count).by(1)
+      it "should create a new user, if none exists" do
+        expect { get :facebook }.to change(User, :count).by(1)
       
-      # this assertion is not strictly a requirement of the observable behavior of this controller,
-      # but it allows us to write other assertions in terms of assigns(:user)
-      expect(assigns(:user).uid).to eq("abc123")
-    end
+        # this assertion is not strictly a requirement of the observable behavior of this controller,
+        # but it allows us to write other assertions in terms of assigns(:user)
+        expect(assigns(:user).uid).to eq(admin_uid)
+      end
     
-    it "should sign in the created user" do
-      get :facebook
-      expect(controller.current_user).to eq(assigns(:user))
-    end
+      it "should sign in the created user" do
+        get :facebook
+        expect(controller.current_user).to eq(assigns(:user))
+      end
     
-    pending "should redirect" do
-      # TODO: why doesn't this redirect?
-      expect(response).to redirect_to(assigns(:user))
-    end
+      pending "should redirect" do
+        # TODO: why doesn't this redirect?
+        expect(response).to redirect_to(assigns(:user))
+      end
     
-    it "should specify a message in the flash" do
-      get :facebook
-      expect(flash[:notice]).to eq("Successfully authenticated from Facebook account.")
-    end
+      it "should specify a message in the flash" do
+        get :facebook
+        expect(flash[:notice]).to eq("Successfully authenticated from Facebook account.")
+      end
     
-    context "if the user already exists" do
-      before { create(:user, :uid => 'abc123') }
+      context "if the user already exists" do
+        before { create(:user, :uid => admin_uid) }
       
-      it "should assign the existing user" do
-        expect{ get :facebook }.to_not change(User, :count)
+        it "should assign the existing user" do
+          expect{ get :facebook }.to_not change(User, :count)
+        end
       end
     end
   end

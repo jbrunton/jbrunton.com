@@ -11,7 +11,7 @@ FactoryGirl.define do
       info_name "Joe Bloggs"
     end
     
-    initialize_with { OmniAuth.config.mock_auth[:facebook].dup }
+    initialize_with { OmniAuth.config.mock_auth[:facebook_admin].dup }
     
     after(:build) do |auth_hash, evaluator|
       auth_hash.info.name = evaluator.info_name
