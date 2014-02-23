@@ -40,7 +40,7 @@ gem 'foundation-rails'
 gem 'devise'
 gem 'omniauth-facebook'
 gem 'cancan'
-gem 'rolify'
+gem 'rolify', '~> 3.2.0'
 
 # Serve assets on Heroku.
 # See https://devcenter.heroku.com/articles/ruby-support#static-assets
