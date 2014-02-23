@@ -73,12 +73,14 @@ World(Warden::Test::Helpers)
 Warden.test_mode!
 
 Before do 
-#  request.env["devise.mapping"] = Devise.mappings[:user] 
+  #allow(User).to receive(:admin_uids).and_return(['abc123'])
+  #request.env["devise.mapping"] = Devise.mappings[:user] 
   #request.env["omniauth.auth"] = OmniAuth.config.mock_auth[:facebook] 
 end
 
 After do
   Warden.test_reset!
+  ENV['ADMIN_USERS'] = nil
 end
 
 Transform /^(-?\d+)$/ do |number|

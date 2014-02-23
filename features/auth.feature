@@ -4,10 +4,17 @@ Feature: Home Page
   I want to authenticate with Facebook
   So that I can administer blog posts
 
-  Scenario: Authenticate
+  Scenario: Authenticate admin
     Given I am on the homepage
+    And I am an admin
     When I click "Sign in with Facebook"
     Then there should be a notice "Successfully authenticated from Facebook account."
+    
+  Scenario: Authenticate user
+    Given I am on the homepage
+    And I am not an admin
+    When I click "Sign in with Facebook"
+    Then there should be a notice "Sorry, you do not have admin permissions for this site."
   
   Scenario: Destroy session
     Given I am authenticated

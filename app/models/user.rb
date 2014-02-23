@@ -8,4 +8,14 @@ class User < ActiveRecord::Base
       user.name = auth.info.name
     end
   end
+  
+  def self.admin_uids
+    ENV['ADMIN_USERS'].to_s
+      .split(',')
+      .map{ |s| s.strip }
+  end
+  
+  def admin?
+    User.admin_uids.include?(uid.to_s)
+  end
 end
