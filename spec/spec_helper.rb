@@ -49,4 +49,16 @@ RSpec.configure do |config|
   config.order = "random"
   
   config.include FactoryGirl::Syntax::Methods
+  
+  config.include Devise::TestHelpers, :type => :controller
+  config.include Devise::TestHelpers, :type => :view
+  
+  OmniAuth.config.test_mode = true
+  
+  OmniAuth.config.mock_auth[:facebook] = OmniAuth::AuthHash.new({
+    :provider => 'facebook',
+    :uid => 'abc123',
+    :info => { :name => "Bob" }
+    # etc.
+  })
 end
