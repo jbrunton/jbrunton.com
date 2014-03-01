@@ -58,9 +58,10 @@ gem 'timecop'
 # markdown and html parsing
 gem 'redcarpet'
 gem 'nokogiri'
+
+gem "heroploy", :github => 'jbrunton/heroploy'
  
 group :development, :test do
-  gem "heroploy", :github => 'jbrunton/heroploy'
   gem 'rspec-rails', '~> 3.0.0.beta'
   gem 'factory_girl_rails'
   gem 'cucumber-rails', :require => false
