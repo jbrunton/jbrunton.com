@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   end
   
   def self.admin_uids
-    ENV['ADMIN_USERS'].to_s
+    Heroploy.config_vars['admin_users'].to_s
       .split(',')
       .map{ |s| s.strip }
   end

@@ -3,8 +3,8 @@
 Devise.setup do |config|
   # try to read the facebook API and secret keys from the Heroku config vars.
   # if that fails, assume we're running locally, and use the localhost key and secret.
-  facebook_app_id = ENV['facebook_app_id'] || "1400932756832068"
-  facebook_app_secret = ENV['facebook_app_secret'] || "3148e45364e47e7ed83091bee6445ca4"
+  facebook_app_id = Heroploy.config_vars[:facebook_app_id]
+  facebook_app_secret = Heroploy.config_vars[:facebook_app_secret]
   config.omniauth :facebook, facebook_app_id, facebook_app_secret
   
   # The secret key used by Devise. Devise uses this key to generate

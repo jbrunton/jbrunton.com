@@ -80,7 +80,7 @@ end
 
 After do
   Warden.test_reset!
-  ENV['ADMIN_USERS'] = nil
+  ENV['admin_users'] = nil
 end
 
 Transform /^(-?\d+)$/ do |number|
