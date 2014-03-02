@@ -9,6 +9,14 @@ class BlogPost < ActiveRecord::Base
     "#{id}-#{string.parameterize}"
   end
   
+  def self.find_by_slug_safely!(slug)
+    blog_post = BlogPost.find_by_slug(slug)
+    blog_post ||= begin
+      match = /^\d+/.match(slug)
+      BlogPost.find(match[0].to_i) unless match.nil?
+    end
+  end
+  
   after_create do |user|
     # the id isn't present the first time we save the record so the slug format
     # (see normalize_friendly_id) won't be right, so we refresh the slug

@@ -1,5 +1,6 @@
 class BlogPostsController < ApplicationController
-  load_and_authorize_resource
+  load_resource :find_by => :slug_safely, :shallow => true
+  authorize_resource
 
   # GET /blog_posts
   # GET /blog_posts.json
@@ -10,6 +11,7 @@ class BlogPostsController < ApplicationController
   # GET /blog_posts/1
   # GET /blog_posts/1.json
   def show
+    redirect_to @blog_post if params[:id] != @blog_post.slug
   end
 
   # GET /blog_posts/new
