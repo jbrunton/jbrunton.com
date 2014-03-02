@@ -1,6 +1,5 @@
 class BlogPostsController < ApplicationController
-  load_resource :find_by => :slug_safely, :shallow => true
-  authorize_resource
+  load_and_authorize_resource :find_by => :slug_safely
 
   # GET /blog_posts
   # GET /blog_posts.json
