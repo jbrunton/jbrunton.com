@@ -29,6 +29,8 @@ describe PagesController do
   # in order to pass any filters (e.g. authentication) defined in
   # PagesController. Be sure to keep this updated too.
   let(:valid_session) { {} }
+  
+  before { sign_in create(:user, :admin) }
 
   describe "GET index" do
     it "assigns all pages as @pages" do
