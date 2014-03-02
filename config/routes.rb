@@ -4,7 +4,7 @@ JbruntonCom::Application.routes.draw do
     delete 'sign_out', :to => 'devise/sessions#destroy', :as => :destroy_user_session
   end
   
-  resources :blog_posts
+  resources :blog_posts, path: '/blog'
 
   root 'blog_posts#index'
   
