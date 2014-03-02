@@ -7,7 +7,7 @@ Given(/^I am authenticated( as an admin)?$/) do |admin|
 end
 
 Given(/^I am an admin$/) do
-  ENV['ADMIN_USERS'] = OmniAuth.config.mock_auth[:facebook].uid
+  ENV['admin_users'] = OmniAuth.config.mock_auth[:facebook].uid
 end
 
 Given(/^I am not an admin$/) do

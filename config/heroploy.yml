@@ -9,8 +9,14 @@ common:
   required:
     - facebook_app_id
     - facebook_app_secret
+  variables:
+    admin_users: 36804649
 
 environments:
+  Rails.env[development]:
+    variables:
+      facebook_app_id: 1400932756832068
+  
   development:
     app: jbrunton-com-development
     variables:
