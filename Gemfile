@@ -59,6 +59,8 @@ gem 'timecop'
 gem 'redcarpet'
 gem 'nokogiri'
 
+gem 'friendly_id'
+
 gem "heroploy", '0.0.7.beta.2'
  
 group :development, :test do
