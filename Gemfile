@@ -59,7 +59,7 @@ gem 'timecop'
 gem 'redcarpet'
 gem 'nokogiri'
 
-gem "heroploy", '0.0.7.beta'
+gem "heroploy", '0.0.7.beta.2'
  
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
