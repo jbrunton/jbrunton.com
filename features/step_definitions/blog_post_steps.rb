@@ -50,7 +50,7 @@ Then(/^it should have a link "(.*?)" which links to the blog post "(.*?)"$/) do 
 end
 
 When(/^I compose a blog post with title "(.*?)"$/) do |title|
-  visit "/blog_posts/new"
+  visit "/blog/new"
   within("form#new_blog_post") do
     fill_in 'blog_post[title]', :with => title
   end

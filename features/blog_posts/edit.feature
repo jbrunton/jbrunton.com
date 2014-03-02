@@ -16,11 +16,11 @@ Feature: Edit blog posts
     Then I should see the text "Title can't be blank"
     
   Scenario: Authorization (signed out)
-    When I navigate to "blog_posts/new"
+    When I navigate to "blog/new"
     Then I should see the text "You are not authorized to access this page."
     
   Scenario: Authorization (authenticated)
     Given I am authenticated
-    When I navigate to "blog_posts/new"
+    When I navigate to "blog/new"
     Then I should see the text "You are not authorized to access this page."
     
