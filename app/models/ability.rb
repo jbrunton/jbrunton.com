@@ -7,6 +7,7 @@ class Ability
       can :manage, :all
     else
       can :read, BlogPost
+      can :read, Page
     end
   end
 end
