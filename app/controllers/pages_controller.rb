@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  load_and_authorize_resource
+  load_and_authorize_resource :except => [:render_if_exists]
 
   # GET /pages
   # GET /pages.json
@@ -58,6 +58,17 @@ class PagesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to pages_url }
       format.json { head :no_content }
+    end
+  end
+  
+  def render_if_exists
+    id = params[:id]
+    begin
+      @page = Page.find(id)
+      authorize! :read, @page
+      render 'show'
+    rescue ActiveRecord::RecordNotFound
+      raise ActionController::RoutingError.new('Not Found')
     end
   end
 
