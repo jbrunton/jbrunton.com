@@ -58,6 +58,8 @@ gem 'timecop'
 # markdown and html parsing
 gem 'redcarpet'
 gem 'nokogiri'
+
+gem 'friendly_id'
  
 group :development, :test do
   gem "heroploy"
