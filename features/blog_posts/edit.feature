@@ -7,7 +7,7 @@ Feature: Edit blog posts
   Scenario: Write post
     Given I am authenticated as an admin
     When I compose a blog post with title "Some Post"
-    And I go to the homepage
+    And I go to the home page
     Then there should be a blog post "Some Post"
 
   Scenario: Validation
