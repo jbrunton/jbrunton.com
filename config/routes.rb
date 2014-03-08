@@ -1,4 +1,8 @@
 JbruntonCom::Application.routes.draw do
+  root 'blog_posts#index'
+  
+  get 'admin', :to => 'home#admin' 
+
   resources :pages
 
   devise_for :users, :controllers => { :omniauth_callbacks => "auth" }
@@ -8,8 +12,6 @@ JbruntonCom::Application.routes.draw do
   
   resources :blog_posts, path: '/blog'
 
-  root 'blog_posts#index'
-  
   get ':id', :to => 'pages#render_if_exists'
   
   # The priority is based upon order of creation: first created -> highest priority.

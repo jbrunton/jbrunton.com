@@ -1,11 +1,10 @@
 require 'spec_helper'
 
 describe "shared/_menu.html.erb" do
-  context "when the current user is not authenticated" do
-    it "includes a 'Sign in' link" do
-      render
-      rendered.should have_link('Sign in with Facebook', :href => user_omniauth_authorize_path(:facebook))
-    end
+  it "includes links to pages" do
+    page = create(:page, title: 'Some Page')
+    render
+    rendered.should have_link('Some Page', :href => page.friendly_id)
   end
 
   context "when the current user is authenticated" do
