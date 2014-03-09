@@ -6,6 +6,7 @@ gem 'rails'
 # Use sqlite3 for development and testing
 group :development, :test do
   gem 'sqlite3'
+  gem 'heroku'
 end
 
 # Use Postgres on Heroku
