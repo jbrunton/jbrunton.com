@@ -6,6 +6,7 @@ gem 'rails'
 # Use sqlite3 for development and testing
 group :development, :test do
   gem 'sqlite3'
+  gem 'heroku'
 end
 
 # Use Postgres on Heroku
@@ -61,7 +62,7 @@ gem 'nokogiri'
 
 gem 'friendly_id'
 
-gem "heroploy", '0.0.7.beta.2'
+gem "heroploy", path: '../heroploy'
  
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
