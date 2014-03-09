@@ -25,8 +25,34 @@ html {
   @include grid-column(12);
 }
 
+.content-main {
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+  @media #{$medium-only} {
+    @include grid-column(12);
+  }
+  @media #{$large-up} {
+    @include grid-column(8);
+  }
+}
+
+.content-sidebar {
+  @include grid-column(4);
+}
+
 .callout-box {
   @include panel();
+}
+
+.blog-post .content code {
+  @media #{$large-up} {
+    width: $row-width - $column-gutter;  
+  }
+}
+
+.blog-post .content p {
+  text-align: justify;
 }
 
 
