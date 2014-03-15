@@ -1,11 +1,19 @@
 
 /*
+ * Box Shadows
+ */
+ 
+@mixin box($offset) {
+  box-shadow: $offset $offset 6px rgba(127, 127, 127, 0.6);
+}
+
+
+/*
  * Top bar
  */
 
 .top-bar-container {
-  border-bottom: 1px solid #999;
-  box-shadow: 0px 0px 6px rgba(127, 127, 127, 0.6);
+  @include box(0);
 }
 
 
@@ -19,6 +27,11 @@ html {
 
 .container {
   @include grid-row();
+}
+
+.box {
+    @include box(0);
+    background-color: #FFF;
 }
 
 .content-full {
@@ -45,6 +58,45 @@ html {
   @include panel();
 }
 
+footer {
+/*
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  -webkit-column-gap: $column-gutter;
+  -moz-column-gap: $column-gutter;
+  column-gap: $column-gutter;
+*/
+  padding: $column-gutter $column-gutter / 2.0;
+  
+  p {
+    font-size: 1.0rem;
+    text-align: center;
+  }
+}
+
+
+/*
+ * Typography
+ */
+ 
+p, ul, ol {
+  text-align: justify;
+  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+
+
+/*
+ * Alerts
+ */
+ 
+div.alert-box {
+  margin: 0;
+}
+
 
 /*
  * Code
@@ -54,7 +106,7 @@ pre code, blockquote {
   margin: 0 0 26px 0;
   padding: 20px;
   border-left: solid 5px #DDD;
-  box-shadow: 1px 1px 8px rgba(127, 127, 127, .6);
+  @include box(1px);
   background-color: #F9F9F9;
 }
 
@@ -86,13 +138,6 @@ code.prettyprint li {
  */
 
 .blog-post .content {
-  p, ul, ol {
-    text-align: justify;
-    font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
-    font-weight: lighter;
-    font-size: 1.1rem;
-  }
-  
   blockquote p {
     font-size: 1.05rem;
   }

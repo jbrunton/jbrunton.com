@@ -22,8 +22,6 @@
       </div>
     <% end %>
     
-    <%= render 'shared/menu' %>
-        
     <% if flash[:alert] %>
       <div data-alert class="alert-box alert radius">
         <%= flash[:alert] %>
@@ -37,9 +35,18 @@
         <a href="#" class="close">&times;</a>
       </div>
     <% end %>
+
+    <%= render 'shared/menu' %>
     
     <div class="container">
-      <%= yield %>
+      <div class="box clearfix">
+        <%= yield %>
+      </div>
+      
+      <footer>
+        <p>I'm a developer with a keen interest in the software craftsmanship movement, which I occasionally try to blog about.
+        <p>Follow me on Twitter <a href="https://twitter.com/JohnBrunton">@johnbrunton</a> or <a href="github.com/jbrunton">GitHub</a>.
+      </footer>
     </div>
     <%= javascript_include_tag "application" %>
   </body>
