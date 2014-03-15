@@ -16,7 +16,7 @@
 end
 
 3.times do |k| Page.create(
-    title: "Page #{k}",
+    title: Faker::Lorem.words(2).map(&:capitalize).join(' '),
     content: 3.times.map { Faker::Lorem.paragraph(5) }.join("\n\n")
   )
 end
