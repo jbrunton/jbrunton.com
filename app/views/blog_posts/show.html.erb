@@ -1,14 +1,14 @@
 <div class="content-main blog-post">
   <p id="notice"><%= notice %></p>
 
-  <h3 class="date right">
-    <%= prettydate(@blog_post.created_at) %>
-  </h3>
-  
   <h1 class="title">
     <%= @blog_post.title %>
   </h1>
 
+  <p class="date">
+    Posted <%= prettydate(@blog_post.created_at) %>
+  </p>
+  
   <div class="content">
     <%= markdown(@blog_post.content) %>
   </div>
