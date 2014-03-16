@@ -1,10 +1,12 @@
 require 'spec_helper'
 
 describe "shared/_menu.html.erb" do
+  include ApplicationHelper
+  
   it "includes links to pages" do
     page = create(:page, title: 'Some Page')
     render
-    rendered.should have_link('Some Page', :href => page.friendly_id)
+    rendered.should have_link('Some Page', :href => friendly_page_path(page))
   end
 
   context "when the current user is authenticated" do
