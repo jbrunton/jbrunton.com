@@ -1,12 +1,15 @@
-<p>
-  <strong>Title:</strong>
-  <%= @page.title %>
-</p>
+<div class="content-main page">
+  <h1 class="title">
+    <%= @page.title %>    
+  </h1>
+  
+  <% if can? :update, @page %>
+    <p>
+      <%= link_to 'Edit', edit_page_path(@page) %>
+    </p>
+  <% end %>
 
-<p>
-  <strong>Content:</strong>
-  <%= markdown(@page.content) %>
-</p>
-
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>
+  <div class="content">
+    <%= markdown(@page.content) %>
+  </div>
+</div>

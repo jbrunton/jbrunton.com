@@ -2,15 +2,15 @@
   <h1 class="title">
     <%= @blog_post.title %>
   </h1>
-
+  
   <p class="date">
     Posted <%= prettydate(@blog_post.created_at) %>
+    <% if can? :update, @blog_post %>
+      &middot; <%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
+    <% end %>
   </p>
   
   <div class="content">
     <%= markdown(@blog_post.content) %>
   </div>
-
-  <%= link_to 'Edit', edit_blog_post_path(@blog_post) %> |
-  <%= link_to 'Back', blog_posts_path %>
 </div>

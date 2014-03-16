@@ -9,7 +9,7 @@
     <section class="top-bar-section">
       <ul class="right">
         <% Page.all.each do |page| %>
-          <li><%= link_to page.title, page.friendly_id %></li>
+          <li><%= link_to page.title, "/#{page.friendly_id}" %></li>
         <% end %>
         
         <% if !current_user.nil? %>
