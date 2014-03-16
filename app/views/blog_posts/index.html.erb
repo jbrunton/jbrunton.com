@@ -1,12 +1,12 @@
-<div class="content-full">
+<div class="content-main">
   <% @blog_posts.reverse.each do |blog_post| %>
     <div class="blog-post">
-      <h3 class="date right">
-        <%= prettydate(blog_post.created_at) %>
-      </h3>
       <h1 class="title">
         <%= link_to blog_post.title, blog_post %>
       </h1>
+      <p class="date">
+        Posted <%= prettydate(blog_post.created_at) %>
+      </p>
       <div class="content">
         <%= preview(markdown(blog_post.content)) %>
       </div>

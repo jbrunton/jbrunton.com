@@ -17,4 +17,8 @@
 //= require prettify
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+$(function() {
+  $(document).foundation();
+  $("pre code").addClass("prettyprint linenums");
+  prettyPrint();
+});
