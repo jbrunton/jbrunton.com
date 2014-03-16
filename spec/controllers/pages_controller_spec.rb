@@ -94,6 +94,7 @@ describe PagesController do
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
         allow_any_instance_of(Page).to receive(:save).and_return(false)
+        allow_any_instance_of(Page).to receive(:errors).and_return(["error"])
         post :create, {:page => { "title" => "invalid value" }}, valid_session
         expect(response).to render_template("new")
       end
@@ -108,7 +109,7 @@ describe PagesController do
         # specifies that the Page created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        expect_any_instance_of(Page).to receive(:update).with({ "title" => "MyString" })
+        expect_any_instance_of(Page).to receive(:update_attributes).with({ "title" => "MyString" })
         put :update, {:id => page.to_param, :page => { "title" => "MyString" }}, valid_session
       end
 
@@ -138,6 +139,7 @@ describe PagesController do
         page = Page.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
         allow_any_instance_of(Page).to receive(:save).and_return(false)
+        allow_any_instance_of(Page).to receive(:errors).and_return(["error"])
         put :update, {:id => page.to_param, :page => { "title" => "invalid value" }}, valid_session
         expect(response).to render_template("edit")
       end
