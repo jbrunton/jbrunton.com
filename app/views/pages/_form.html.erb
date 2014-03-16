@@ -20,6 +20,11 @@
     <%= f.text_area :content %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <% if @page.new_record? %>
+      <%= f.submit 'Create', :class => 'small radius action button' %>
+    <% else %>
+      <%= link_to 'Cancel', @page, :class => 'small radius cancel button' %>
+      <%= f.submit 'Save', :class => 'small radius button' %>
+    <% end %>
   </div>
 <% end %>

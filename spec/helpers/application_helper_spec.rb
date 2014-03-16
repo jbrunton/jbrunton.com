@@ -1,0 +1,10 @@
+require 'spec_helper'
+
+describe ApplicationHelper do
+  describe "#friendly_page_path" do
+    it "returns the friendly url for a page" do
+      page = create(:page, :title => 'Some Page')
+      expect(helper.friendly_page_path(page)).to eq("/some-page")
+    end
+  end
+end
