@@ -103,7 +103,8 @@ describe BlogPostsController do
 
       it "re-renders the 'new' template" do
         # Trigger the behavior that occurs when invalid params are submitted
-        BlogPost.any_instance.stub(:save).and_return(false)
+        allow_any_instance_of(BlogPost).to receive(:save).and_return(false)
+        allow_any_instance_of(BlogPost).to receive(:errors).and_return(["error"])
         post :create, {:blog_post => { "title" => "invalid value" }}
         expect(response).to render_template("new")
       end
@@ -118,7 +119,7 @@ describe BlogPostsController do
         # specifies that the BlogPost created on the previous line
         # receives the :update_attributes message with whatever params are
         # submitted in the request.
-        expect_any_instance_of(BlogPost).to receive(:update).with({ "title" => "MyString" })
+        expect_any_instance_of(BlogPost).to receive(:update_attributes).with({ "title" => "MyString" })
         put :update, {:id => blog_post.to_param, :blog_post => { "title" => "MyString" }}
       end
 
@@ -147,7 +148,8 @@ describe BlogPostsController do
       it "re-renders the 'edit' template" do
         blog_post = BlogPost.create! valid_attributes
         # Trigger the behavior that occurs when invalid params are submitted
-        BlogPost.any_instance.stub(:save).and_return(false)
+        allow_any_instance_of(BlogPost).to receive(:save).and_return(false)
+        allow_any_instance_of(BlogPost).to receive(:errors).and_return(["error"])
         put :update, {:id => blog_post.to_param, :blog_post => { "title" => "invalid value" }}
         expect(response).to render_template("edit")
       end
