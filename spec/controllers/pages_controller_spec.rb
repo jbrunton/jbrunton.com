@@ -46,6 +46,20 @@ describe PagesController do
       get :show, {:id => page.to_param}, valid_session
       expect(assigns(:page)).to eq(page)
     end
+    
+    context "#render_if_exists" do
+      it "assigns the request page as @page, if it exists" do
+        page = Page.create! valid_attributes
+        get :render_if_exists, :id => page.to_param
+        expect(assigns(:page)).to eq(page)
+      end
+      
+      it "returns a 401, if it doesn't exist" do
+        expect{
+          get :render_if_exists, :id => 'not-a-real-page'
+        }.to raise_error(ActionController::RoutingError)
+      end
+    end
   end
 
   describe "GET new" do

@@ -56,6 +56,12 @@ describe BlogPostsController do
       get :show, {:id => blog_post.to_param}
       expect(assigns(:blog_post)).to eq(blog_post)
     end
+    
+    it "redirects to the blog post with the same id, in case the title has changed" do
+      blog_post = BlogPost.create! valid_attributes
+      get :show, {:id => "#{blog_post.id}-wrong-title"}
+      expect(response).to redirect_to(blog_post)
+    end
   end
 
   describe "GET new" do
