@@ -7,4 +7,10 @@ describe ApplicationHelper do
       expect(helper.friendly_page_path(page)).to eq("/some-page")
     end
   end
+  
+  describe "#markdown" do
+    it "generates HTML for the given markdown" do
+      expect(helper.markdown("foo")).to eq("<p>foo</p>\n")
+    end
+  end
 end
