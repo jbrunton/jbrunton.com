@@ -3,7 +3,7 @@ module BlogPostsHelper
     datetime.strftime('%-d %b, %Y')
   end
   
-  def preview(document)
+  def preview(document, char_limit = 400)
     paragraphs = Nokogiri::HTML(document).css("p")
     preview_set = paragraphs.inject([]) do |current_set, p|
       potential_set = current_set + [p]
@@ -11,7 +11,7 @@ module BlogPostsHelper
       if current_set.empty?
         # always at least one paragraph
         potential_set
-      elsif text_length(potential_set) < 400
+      elsif text_length(potential_set) < char_limit
         # or add the next paragraph if we're still under the preview character limit
         potential_set
       else
