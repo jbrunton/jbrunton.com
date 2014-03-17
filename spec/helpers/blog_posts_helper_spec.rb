@@ -17,4 +17,15 @@ describe BlogPostsHelper do
       expect(helper.prettydate(date)).to eq("1 May, 2013")
     end
   end
+  
+  describe "#preview" do
+    it "returns a preview up to the character limit" do
+      expect(helper.preview("<p>Foo</p><p>Bar</p>", 3)).to eq("<p>Foo</p>\n")
+    end
+    
+    it "always returns at least one paragraph" do
+      # a little over the limit, but returns it anyway
+      expect(helper.preview("<p>Foo</p><p>Bar</p>", 2)).to eq("<p>Foo</p>\n")
+    end
+  end
 end
