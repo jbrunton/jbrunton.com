@@ -77,6 +77,23 @@ footer {
 
 
 /*
+ * Images
+ */
+$thumb-radius: 5px;
+
+ul[data-clearing] {
+  li {
+    > a {
+      @include thumb;
+      @include radius;
+    }
+    margin-right: 0;
+  }
+  margin-bottom: 26px;
+}
+
+
+/*
  * Typography
  */
  
@@ -99,9 +116,10 @@ div.alert-box {
 
 
 /*
- * Code
+ * Code and Quotes
  */
- 
+
+/*** TODO: factor out common styles for code and blockquote entities ***/
 pre code, blockquote {
   margin: 0 0 26px 0;
   padding: 20px;
@@ -140,6 +158,10 @@ code.prettyprint li {
 .blog-post .content {
   blockquote p {
     font-size: 1.05rem;
+  }
+  
+  blockquote p:last-child {
+    margin-bottom: 0;
   }
   
   code {
