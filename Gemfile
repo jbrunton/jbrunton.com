@@ -65,7 +65,9 @@ gem 'nokogiri'
 
 gem 'friendly_id'
 
-gem "heroploy", '0.0.7.beta.2'
+group :development, :test do
+  gem "heroploy", '0.0.7.beta.3'
+end
  
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'

@@ -75,9 +75,8 @@ GEM
     diff-lcs (1.2.5)
     docile (1.1.3)
     erubis (2.7.0)
-    ethon (0.6.3)
+    ethon (0.7.0)
       ffi (>= 1.3.0)
-      mime-types (~> 1.18)
     excon (0.25.3)
     execjs (2.0.2)
     factory_girl (4.4.0)
@@ -118,7 +117,7 @@ GEM
       rubyzip
     heroku-api (0.3.15)
       excon (~> 0.25.1)
-    heroploy (0.0.7.beta.2)
+    heroploy (0.0.7.beta.3)
       bundler (~> 1.3)
       travis (~> 1.6)
     highline (1.6.21)
@@ -279,8 +278,8 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.2.1)
       coffee-rails
-    typhoeus (0.6.7)
-      ethon (~> 0.6.2)
+    typhoeus (0.6.8)
+      ethon (>= 0.7.0)
     tzinfo (0.3.39)
     uglifier (2.5.0)
       execjs (>= 0.3.0)
@@ -306,7 +305,7 @@ DEPENDENCIES
   foundation-rails
   friendly_id
   heroku
-  heroploy (= 0.0.7.beta.2)
+  heroploy (= 0.0.7.beta.3)
   inherited_resources
   jbuilder
   jquery-rails
