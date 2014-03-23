@@ -13,7 +13,7 @@ common:
     admin_users: 36804649
 
 environments:
-  Rails.env[development]:
+  local:
     variables:
       facebook_app_id: 1400932756832068
   
