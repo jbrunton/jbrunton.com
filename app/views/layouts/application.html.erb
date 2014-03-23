@@ -13,10 +13,10 @@
 
   <body>
     
-    <% if request.host != 'jbrunton.com' %>
+    <% if request.host != 'www.jbrunton.com' %>
       <div data-alert class="alert-box info radius">
         This is a development or staging environment.  Please go to
-        <%= link_to('jbrunton.com', "#{request.protocol}jbrunton.com#{request.original_fullpath}") %>
+        <%= link_to('www.jbrunton.com', "#{request.protocol}www.jbrunton.com#{request.original_fullpath}") %>
         for a more robust experience.
         <a href="#" class="close">&times;</a>
       </div>
