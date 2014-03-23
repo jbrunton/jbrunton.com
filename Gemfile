@@ -66,7 +66,7 @@ gem 'nokogiri'
 gem 'friendly_id'
 
 group :development, :test do
-  gem "heroploy", path: '../heroploy'
+  gem "heroploy", '0.0.7.beta.3'
 end
  
 group :development, :test do
