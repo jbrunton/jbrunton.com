@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   end
   
   def self.admin_uids
-    ENV['admin_users']
+    (ENV['admin_users'] || "")
       .split(',')
       .map{ |s| s.strip }
   end
