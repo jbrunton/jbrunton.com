@@ -1,9 +1,7 @@
-Given(/^a blog post "(.*?)"(?: with content "(.*?)")?$/) do |title, content|
-  if content then
-    create(:blog_post, title: title, content: content)
-  else
-    create(:blog_post, title: title)
-  end    
+Given(/^a blog post "(.*?)"(?: with body text "(.*?)")?$/) do |title, body_text|
+  opts = {title: title}
+  opts.merge!(body: body_text) unless body_text.nil?
+  create(:blog_post, opts)
 end
 
 When(/^I am on the page for the blog post "(.*?)"$/) do |title|
@@ -11,10 +9,10 @@ When(/^I am on the page for the blog post "(.*?)"$/) do |title|
   visit url_for(blog_post)
 end
 
-Then(/^there should be a blog post "(.*?)"(?: with content "(.*?)")?$/) do |title, content|
+Then(/^there should be a blog post "(.*?)"(?: with body text "(.*?)")?$/) do |title, body_text|
   expect(page).to have_selector('.blog-post .title', text: title)
-  unless content.nil?
-    expect(page).to have_selector('.blog-post .content', text: content)
+  unless body_text.nil?
+    expect(page).to have_selector('.blog-post .body', text: body_text)
   end
   @subject = page.all('.blog-post', text: title).first
 end

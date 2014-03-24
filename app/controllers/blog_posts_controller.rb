@@ -14,11 +14,11 @@ class BlogPostsController < ApplicationController
 
 protected
   # TODO: is this implementation equivalent to this?
-  #   params.require(:blog_post).permit(:title, :content)
+  #   params.require(:blog_post).permit(:title, :body)
   # See for more details:
   #   https://github.com/josevalim/inherited_resources
   def build_resource_params
-    [params.fetch(:blog_post, {}).permit(:title, :content)]
+    [params.fetch(:blog_post, {}).permit(:title, :body)]
   end
 
   def resource 

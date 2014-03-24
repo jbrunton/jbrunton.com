@@ -1,7 +1,7 @@
 FactoryGirl.define do
   factory :blog_post do
     sequence(:title) { |n| "Blog Post #{n}" }
-    content "Lorem Ipsum"
+    body "Lorem Ipsum"
     
     after :create do |blog_post, evaluator|
       unless evaluator.created_at.nil?
