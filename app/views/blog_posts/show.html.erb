@@ -9,8 +9,12 @@
       &middot; <%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
     <% end %>
   </p>
+
+  <div class="jump">
+    <%= markdown(@blog_post.jump) %>
+  </div>
   
-  <div class="content">
-    <%= markdown(@blog_post.content) %>
+  <div class="body">
+    <%= markdown(@blog_post.body) %>
   </div>
 </div>

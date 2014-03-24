@@ -5,12 +5,12 @@ describe "blog_posts/index" do
     assign(:blog_posts, [
       stub_model(BlogPost,
         :title => "Title",
-        :content => "MyText",
+        :jump => "MyJumpText",
         :created_at => DateTime.now
       ),
       stub_model(BlogPost,
         :title => "Title",
-        :content => "MyText",
+        :jump => "MyJumpText",
         :created_at => DateTime.now
       )
     ])
@@ -20,6 +20,6 @@ describe "blog_posts/index" do
     render
     # Run the generator again with the --webrat flag if you want to use webrat matchers
     assert_select ".blog-post .title", :text => "Title".to_s, :count => 2
-    assert_select ".blog-post .content", :text => "MyText".to_s, :count => 2
+    assert_select ".blog-post .jump", :text => "MyJumpText".to_s, :count => 2
   end
 end
