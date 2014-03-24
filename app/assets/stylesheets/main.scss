@@ -155,7 +155,7 @@ code.prettyprint li {
  * Blog Posts
  */
 
-.blog-post .content {
+.blog-post .body {
   blockquote p {
     font-size: 1.05rem;
   }
@@ -178,15 +178,21 @@ code.prettyprint li {
   font-variant: small-caps;
 }
 
+textarea#blog_post_jump {
+  height: 150px;
+}
+
+textarea#blog_post_body {
+  height: 300px;
+}
+
+
+
 
 /*
  * Inputs
  */
  
-textarea {
-  height: 300px;
-}
-
 textarea.fixed-width {
   max-width: 100%;
 }

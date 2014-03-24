@@ -12,5 +12,9 @@ describe ApplicationHelper do
     it "generates HTML for the given markdown" do
       expect(helper.markdown("foo")).to eq("<p>foo</p>\n")
     end
+    
+    it "returns an empty string when passed nil as an argument" do
+      expect(helper.markdown(nil)).to eq("")
+    end
   end
 end

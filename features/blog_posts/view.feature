@@ -5,9 +5,9 @@ Feature: View Posts
 
   Scenario: view post
 
-    Given a blog post "Some Post" with body text "Lorem ipsum"
+    Given a blog post "Some Post" with jump text "Lorem ipsum" and body text "dolor sit amet"
     When I am on the page for the blog post "Some Post"
-    Then there should be a blog post "Some Post" with body text "Lorem ipsum"
+    Then there should be a blog post "Some Post" with jump text "Lorem ipsum" and body text "dolor sit amet"
 
   Scenario: view posts
     Given a blog post "First Post" created on 2013-05-01
@@ -18,7 +18,7 @@ Feature: View Posts
     And the first blog post should be "Second Post"
     
   Scenario: Markdown
-    Given a blog post "Some Post" with body text "lorem _ipsum_"
+    Given a blog post "Some Post" with jump text "lorem _ipsum_"
     When I am on the page for the blog post "Some Post"
     Then there should be the html "<p>lorem <em>ipsum</em></p>"
   

@@ -7,8 +7,8 @@
       <p class="date">
         Posted <%= prettydate(blog_post.created_at) %>
       </p>
-      <div class="body">
-        <%= preview(markdown(blog_post.body)) %>
+      <div class="jump">
+        <%= preview(markdown(blog_post.jump)) %>
       </div>
       <p>
         <%= link_to 'Continue Reading &rarr;'.html_safe, blog_post %>

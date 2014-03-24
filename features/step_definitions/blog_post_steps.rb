@@ -1,6 +1,7 @@
-Given(/^a blog post "(.*?)"(?: with body text "(.*?)")?$/) do |title, body_text|
+Given(/^a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |title, jump_text, body_text|
   opts = {title: title}
   opts.merge!(body: body_text) unless body_text.nil?
+  opts.merge!(jump: jump_text) unless jump_text.nil?
   create(:blog_post, opts)
 end
 
@@ -9,8 +10,11 @@ When(/^I am on the page for the blog post "(.*?)"$/) do |title|
   visit url_for(blog_post)
 end
 
-Then(/^there should be a blog post "(.*?)"(?: with body text "(.*?)")?$/) do |title, body_text|
+Then(/^there should be a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |title, jump_text, body_text|
   expect(page).to have_selector('.blog-post .title', text: title)
+  unless jump_text.nil?
+    expect(page).to have_selector('.blog-post .jump', text: jump_text)
+  end
   unless body_text.nil?
     expect(page).to have_selector('.blog-post .body', text: body_text)
   end
