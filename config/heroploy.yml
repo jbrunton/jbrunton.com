@@ -21,11 +21,15 @@ environments:
     app: jbrunton-com-development
     variables:
       facebook_app_id: 523872661065702
+      RACK_ENV: development
+      RAILS_ENV: development
 
   staging:
     app: jbrunton-com-staging
     variables:
       facebook_app_id: 1408788939378363
+      RACK_ENV: staging
+      RAILS_ENV: staging
     checks:
       pushed: true
       branch: master
@@ -36,6 +40,8 @@ environments:
     tag: 'RELEASE_%Y%m%dT%H%M%S%z'
     variables:
       facebook_app_id: 661405633896129
+      RACK_ENV: production
+      RAILS_ENV: production
     checks:
       pushed: true
       branch: master
