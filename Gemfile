@@ -47,7 +47,7 @@ gem 'inherited_resources'
 # Can't deploy to Heroku using latest Rolify.
 # See: http://stackoverflow.com/a/21897887
 # Fixed for upcoming 3.5: https://github.com/EppO/rolify/issues/221
-gem 'rolify', '~> 3.2.0'
+gem 'rolify', '~> 3.4.0'
 
 # Serve assets on Heroku.
 # See https://devcenter.heroku.com/articles/ruby-support#static-assets

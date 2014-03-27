@@ -207,7 +207,7 @@ GEM
       railties (>= 3.2, < 5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
-    rolify (3.2.0)
+    rolify (3.4.0)
     rspec-collection_matchers (0.0.3)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.0.0.beta2)
@@ -316,7 +316,7 @@ DEPENDENCIES
   rails_12factor
   rails_serve_static_assets
   redcarpet
-  rolify (~> 3.2.0)
+  rolify (~> 3.4.0)
   rspec-rails (~> 3.0.0.beta)
   sass-rails
   sdoc
