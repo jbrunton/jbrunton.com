@@ -1,4 +1,4 @@
-Given(/^a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |title, jump_text, body_text|
+Given(/^a (draft|published) blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |published_state, title, jump_text, body_text|
   opts = {title: title}
   opts.merge!(body: body_text) unless body_text.nil?
   opts.merge!(jump: jump_text) unless jump_text.nil?
@@ -21,7 +21,7 @@ Then(/^there should be a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and
   @subject = page.all('.blog-post', text: title).first
 end
 
-Given(/^a blog post "(.*?)" created on (\d+)\-(\d+)\-(\d+)$/) do |title, year, month, day|
+Given(/^a blog post "(.*?)" published on (\d+)\-(\d+)\-(\d+)$/) do |title, year, month, day|
   create(:blog_post, title: title, created_at: DateTime.new(year, month, day))
 end
 
@@ -57,4 +57,11 @@ When(/^I compose a blog post with title "(.*?)"$/) do |title|
     fill_in 'blog_post[title]', :with => title
   end
   click_button 'Create'
+end
+
+Then(/^the blog post "(.*?)" should be published$/) do |title|
+  many_steps %{
+    When I go to the home page
+    Then there should be a blog post "title"
+  }
 end
