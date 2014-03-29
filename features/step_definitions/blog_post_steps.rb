@@ -1,5 +1,5 @@
 Given(/^a (draft|published) blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |published_state, title, jump_text, body_text|
-  opts = {title: title}
+  opts = {title: title, published: published_state == 'published'}
   opts.merge!(body: body_text) unless body_text.nil?
   opts.merge!(jump: jump_text) unless jump_text.nil?
   create(:blog_post, opts)
@@ -26,7 +26,7 @@ Then(/^there should be a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and
 end
 
 Given(/^a blog post "(.*?)" published on (\d+)\-(\d+)\-(\d+)$/) do |title, year, month, day|
-  create(:blog_post, title: title, created_at: DateTime.new(year, month, day))
+  create(:blog_post, title: title, published: true, created_at: DateTime.new(year, month, day))
 end
 
 When(/^I am on the page for blog posts$/) do
