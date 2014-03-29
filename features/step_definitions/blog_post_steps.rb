@@ -10,6 +10,10 @@ When(/^I am on the page for the blog post "(.*?)"$/) do |title|
   visit url_for(blog_post)
 end
 
+Then(/^there should not be a blog post "(.*?)"$/) do |title|
+  expect(page).not_to have_selector('.blog-post .title', text: title)
+end
+
 Then(/^there should be a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |title, jump_text, body_text|
   expect(page).to have_selector('.blog-post .title', text: title)
   unless jump_text.nil?
@@ -56,12 +60,12 @@ When(/^I compose a blog post with title "(.*?)"$/) do |title|
   within("form#new_blog_post") do
     fill_in 'blog_post[title]', :with => title
   end
-  click_button 'Create'
+  click_button 'Save Draft'
 end
 
 Then(/^the blog post "(.*?)" should be published$/) do |title|
-  many_steps %{
+  steps %{
     When I go to the home page
-    Then there should be a blog post "title"
+    Then there should be a blog post "#{title}"
   }
 end

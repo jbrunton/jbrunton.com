@@ -2,10 +2,15 @@ Feature: Home Page
 
   A dummy home page to test automation, deployment and infrastructure
 
-  Scenario: Show posts
+  Scenario: Show published posts
     Given a published blog post "Some Post"
     When I am on the home page
     Then there should be a blog post "Some Post"
+
+  Scenario: Hide draft posts
+    Given a draft blog post "Some Post"
+    When I am on the home page
+    Then there should not be a blog post "Some Post"
 
   Scenario: Ordering
     Given a blog post "First Post" published on 2013-05-01

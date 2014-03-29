@@ -1,4 +1,4 @@
-Feature: Home Page
+Feature: Authentication
 
   As an admin
   I want to authenticate with Facebook
