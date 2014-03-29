@@ -26,6 +26,8 @@ protected
   end
   
   def collection
-    @blog_posts ||= BlogPost.all.sort_by(&:created_at)
+    @blog_posts ||= BlogPost.all.
+      where(published: true).
+      sort_by(&:created_at)
   end
 end
