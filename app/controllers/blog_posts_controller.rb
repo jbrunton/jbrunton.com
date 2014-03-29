@@ -18,7 +18,7 @@ protected
   # See for more details:
   #   https://github.com/josevalim/inherited_resources
   def build_resource_params
-    [params.fetch(:blog_post, {}).permit(:title, :jump, :body)]
+    [params.fetch(:blog_post, {}).permit(:title, :jump, :body, :published)]
   end
 
   def resource 
