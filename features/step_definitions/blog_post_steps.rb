@@ -63,9 +63,11 @@ When(/^I compose a blog post with title "(.*?)"$/) do |title|
   click_button 'Save Draft'
 end
 
-Then(/^the blog post "(.*?)" should be published$/) do |title|
-  steps %{
-    When I go to the home page
-    Then there should be a blog post "#{title}"
-  }
+['should', 'should not'].each do |predicate|
+  Then(/^the blog post "(.*?)" #{predicate} be published$/) do |title|
+    steps %{
+      When I go to the home page
+      Then there #{predicate} be a blog post "#{title}"
+    }
+  end
 end

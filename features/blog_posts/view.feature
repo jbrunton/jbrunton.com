@@ -37,3 +37,4 @@ Feature: View Posts
     When I am on the page for blog posts
     Then there should be a blog post "Some Post"
     And it should have a link "Continue Reading" which links to the blog post "Some Post"
+    

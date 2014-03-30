@@ -7,8 +7,16 @@ Feature: Edit blog posts
   Scenario: Publish draft
     Given a draft blog post "Some Post"
     And I am authenticated as an admin
-    When I go to the "edit" page for the blog post "Some Post"
+    When I go to the "show" page for the blog post "Some Post"
     And I click "Publish"
     Then I should be on the "show" page for the blog post "Some Post"
     And the blog post "Some Post" should be published
+
+  Scenario: Unpublish draft
+    Given a published blog post "Some Post"
+    And I am authenticated as an admin
+    When I go to the "show" page for the blog post "Some Post"
+    And I click "Unpublish"
+    Then I should be on the "show" page for the blog post "Some Post"
+    And the blog post "Some Post" should not be published
     

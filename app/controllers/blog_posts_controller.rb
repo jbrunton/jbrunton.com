@@ -11,6 +11,15 @@ class BlogPostsController < ApplicationController
     end
     show!
   end
+  
+  def publish
+    params[:blog_post][:published] = true
+    logger.info "*** publishing"
+    update!
+    
+    blog_post = BlogPost.find(params[:id])
+    logger.info "*** blog_post: #{blog_post.to_yaml}"
+  end
 
 protected
   # TODO: is this implementation equivalent to this?
