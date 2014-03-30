@@ -23,4 +23,12 @@ class BlogPost < ActiveRecord::Base
     user.slug = nil
     user.save!
   end
+  
+  after_update do |user|
+    # update the friendly_id if the title of the post changes
+    unless user.friendly_id == normalize_friendly_id(user.title)
+      user.slug = nil
+      user.save!
+    end
+  end
 end

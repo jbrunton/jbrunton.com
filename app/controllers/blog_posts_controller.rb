@@ -5,8 +5,8 @@ class BlogPostsController < ApplicationController
   inherit_resources
 
   def show    
-    unless params[:id] == @blog_post.slug
-      redirect_to @blog_post
+    unless params[:id] == @blog_post.friendly_id
+      redirect_to @blog_post, :status => :moved_permanently
       return
     end
     show!

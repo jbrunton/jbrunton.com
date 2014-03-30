@@ -69,6 +69,7 @@ describe BlogPostsController do
       blog_post = BlogPost.create! valid_attributes
       get :show, {:id => "#{blog_post.id}-wrong-title"}
       expect(response).to redirect_to(blog_post)
+      expect(response.code).to eq('301')
     end
   end
 
