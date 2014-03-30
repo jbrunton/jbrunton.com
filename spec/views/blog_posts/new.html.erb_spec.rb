@@ -17,6 +17,7 @@ describe "blog_posts/new" do
       assert_select "input#blog_post_title[name=?]", "blog_post[title]"
       assert_select "textarea#blog_post_jump[name=?]", "blog_post[jump]"
       assert_select "textarea#blog_post_body[name=?]", "blog_post[body]"
+      assert_select "input#blog_post_published[name=?]", "blog_post[published]"
     end
   end
 end

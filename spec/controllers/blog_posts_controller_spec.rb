@@ -23,7 +23,8 @@ describe BlogPostsController do
   # This should return the minimal set of attributes required to create a valid
   # BlogPost. As you add validations to BlogPost, be sure to
   # adjust the attributes here as well.
-  let(:valid_attributes) { { "title" => "MyString" } }
+  let(:valid_attributes) { { "title" => "MyString", "published" => false } }
+  let(:published_attributes) { valid_attributes.merge({ "published" => true }) }
 
   # This should return the minimal set of values that should be in the session
   # in order to pass any filters (e.g. authentication) defined in
@@ -34,15 +35,22 @@ describe BlogPostsController do
 
   describe "GET index" do
     it "assigns all blog_posts as @blog_posts" do
-      blog_post = BlogPost.create! valid_attributes
+      blog_post = BlogPost.create! published_attributes
       get :index
       expect(assigns(:blog_posts)).to eq([blog_post])
     end
     
+    it "filters draft posts" do
+      draft_post = create(:blog_post, published: false)
+      published_post = create(:blog_post, published: true)
+      get :index
+      expect(assigns(:blog_posts)).to eq([published_post])
+    end
+    
     it "orders the blog_posts by creation date in ascending order" do
-      post_A = create(:blog_post, created_at: Date.today)
-      post_B = create(:blog_post, created_at: 2.days.ago)
-      post_C = create(:blog_post, created_at: 1.day.ago)
+      post_A = create(:blog_post, published: true, created_at: Date.today)
+      post_B = create(:blog_post, published: true, created_at: 2.days.ago)
+      post_C = create(:blog_post, published: true, created_at: 1.day.ago)
       
       get :index
       

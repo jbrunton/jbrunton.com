@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140324212637) do
+ActiveRecord::Schema.define(version: 20140328222357) do
 
   create_table "blog_posts", force: true do |t|
     t.string   "title"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140324212637) do
     t.datetime "updated_at"
     t.string   "slug"
     t.text     "jump"
+    t.boolean  "published",  null: false
   end
 
   add_index "blog_posts", ["slug"], name: "index_blog_posts_on_slug", unique: true

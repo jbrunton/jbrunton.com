@@ -4,11 +4,12 @@ Feature: Create blog posts
   I want to write blog posts
   So that I can impart thoughtful and intelligent articles
   
-  Scenario: Write post
+  Scenario: Write draft
     Given I am authenticated as an admin
-    When I compose a blog post with title "Some Post"
-    And I go to the home page
-    Then there should be a blog post "Some Post"
+    When I navigate to "blog/new"
+    And I enter "Some Post" into the "Title" field
+    And I click "Save Draft"
+    Then I should be on the "show" page for the blog post "Some Post"
 
   Scenario: Validation
     Given I am authenticated as an admin

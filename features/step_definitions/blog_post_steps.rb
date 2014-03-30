@@ -1,5 +1,5 @@
-Given(/^a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |title, jump_text, body_text|
-  opts = {title: title}
+Given(/^a (draft|published) blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |published_state, title, jump_text, body_text|
+  opts = {title: title, published: published_state == 'published'}
   opts.merge!(body: body_text) unless body_text.nil?
   opts.merge!(jump: jump_text) unless jump_text.nil?
   create(:blog_post, opts)
@@ -8,6 +8,10 @@ end
 When(/^I am on the page for the blog post "(.*?)"$/) do |title|
   blog_post = BlogPost.where(title: title).first
   visit url_for(blog_post)
+end
+
+Then(/^there should not be a blog post "(.*?)"$/) do |title|
+  expect(page).not_to have_selector('.blog-post .title', text: title)
 end
 
 Then(/^there should be a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and|with) body text "(.*?)")?$/) do |title, jump_text, body_text|
@@ -21,8 +25,8 @@ Then(/^there should be a blog post "(.*?)"(?: with jump text "(.*?)")?(?: (?:and
   @subject = page.all('.blog-post', text: title).first
 end
 
-Given(/^a blog post "(.*?)" created on (\d+)\-(\d+)\-(\d+)$/) do |title, year, month, day|
-  create(:blog_post, title: title, created_at: DateTime.new(year, month, day))
+Given(/^a blog post "(.*?)" published on (\d+)\-(\d+)\-(\d+)$/) do |title, year, month, day|
+  create(:blog_post, title: title, published: true, created_at: DateTime.new(year, month, day))
 end
 
 When(/^I am on the page for blog posts$/) do
@@ -56,5 +60,14 @@ When(/^I compose a blog post with title "(.*?)"$/) do |title|
   within("form#new_blog_post") do
     fill_in 'blog_post[title]', :with => title
   end
-  click_button 'Create'
+  click_button 'Save Draft'
+end
+
+['should', 'should not'].each do |predicate|
+  Then(/^the blog post "(.*?)" #{predicate} be published$/) do |title|
+    steps %{
+      When I go to the home page
+      Then there #{predicate} be a blog post "#{title}"
+    }
+  end
 end

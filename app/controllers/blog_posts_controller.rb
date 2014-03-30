@@ -11,6 +11,15 @@ class BlogPostsController < ApplicationController
     end
     show!
   end
+  
+  def publish
+    params[:blog_post][:published] = true
+    logger.info "*** publishing"
+    update!
+    
+    blog_post = BlogPost.find(params[:id])
+    logger.info "*** blog_post: #{blog_post.to_yaml}"
+  end
 
 protected
   # TODO: is this implementation equivalent to this?
@@ -18,7 +27,7 @@ protected
   # See for more details:
   #   https://github.com/josevalim/inherited_resources
   def build_resource_params
-    [params.fetch(:blog_post, {}).permit(:title, :jump, :body)]
+    [params.fetch(:blog_post, {}).permit(:title, :jump, :body, :published)]
   end
 
   def resource 
@@ -26,6 +35,8 @@ protected
   end
   
   def collection
-    @blog_posts ||= BlogPost.all.sort_by(&:created_at)
+    @blog_posts ||= BlogPost.all.
+      where(published: true).
+      sort_by(&:created_at)
   end
 end

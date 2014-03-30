@@ -3,6 +3,7 @@ FactoryGirl.define do
     sequence(:title) { |n| "Blog Post #{n}" }
     jump "Lorem Ipsum"
     body "dolor sit amet"
+    published false
     
     after :create do |blog_post, evaluator|
       unless evaluator.created_at.nil?
