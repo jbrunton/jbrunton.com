@@ -38,3 +38,9 @@ Feature: View Posts
     Then there should be a blog post "Some Post"
     And it should have a link "Continue Reading" which links to the blog post "Some Post"
     
+
+  Scenario: Viewing drafts requires admin permissions
+    Given a draft blog post "Some Post"
+    When I am on the page for the blog post "Some Post"
+    Then there should be a notice "You are not authorized to access this page."
+    
