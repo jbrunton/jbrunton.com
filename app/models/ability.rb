@@ -6,7 +6,7 @@ class Ability
     if user.admin?
       can :manage, :all
     else
-      can :read, BlogPost
+      can :read, BlogPost, published: true
       can :read, Page
     end
   end
