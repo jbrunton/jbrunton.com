@@ -48,5 +48,5 @@ environments:
     checks:
       pushed: true
       branch: master
-      staged: development
+      staged: true
       travis: true
