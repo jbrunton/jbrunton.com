@@ -4,7 +4,7 @@ module BlogPostsHelper
   end
   
   def preview(document, char_limit = 400)
-    paragraphs = Nokogiri::HTML(document).css("p")
+    paragraphs = Nokogiri::HTML(document).xpath('/html/body/*')
     preview_set = paragraphs.inject([]) do |current_set, p|
       potential_set = current_set + [p]
 

@@ -27,5 +27,10 @@ describe BlogPostsHelper do
       # a little over the limit, but returns it anyway
       expect(helper.preview("<p>Foo</p><p>Bar</p>", 2)).to eq("<p>Foo</p>\n")
     end
+    
+    it "returns fragments of html" do
+      html = "<blockquote><p>Foo</p></blockquote>"
+      expect(helper.preview(html, 2)).to eq(html)
+    end
   end
 end
