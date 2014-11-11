@@ -14,7 +14,7 @@ describe BlogPostsHelper do
   describe "#prettydate" do
     it "formats the date" do
       date = DateTime.new(2013, 5, 1)
-      expect(helper.prettydate(date)).to eq("1 May, 2013")
+      expect(helper.prettydate(date)).to eq("1 MAY, 2013")
     end
   end  
 end
