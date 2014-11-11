@@ -208,6 +208,13 @@ code.prettyprint li {
     font-family: Georgia, serif;
   }
   
+  .jump > p:first-of-type:first-letter  {
+    font-weight: bold;
+    font-size: 4.3rem;
+    float: left;
+    margin: 1.2rem 0.4rem 0 0;
+  }
+  
   a:hover {
     text-decoration: underline;
   }
