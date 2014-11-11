@@ -5,7 +5,11 @@ module ApplicationHelper
   
   def markdown(text)
     return "" if text.nil?
-    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, :autolink => true, :space_after_headers => true)
+    renderer = Redcarpet::Render::HTML.new(:hard_wrap => true)
+    markdown = Redcarpet::Markdown.new(renderer,
+      :autolink => true,
+      :space_after_headers => true,
+      :hard_wrap => true)
     markdown.render(text).html_safe
   end
 end

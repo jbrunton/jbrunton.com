@@ -238,6 +238,7 @@ code.prettyprint li {
     font-family: $serif-family;
     &.title {
       font-weight: bold;
+      @include full-width();
     }
   }
 }
