@@ -1,3 +1,17 @@
+/*
+ * Top Bar
+ */
+
+.top-bar .name h1 {
+  font-variant: small-caps;
+  letter-spacing: 1.4px;
+  font-size: 1.4rem;
+  
+  a:hover {
+    background-color: $topbar-link-bg-hover;
+  }
+}
+
 
 /*
  * Box Shadows
@@ -103,10 +117,13 @@ ul[data-clearing] {
 /*
  * Typography
  */
+
+$serif-family: Lucida Bright, Georgia, serif;
+$default-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
  
 p, ul, ol {
   text-align: justify;
-  font-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+  font-family: $default-family;
   font-weight: lighter;
   font-size: 1.1rem;
 }
@@ -137,7 +154,6 @@ table.equal-columns {
     table-layout: fixed;
   }
 }
-
 
 /*
  * Alerts
@@ -189,12 +205,22 @@ code.prettyprint li {
  */
 
 .blog-post {
+  p, ul, ol {
+    font-family: Georgia, serif;
+  }
+  
+  p {
+    line-height: 2.1rem;
+  }
+
   blockquote p {
     font-size: 1.05rem;
+    font-family: $default-family;
   }
   
   blockquote p:last-child {
     margin-bottom: 0;
+    font-family: $default-family;
   }
   
   code {
@@ -207,10 +233,18 @@ code.prettyprint li {
   .full-width {
     @include full-width();
   }
+  
+  h1, h2, h3, h4, h5 {
+    font-family: $serif-family;
+    &.title {
+      font-weight: bold;
+    }
+  }
 }
 
 .blog-post .date {
   font-variant: small-caps;
+  font-family: $default-family;
 }
 
 textarea#blog_post_jump {
