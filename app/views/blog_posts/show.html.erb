@@ -7,7 +7,7 @@
     <%= f.hidden_field :published, :value => !@blog_post.published %>
     <p class="date">
       <% if @blog_post.published %>
-        Posted <%= prettydate(@blog_post.created_at) %>
+        POSTED <%= prettydate(@blog_post.created_at) %>
       <% else %>
         Draft
       <% end %>

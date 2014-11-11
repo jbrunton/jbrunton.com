@@ -5,7 +5,7 @@
         <%= link_to blog_post.title, blog_post %>
       </h1>
       <p class="date">
-        Posted <%= prettydate(blog_post.created_at) %>
+        POSTED <%= prettydate(blog_post.created_at) %>
       </p>
       <div class="jump">
         <%= markdown(blog_post.jump) %>

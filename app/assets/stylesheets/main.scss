@@ -3,9 +3,8 @@
  */
 
 .top-bar .name h1 {
-  font-variant: small-caps;
-  letter-spacing: 1.4px;
-  font-size: 1.4rem;
+  letter-spacing: 0.06rem;
+  font-size: 1.0rem;
   
   a:hover {
     background-color: $topbar-link-bg-hover;
@@ -209,6 +208,10 @@ code.prettyprint li {
     font-family: Georgia, serif;
   }
   
+  a:hover {
+    text-decoration: underline;
+  }
+  
   p {
     line-height: 2.1rem;
   }
@@ -244,8 +247,9 @@ code.prettyprint li {
 }
 
 .blog-post .date {
-  font-variant: small-caps;
   font-family: $default-family;
+  letter-spacing: 0.03rem;
+  font-size: 1.0rem;
 }
 
 textarea#blog_post_jump {
