@@ -202,18 +202,17 @@ code.prettyprint li {
 /*
  * Blog Posts
  */
-
-.blog-post {
-  p, ul, ol {
-    font-family: Georgia, serif;
-  }
-  
+.blog-post {  
   .jump > p:first-of-type:first-letter  {
-    font-weight: normal;
-    font-size: 4.3rem;
-    float: left;
-    //margin: 1.2rem 0.4rem 0 0;
-    margin: 1.0rem 0.4rem 0.5rem 0;
+    font-size:340%; 
+    margin:9px 0 -5px 0; 
+    padding:0 .1em 0 0; 
+    height:.7em; 
+    line-height:.85em; 
+    float:left; 
+    color:#333; 
+    font-weight: 400;
+    *line-height:1em; /* IE7 Only */ 
   }
   
   a:hover {
@@ -221,7 +220,8 @@ code.prettyprint li {
   }
   
   p {
-    line-height: 2.1rem;
+    font-size: 1.2em;
+    line-height: 1.7em;
   }
 
   blockquote p {
@@ -247,9 +247,9 @@ code.prettyprint li {
   
   h1, h2, h3, h4, h5 {
     font-family: $serif-family;
+    text-align: center;
     &.title {
       font-weight: bold;
-      @include full-width();
     }
   }
 }
@@ -258,6 +258,7 @@ code.prettyprint li {
   font-family: $default-family;
   letter-spacing: 0.03rem;
   font-size: 1.0rem;
+  text-align: center;
 }
 
 textarea#blog_post_jump {
