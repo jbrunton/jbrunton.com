@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ApplicationHelper do
+describe ApplicationHelper, :type => :helper do
   describe "#friendly_page_path" do
     it "returns the friendly url for a page" do
       page = create(:page, :title => 'Some Page')

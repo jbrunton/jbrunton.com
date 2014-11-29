@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "shared/_menu.html.erb" do
+describe "shared/_menu.html.erb", :type => :view do
   include ApplicationHelper
   
   it "includes links to pages" do
