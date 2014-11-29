@@ -70,7 +70,7 @@ group :development, :test do
 end
  
 group :development, :test do
-  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'rspec-rails'
   gem 'rspec-activemodel-mocks'
   gem 'factory_girl_rails'
   gem 'cucumber-rails', :require => false
