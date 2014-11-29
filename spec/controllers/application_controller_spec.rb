@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'cancan'
 
-describe ApplicationController do
+describe ApplicationController, :type => :controller do
   
   controller do
     def access_denied

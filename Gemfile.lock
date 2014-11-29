@@ -213,6 +213,10 @@ GEM
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rolify (3.4.1)
+    rspec-activemodel-mocks (1.0.1)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      rspec-mocks (>= 2.99, < 4.0)
     rspec-core (3.0.4)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.4)
@@ -315,6 +319,7 @@ DEPENDENCIES
   rails_serve_static_assets
   redcarpet
   rolify (~> 3.4.0)
+  rspec-activemodel-mocks
   rspec-rails (~> 3.0.0.beta)
   sass-rails
   sdoc

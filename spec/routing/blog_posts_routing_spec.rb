@@ -1,6 +1,6 @@
 require "spec_helper"
 
-describe BlogPostsController do
+describe BlogPostsController, :type => :controller do
   describe "routing" do
 
     it "routes to #index" do

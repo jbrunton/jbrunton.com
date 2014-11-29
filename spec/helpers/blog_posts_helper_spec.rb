@@ -10,7 +10,7 @@ require 'spec_helper'
 #     end
 #   end
 # end
-describe BlogPostsHelper do
+describe BlogPostsHelper, :type => :helper do
   describe "#prettydate" do
     it "formats the date" do
       date = DateTime.new(2013, 5, 1)
