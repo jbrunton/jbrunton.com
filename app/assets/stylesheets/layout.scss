@@ -1,0 +1,39 @@
+html {
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape */
+}
+
+.container {
+  @include grid-row();
+}
+
+.content-full {
+  @include grid-column(12);
+}
+
+.content-main {
+  @media #{$small-only} {
+    @include grid-column(12);
+  }
+  @media #{$medium-only} {
+    @include grid-column(12);
+  }
+  @media #{$large-up} {
+    @include grid-column(8);
+  }
+}
+
+.content-sidebar {
+  @include grid-column(4);
+}
+
+.callout-box {
+  @include panel();
+}
+
+@mixin full-width {
+  @media #{$large-up} {
+    width: $row-width - $column-gutter;  
+  }
+}
+

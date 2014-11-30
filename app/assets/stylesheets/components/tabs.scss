@@ -1,0 +1,34 @@
+/*
+ * Tabs
+ */
+
+.tabs-content > .content {
+  // TODO: there may be a better way to achieve this, but it's to ensure that
+  // content doesn't widen to the width of the code block on smaller screens
+  width: 100%;
+}
+
+.tabs {
+  border-bottom: 1px solid $tabs-navigation-border-color;
+}
+
+.tabs dd {
+  margin-bottom: -1px !important;;
+}
+
+.tabs dd a {
+  margin-right: 2px;
+  color: $anchor-font-color;
+  
+  @media #{$small-only} {
+    padding: 5px 10px;
+  }
+}
+
+.tabs dd.active a {
+  border: 1px solid $tabs-navigation-border-color;
+  border-bottom-color: transparent;
+  color: $tabs-navigation-font-color;
+}
+
+

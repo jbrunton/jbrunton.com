@@ -1,0 +1,10 @@
+@mixin box($offset) {
+  box-shadow: $offset $offset 6px rgba(127, 127, 127, 0.6);
+}
+
+// TODO: use the mixin instead of this class
+.box {
+    @include box(0);
+    background-color: #FFF;
+}
+

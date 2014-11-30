@@ -1,0 +1,12 @@
+.top-bar-container {
+  @include box(0);
+}
+
+.top-bar .name h1 {
+  letter-spacing: 0.06rem;
+  font-size: 1.0rem;
+  
+  a:hover {
+    background-color: $topbar-link-bg-hover;
+  }
+}

@@ -1,0 +1,16 @@
+footer {
+/*
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3;
+  -webkit-column-gap: $column-gutter;
+  -moz-column-gap: $column-gutter;
+  column-gap: $column-gutter;
+*/
+  padding: $column-gutter $column-gutter / 2.0;
+  
+  p {
+    font-size: 1.0rem;
+    text-align: center;
+  }
+}
