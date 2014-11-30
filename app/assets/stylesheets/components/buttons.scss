@@ -1,0 +1,24 @@
+/*
+ * Actions
+ */
+ 
+.actions {
+  float: right;
+}
+
+
+/*
+ * Buttons
+ */
+
+.button.action {
+  @include button-style($bg:$primary-color);
+  
+  border: solid 1px $primary-color;
+}
+
+.button.cancel { 
+  @include button-style($bg:$secondary-color);
+    
+  border: solid 1px #CCC;
+}

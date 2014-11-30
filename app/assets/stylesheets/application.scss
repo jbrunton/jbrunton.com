@@ -3,5 +3,18 @@
 */
 
 @import 'foundation_and_overrides';
-@import 'main';
 
+@import 'layout';
+
+@import 'common/shadows';
+@import 'common/typography';
+
+@import 'resources/blog_posts';
+
+@import 'components/buttons';
+@import 'components/inputs';
+@import 'components/tabs';
+@import 'components/alerts';
+@import 'components/images';
+@import 'components/menu';
+@import 'components/footer';

@@ -1,0 +1,40 @@
+/*
+ * Typography
+ */
+
+$serif-family: Lucida Bright, Georgia, serif;
+$default-family: "Source Sans Pro", "Helvetica", "Arial", sans-serif;
+ 
+p, ul, ol {
+  text-align: justify;
+  font-family: $default-family;
+  font-weight: lighter;
+  font-size: 1.1rem;
+}
+
+table {
+  tbody {
+    td, th {
+      text-align: left;
+    }
+    tr:first-child th {
+      text-align: center;
+    }
+    vertical-align: top;
+    ul {
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
+}
+
+table.equal-columns {
+  tbody {
+    td.small-column, th.small-column {
+      width: 6rem;
+    }
+  }
+  @media #{$large-up} {
+    table-layout: fixed;
+  }
+}
