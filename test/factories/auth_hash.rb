@@ -7,7 +7,7 @@ FactoryGirl.define do
     uid "abc123"
     info { build(:info_hash) }
     
-    ignore do
+    transient do
       info_name "Joe Bloggs"
     end
     
