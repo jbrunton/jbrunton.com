@@ -3,4 +3,6 @@ rvm:
   - 2.0.0
 script:
   - bundle exec rake db:test:prepare cucumber spec
-  
+addons:
+  code_climate:
+    repo_token: a5033419d138caa0b84d02f3fc40149b568bf3f04348eccaba9e84ce7c45e900
