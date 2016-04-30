@@ -11,7 +11,7 @@ description: > # this means to ignore newlines until "baseurl:"
   I'm mad keen on software craftsmanship, Lean methodologies and self-organising
   teams. Sustainable development (i.e. the continuous delivery of value) is what
   happens when you get these things right. This blog will include musings on
-  these topics.
+  these topics, and sometimes others.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "www.jbrunton.com" # the base hostname & protocol for your site
 twitter_username: johnbrunton
