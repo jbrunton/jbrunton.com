@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 Plenty of Agile teams treat their backlogs as either a first-in-first-out (FIFO) queue, or perhaps a priority queue ordered by the expected ROI of each individual project. It turns out that neither approach is based on sound economics.
 
-Donald Reinertsen knows this, and I won't attempt to summarise the incredible wealth of valuable insights in his book on the topic. Instead, here's a short example to illustrate one of the simplest ways teams often get their scheduling wrong: by failing to account for the cost of delay for each project.
+Donald Reinertsen knows this, and I won't attempt to summarise the incredible wealth of valuable insights in his [book on the topic](http://www.amazon.com/Principles-Product-Development-Flow-Generation/dp/1935401009/). Instead, here's a short example to illustrate one of the simplest ways teams often get their scheduling wrong: by failing to account for the cost of delay for each project.
 
 Suppose a team is asked to deliver projects A and B, and the cost-benefit suggests that:
 
@@ -24,7 +24,7 @@ The team takes 2 months to deliver B, which then contributes $3k over the follow
 
 # Scenario 2: Schedule according to Economics
 
-Didn't we already schedule according to economics with our ROI heuristic? Kind of, but there's another important consideration: the cost of delay. Let's try delivering the projects in a different order to see what happens:
+Didn't we already schedule according to economics with our ROI heuristic? Kind of, but there's another important consideration: the **cost of delay**. Let's try delivering the projects in a different order to see what happens:
 
 ![Schedule According To Economics](/assets/cost-of-delay/scheduling-2.png)
 
