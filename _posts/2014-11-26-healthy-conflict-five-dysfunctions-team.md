@@ -5,7 +5,7 @@ date:   2014-11-26
 category: teams
 tags:
   - healthy conflict
-  - high performing teams
+  - high performance teams
   - five dysfunctions
   - four player model
 ---
