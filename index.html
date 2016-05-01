@@ -15,9 +15,9 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
 
-        <p>{% include category_link.html category=post.category %}</p>
-
         {{ post.excerpt }}
+
+        <p>{% include category_link.html category=post.category %}</p
       </li>
     {% endfor %}
   </ul>
