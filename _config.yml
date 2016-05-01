@@ -17,6 +17,10 @@ url: "www.jbrunton.com" # the base hostname & protocol for your site
 twitter_username: johnbrunton
 github_username:  jbrunton
 
+category_names:
+  lean: Lean Thinking
+  teams: Teams
+
 # Build settings
 markdown: kramdown
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
