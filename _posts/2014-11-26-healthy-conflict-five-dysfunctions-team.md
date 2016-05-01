@@ -2,11 +2,12 @@
 layout: post
 title:  "Healthy Conflict, and the Five Dysfunctions of a Team"
 date:   2014-11-26
-categories:
+category: teams
+tags:
   - healthy conflict
   - high performing teams
   - five dysfunctions
-  - Four Player Model
+  - four player model
 ---
 A couple of decks to support discussions around Kantor's 'Four Player' model, and Lencioni's 'The Five Dysfunctions of a Team'. These conceptual models can be helpful tools when coaching self-organising teams, to facilitate healthy conflict and robust decision making.
 

@@ -2,7 +2,10 @@
 layout: post
 title:  "Schedule Projects To Minimise The Cost Of Delay"
 date:   2014-12-11
-categories: "cost of delay"
+category: lean
+tags:
+  - cost of delay
+  - lean
 ---
 Plenty of Agile teams treat their backlogs as either a first-in-first-out (FIFO) queue, or perhaps a priority queue ordered by the expected ROI of each individual project. It turns out that neither approach is based on sound economics.
 
