@@ -7,7 +7,7 @@ tags:
   - cost of delay
   - lean
 ---
-Plenty of Agile teams treat their backlogs as either a first-in-first-out (FIFO) queue, or perhaps a priority queue ordered by the expected ROI of each individual project. It turns out that neither approach is based on sound economics.
+Plenty of Agile teams treat their backlogs as either a first-in-first-out (FIFO) queue, or perhaps a priority queue ordered by the expected revenue of each individual project. It turns out that neither approach is based on sound economics.
 
 Donald Reinertsen knows this, and I won't attempt to summarise the incredible wealth of valuable insights in his [book on the topic](http://www.amazon.com/Principles-Product-Development-Flow-Generation/dp/1935401009/). Instead, here's a short example to illustrate one of the simplest ways teams often get their scheduling wrong: by failing to account for the cost of delay for each project.
 
@@ -17,9 +17,9 @@ Suppose a team is asked to deliver projects A and B, and the cost-benefit sugges
 * Project B will take 2 months to implement (if the whole team works on it), and the ROI will be $3k per month the project is live for.
 Here are our options for scheduling the work.
 
-# Scenario 1: Prioritise by ROI
+# Scenario 1: Prioritise by Revenue
 
-We've determined that project B will deliver the greatest ROI, so we decide to deliver that first. Here's a graph showing the total value added over the four month period from when development starts:
+We've determined that project B will produce the greatest monthly revenue, so we decide to deliver that first. Here's a graph showing the total value added over the four month period from when development starts:
 
 ![Prioritise the benefit](/assets/cost-of-delay/scheduling-1.png)
 
@@ -27,7 +27,7 @@ The team takes 2 months to deliver B, which then contributes $3k over the follow
 
 # Scenario 2: Schedule according to Economics
 
-Didn't we already schedule according to economics with our ROI heuristic? Kind of, but there's another important consideration: the **cost of delay**. Let's try delivering the projects in a different order to see what happens:
+Didn't we already schedule according to economics with our revenue heuristic? Kind of, but there's another important consideration: the **cost of delay**. Let's try delivering the projects in a different order to see what happens:
 
 ![Schedule According To Economics](/assets/cost-of-delay/scheduling-2.png)
 
@@ -49,4 +49,4 @@ Indeed, the overheads of managing multiple work streams simultaneously will like
 
 # Minimise the Cost of Delay
 
-It should be clear, but it's worth highlighting: in each of these three scenarios **the team did precisely the same amount of work, but the value added varied substantially**. This is why scheduling work according to not only ROI, but also the cost of delay, is incredibly important if you want to maximise the value your team is adding.
+It should be clear, but it's worth highlighting: in each of these three scenarios **the team did precisely the same amount of work, but the value added varied substantially**. This is why scheduling work according to not only revenue, but also the cost of delay, is incredibly important if you want to maximise the value your team is adding.
