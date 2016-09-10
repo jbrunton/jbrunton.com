@@ -11,4 +11,7 @@ I created a 'cheat sheet' for the excellent [Helping: How to Offer, Give, and Re
 
 It's impossible to distil all the insight and wisdom of the book down to two sides of A4, but I find it makes for a useful reference and reminder.
 
-The PDF is available [here](https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf).
+You can download the PDF [here](https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf).
+
+<iframe src="http://docs.google.com/gview?url=https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf&embedded=true"
+style="width:100%; height: 600px;" frameborder="0"></iframe>
