@@ -2,7 +2,7 @@
 layout: post
 title:  "Humble Inquiry Cheat Sheet"
 date:   2016-09-10
-category: teams
+category: teamwork
 tags:
   - helping
   - humble inquiry

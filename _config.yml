@@ -20,7 +20,7 @@ medium_username:  johnbrunton
 
 category_names:
   lean: Lean Thinking
-  teams: Teams
+  teamwork: Teamwork
 
 # Build settings
 markdown: kramdown

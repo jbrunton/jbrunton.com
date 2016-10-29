@@ -2,7 +2,7 @@
 layout: post
 title:  "Self-Directed Work Teams"
 date:   2014-03-25
-category: teams
+category: teamwork
 tags:
   - self-directed work teams
   - high performance teams
