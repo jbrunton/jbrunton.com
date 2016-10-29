@@ -2,7 +2,7 @@
 layout: post
 title:  "Healthy Conflict, and the Five Dysfunctions of a Team"
 date:   2014-11-26
-category: teams
+category: teamwork
 tags:
   - healthy conflict
   - high performance teams
