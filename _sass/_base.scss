@@ -172,7 +172,7 @@ pre {
     padding-left: $spacing-unit;
     @extend %clearfix;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-tablet) {
         max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
@@ -222,10 +222,21 @@ pre {
     background-color: #FFF;
     padding-top: $spacing-unit * 1.5;
     padding-bottom: $spacing-unit;
-    padding-left: $spacing-unit * 2;
-    padding-right: $spacing-unit * 2;
     margin-top: 0;
     margin-bottom: 0;
+
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit * 2;
     margin-left: -$spacing-unit * 2;
     margin-right: -$spacing-unit * 2;
+
+    @include media-query($on-tablet + $spacing-unit * 4) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    @include media-query($on-phone) {
+        padding-left: $spacing-unit;
+        padding-right: $spacing-unit;
+    }
 }

@@ -42,7 +42,7 @@
         }
     }
 
-    @include media-query($on-palm) {
+    @include media-query($on-mobile) {
         position: absolute;
         top: 9px;
         right: $spacing-unit / 2;
@@ -136,7 +136,7 @@
     width:         calc(65% - (#{$spacing-unit} / 2));
 }
 
-@include media-query($on-laptop) {
+@include media-query($on-tablet) {
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
@@ -149,7 +149,7 @@
     }
 }
 
-@include media-query($on-palm) {
+@include media-query($on-mobile) {
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -193,6 +193,12 @@
       float: right;
       text-align: right;
       width: 25%;
+
+      @include media-query($on-mobile) {
+        float: none;
+        text-align: left;
+        width: auto;
+      }
     }
 }
 
@@ -217,7 +223,7 @@
 .post-title {
     width: 75%;
 
-    @include media-query($on-laptop) {
+    @include media-query($on-tablet) {
         font-size: 36px;
     }
 }
@@ -228,7 +234,7 @@
     h2 {
         font-size: 32px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-tablet) {
             font-size: 28px;
         }
     }
@@ -236,7 +242,7 @@
     h3 {
         font-size: 26px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-tablet) {
             font-size: 22px;
         }
     }
@@ -244,7 +250,7 @@
     h4 {
         font-size: 20px;
 
-        @include media-query($on-laptop) {
+        @include media-query($on-tablet) {
             font-size: 18px;
         }
     }
