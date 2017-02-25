@@ -205,6 +205,10 @@
 .post-link {
     display: block;
     width: 75%;
+
+    @include media-query($on-mobile) {
+      width: auto;
+    }
 }
 
 
@@ -222,6 +226,10 @@
 
 .post-title {
     width: 75%;
+
+    @include media-query($on-mobile) {
+      width: auto;
+    }
 
     @include media-query($on-tablet) {
         font-size: 36px;
