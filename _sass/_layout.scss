@@ -178,6 +178,10 @@
     > li {
         @include box;
         margin-bottom: $spacing-unit;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
 }
 
