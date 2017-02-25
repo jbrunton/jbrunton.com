@@ -5,15 +5,19 @@ layout: default
 <ul class="post-list">
   {% for post in site.posts %}
     <li>
-      <span class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</span>
+      <div class="post-header">
+        <span class="post-meta right">{{ post.date | date: "%B %-d, %Y" }}</span>
 
-      <h1>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h1>
+        <h1>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h1>
+
+        <div class="post-meta">
+          {% include category_link.html category=post.category %}
+        </div>
+      </div>
 
       {{ post.excerpt }}
-
-      <p>{% include category_link.html category=post.category %}</p
     </li>
   {% endfor %}
 </ul>

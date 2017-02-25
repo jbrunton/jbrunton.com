@@ -185,14 +185,16 @@
     font-size: $small-font-size;
     color: $grey-color;
 
-    .category-link {
+    &.right {
       float: right;
+      text-align: right;
+      width: 25%;
     }
 }
 
 .post-link {
     display: block;
-    font-size: 24px;
+    width: 75%;
 }
 
 
@@ -209,9 +211,7 @@
 }
 
 .post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
+    width: 75%;
 
     @include media-query($on-laptop) {
         font-size: 36px;
