@@ -8,7 +8,9 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+html {
+    overflow-y:scroll;
+}
 
 /**
  * Basic styling
@@ -35,6 +37,12 @@ p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: -1px;
+    line-height: 1.2;
 }
 
 
@@ -203,4 +211,21 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+@mixin shadow {
+  box-shadow: 0 2px 5px #CCC;
+}
+
+@mixin box {
+    @include shadow;
+    background-color: #FFF;
+    padding-top: $spacing-unit * 1.5;
+    padding-bottom: $spacing-unit;
+    padding-left: $spacing-unit * 2;
+    padding-right: $spacing-unit * 2;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: -$spacing-unit * 2;
+    margin-right: -$spacing-unit * 2;
 }
