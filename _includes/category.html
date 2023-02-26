@@ -1,21 +1,7 @@
-<h1 class="page-heading">Category: {{ page.title }}</h1>
+<h2 class="page-heading">Category: {{ page.title }}</h2>
 
 <ul class="post-list">
   {% for post in site.categories[include.category] %}
-    <li>
-      <div class="post-header">
-        <span class="post-meta right">{{ post.date | date: "%B %-d, %Y" }}</span>
-
-        <h1>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h1>
-
-        <div class="post-meta">
-          {% include category_link.html category=post.category %}
-        </div>
-      </div>
-
-      {{ post.excerpt }}
-    </li>
+    {% include post_link.html post=post %}
   {% endfor %}
 </ul>
