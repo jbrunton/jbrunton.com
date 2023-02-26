@@ -4,11 +4,12 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
+    <time>{{ page.date | date: "%B %-d, %Y" }}</time>
+
     <h1 class="post-title" itemprop="name headline">{{ page.title }}</h1>
-    <div class="post-meta">
-      {{ page.date | date: "%B %-d, %Y" }}
-      &middot;
-      {% include category_link.html category=page.category %}
+    
+    <div>
+      Category: {% include category_link.html category=page.category %}
     </div>
   </header>
 
