@@ -11,5 +11,5 @@ A short 'cheat sheet' for a couple of frameworks I find helpful for facilitating
 
 You can download the PDF [here](https://github.com/jbrunton/FacilitatingDialogueCheatSheet/raw/master/Facilitating_Dialogue_Cheat_Sheet.pdf).
 
-<iframe src="https://docs.google.com/gview?url=https://github.com/jbrunton/FacilitatingDialogueCheatSheet/raw/master/Facilitating_Dialogue_Cheat_Sheet.pdf&embedded=true"
+<iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/jbrunton/FacilitatingDialogueCheatSheet/master/Facilitating_Dialogue_Cheat_Sheet.pdf&embedded=true"
 style="width:100%; height: 600px;" frameborder="0"></iframe>
