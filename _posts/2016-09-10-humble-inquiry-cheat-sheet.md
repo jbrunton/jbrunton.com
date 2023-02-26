@@ -13,5 +13,5 @@ It's impossible to distil all the insight and wisdom of the book down to two sid
 
 You can download the PDF [here](https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf).
 
-<iframe src="http://docs.google.com/gview?url=https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf&embedded=true"
+<iframe src="https://docs.google.com/gview?url=https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf&embedded=true"
 style="width:100%; height: 600px;" frameborder="0"></iframe>
