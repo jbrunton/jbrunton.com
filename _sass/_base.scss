@@ -40,9 +40,10 @@ ul, ol, dl, figure,
 }
 
 h1 {
-    font-size: 2em;
+    font-size: $base-font-size * 2;
     letter-spacing: -1px;
-    line-height: 1.2;
+    text-align: justify;
+    line-height: 1.2em;
 }
 
 
@@ -99,16 +100,13 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+    color: $grey-color;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 4px;
 
     &:hover {
         color: $text-color;
-        text-decoration: underline;
     }
 }
 
@@ -213,13 +211,7 @@ pre {
     }
 }
 
-@mixin shadow {
-  box-shadow: 0 2px 5px #CCC;
-}
-
 @mixin box {
-    @include shadow;
-    background-color: #FFF;
     padding-top: $spacing-unit * 1.5;
     padding-bottom: $spacing-unit;
     margin-top: 0;

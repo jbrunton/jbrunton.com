@@ -1,0 +1,15 @@
+<li>
+  <div class="post-header">
+    <h1>
+      <a class="post-link" href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title }}</a>
+    </h1>
+
+    <div class="post-meta">
+      {{ include.post.date | date: "%B %-d, %Y" }}
+      &middot;
+      {% include category_link.html category=include.post.category %}
+    </div>
+  </div>
+
+  {{ include.post.excerpt }}
+</li>
