@@ -9,7 +9,7 @@ tags:
 ---
 I created a 'cheat sheet' for the excellent [Helping: How to Offer, Give, and Receive Help](https://www.amazon.com/Helping-Offer-Give-Receive-Help-ebook/dp/B005P2A6TI) by Edgar Schein.
 
-It's impossible to distil all the insight and wisdom of the book down to two sides of A4, but I find it makes for a useful reference and reminder.
+It's tough to distil everything in the book down to two sides of A4, but I find this makes for a useful reference and reminder.
 
 You can download the PDF [here](https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf).
 
