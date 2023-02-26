@@ -44,6 +44,10 @@ h1 {
     letter-spacing: -1px;
     text-align: justify;
     line-height: 1.2em;
+
+    @include media-query($on-mobile) {
+      text-align: left;
+    }
 }
 
 
