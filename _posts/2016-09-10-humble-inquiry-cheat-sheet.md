@@ -13,5 +13,8 @@ It's tough to distil everything in the book down to two sides of A4, but I find 
 
 You can download the PDF [here](https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf).
 
-<iframe src="https://docs.google.com/gview?url=https://raw.githubusercontent.com/jbrunton/HumbleInquiryCheatSheet/master/Humble_Inquiry_Cheat_Sheet.pdf&embedded=true"
-style="width:100%; height: 600px;" frameborder="0"></iframe>
+<object
+  data="/assets/humble-inquiry/Humble_Inquiry_Cheat_Sheet.pdf"
+  type="application/pdf"
+  style="width:100%; height: 600px;" frameborder="0">
+</object>
