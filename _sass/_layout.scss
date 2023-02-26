@@ -196,10 +196,10 @@
 .post-link {
     color: $brand-color;        
     text-decoration-thickness: 0.15rem;
-    text-decoration-style: solid;
+    text-decoration-style: dotted;
 
     &:hover {
-      text-decoration-style: dotted;
+      text-decoration-style: solid;
     }
 
     @include media-query($on-mobile) {
