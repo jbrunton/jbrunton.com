@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Systems Thinking for Teams"
+title:  "Systems Thinking for Management"
 date:   2023-03-05
 category: teamwork
 tags:
