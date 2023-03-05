@@ -1,15 +1,19 @@
-<li>
+<section class="post-preview">
   <div class="post-header">
-    <span><time>{{ include.post.date | date: "%B %-d, %Y" }}</time></span>
+  <h1>
+    <a class="post-link" href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title }}</a>
+  </h1>
 
-    <h1>
-      <a class="post-link" href="{{ include.post.url | prepend: site.baseurl }}">{{ include.post.title }}</a>
-    </h1>
+  <span><time>{{ include.post.date | date: "%B %-d, %Y" }}</time></span>
 
-    <span>
-      Category: {% include category_link.html category=include.post.category %}
-    </span>
-  </div>
+      <span>
+        Category: {% include category_link.html category=include.post.category %}
+      </span>
 
-  {{ include.post.excerpt }}
-</li>
+</div>
+
+
+    <div class="col-body">
+    {{ include.post.excerpt }}
+    </div>
+</section>
