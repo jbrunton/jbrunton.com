@@ -1,5 +1,19 @@
-p {
+.post-content {
   text-align: justify;
   font-size: $base-font-size;
   letter-spacing: -0.3px;
+}
+
+blockquote {
+  color: $grey-color-dark;
+  border-left: 4px solid $grey-color-light;
+  padding-left: calc($spacing-unit / 2);
+  padding-right: calc($spacing-unit / 2);
+  font-size: $base-font-size;
+  letter-spacing: 0;
+  font-style: italic;
+
+  > :last-child {
+      margin-bottom: 0;
+  }
 }

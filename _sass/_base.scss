@@ -34,7 +34,7 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, li, dl, figure,
 %vertical-rhythm {
     margin-bottom: calc($spacing-unit / 2);
 }
@@ -114,26 +114,6 @@ a {
         text-decoration-style: solid;
     }
 }
-
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: calc($spacing-unit / 2);
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
-}
-
-
 
 /**
  * Code formatting
