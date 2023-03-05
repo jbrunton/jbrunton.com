@@ -172,7 +172,7 @@
 }
 
 .post {
-  @include two-column-grid(1fr 1fr);
+  @include two-column-grid(2fr 3fr);
 }
 
 .post-preview {
