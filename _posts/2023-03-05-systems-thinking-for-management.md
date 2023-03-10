@@ -48,13 +48,15 @@ Donella Meadows categorises twelve ways in which we can influence systems. Those
 
 Barry Oshry offers some interesting (and uniquely stylised) lessons from running his 'Power Lab' workshops in which participants enter a three tier society. During this time, participants' experiences always seem deeply personal, but the same systemic patterns emerge time after time.
 
+## Human factors research
+
 Meanwhile, the field of **human factors research** studies the failure of complex systems with humans in the loop. Sydney Dekker, among others, has written extensively on the topic, and shows how useless the 'old view' of human error is, and why we should reject the traditional preventative solutions rooted in compliance and disciplinary action.
 
 Arguably, Amy Edmondson's research into **psychological safety** builds on this, showing not just why this old view of human error is counterproductive to safety, but why psychological safety is an important predictor of high performing teams (supporting, as it does, a culture of learning and continuous improvement).
 
-In short, systems thinking is an essential tool for any manager or leader in a modern organisation. It offers ways to see opportunities that traditional methods overlook. Importantly, however, it also provides a much more powerful role for management: sometimes a system needs to be changed so that new options are made available to those working within it. (This should not be confused with the dreaded 're-organization', however. Too often, these are rooted in the traditional view of an organisation as a hierarchy.)
-
 ## Getting Started
+
+In short, systems thinking is an mportant tool for any manager or leader in a modern organisation. It offers ways to see opportunities that traditional methods overlook. Importantly, however, it also provides a much more powerful role for management: sometimes a system needs to be changed so that new options are made available to those working within it. (This should not be confused with the dreaded 're-organization', however. Too often, these are rooted in the traditional view of an organisation as a hierarchy.)
 
 Some of the books I recommend as an introduction to this field:
 
@@ -66,4 +68,4 @@ Some of the books I recommend as an introduction to this field:
 
 4. *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth* by Amy Edmondson shows the importance and benefits of a culture which avoids placing blame or top-down directives.
 
-5. *The Fifth Discipline* by Peter Senge. A well known book that draws insightful connections between systems thinking and learning organisations. It is, however, a long read, and arguably the literature on learning organisations has evolved since it was written.
+5. *The Fifth Discipline* by Peter Senge. A well known book that draws insightful connections between systems thinking and other key 'disciplines' that Senge argues are necessary to build learning organisations. It is, however, a long read, and arguably the literature on learning organisations has evolved since it was written.
