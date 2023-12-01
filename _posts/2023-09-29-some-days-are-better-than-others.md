@@ -20,4 +20,4 @@ This anecdote comes from [Understanding Variation: The Key to Managing Chaos](ht
 >
 > Evidently no one had had the temerity to ask the president this, because he paused, looked at the chart on the wall, and then said, “Well, some days are better than others!”
 
-A lot of organisations struggle to understand natural variation. Reports are shown in which lines go up and down. A team has a good month: the line goes up 8%. But then – horror! – the following month it falls 10%. What happened? Management worries about the rest, but quite possibly it's just reversion to the mean or expected seasonality.
+A lot of organisations struggle to understand natural variation. Reports are shown in which lines go up and down. A team has a good month: the line goes up 8%. But then – horror! – the following month it falls 10%. What happened? A bunch of time is spent theorising and explaining, but quite possibly it's just a case of reversion to the mean, the spike a case of natural variation in contributing stochastic processes.
