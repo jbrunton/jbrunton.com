@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Chaos vs Time in Test First and Test Later Projects"
+title:  "Chaos Vs. Time In Test First And Test Later Projects"
 date:   2023-12-01
 category: lean
 tags:
