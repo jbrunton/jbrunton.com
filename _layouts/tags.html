@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<h2 class="page-heading">Topic: {{ page.tag-name }}</h2>
+
+{% for post in site.tags[page.tag-name] %}
+  {% include post_link.html post=post %}
+{% endfor %}

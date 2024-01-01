@@ -4,7 +4,7 @@ title:  "Chaos Vs. Time In Test First And Test Later Projects"
 date:   2023-12-01
 category: lean
 tags:
-  - quality control
+  - process control
   - lean thinking
 ---
 

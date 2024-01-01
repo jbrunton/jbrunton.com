@@ -4,8 +4,7 @@ title:  "Lean Thinking: Principles and Processes according to The Toyota Way"
 date:   2015-10-25
 category: lean
 tags:
-  - lean
-  - the toyota way
+  - lean thinking
 ---
 Reference slides I put together for talking about 'lean thinking'. The emphasis is on creating a culture of continuous learning and improvement in order to be successful when transitioning to a lean methodology.
 

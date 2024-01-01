@@ -1,0 +1,6 @@
+<div class="tags header">
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    <span class="tag"><a href="/topics/{{ tag[0] }}">{{ tag[0] }}</a> ({{ tag[1] | size }})</span>
+  {% endfor %}
+</div>

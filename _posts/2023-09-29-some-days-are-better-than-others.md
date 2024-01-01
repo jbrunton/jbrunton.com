@@ -5,6 +5,7 @@ date:   2023-09-29
 category: lean
 tags:
   - systems thinking
+  - lean thinking
   - process control
 ---
 
