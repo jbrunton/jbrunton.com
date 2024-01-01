@@ -22,3 +22,8 @@ category_names:
 # Build settings
 markdown: kramdown
 exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+defaults:
+  - scope:
+      type: tags
+    values:
+      layout: topic

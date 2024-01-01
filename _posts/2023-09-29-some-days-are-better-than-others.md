@@ -2,9 +2,9 @@
 layout: post
 title:  "“Some Days Are Better Than Others”"
 date:   2023-09-29
-category: lean
 tags:
   - systems thinking
+  - lean thinking
   - process control
 ---
 
