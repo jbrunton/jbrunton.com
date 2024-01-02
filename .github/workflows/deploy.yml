@@ -17,9 +17,9 @@ concurrency:
 
 jobs:
   deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    # environment:
+    #   name: github-pages
+    #   url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -28,6 +28,8 @@ jobs:
           bundler-cache: true
       - name: Build
         run: bundle exec jekyll build
+      - name: list files
+        run: ls -R ./_site
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
