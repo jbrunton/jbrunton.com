@@ -2,10 +2,8 @@
 layout: post
 title:  "Facilitating Dialogue Cheat Sheet"
 date:   2023-02-26
-category: teamwork
 tags:
-  - dialogue
-  - healthy conflict
+  - group dynamics
 ---
 A short 'cheat sheet' for a couple of frameworks I find helpful for facilitating difficult discussions and keeping participiants 'in dialogue'. It summarises Kantor's 'Four Player' model and Bohm's 'On Dialogue'.
 

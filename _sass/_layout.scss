@@ -157,7 +157,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: 0 0 $spacing-unit 0;
 }
 
 @mixin two-column-grid($columns) {
@@ -233,4 +233,43 @@
     @include media-query($on-mobile) {
       width: auto;
     }
+}
+
+.topic-heading {
+  text-align: center;
+}
+
+.tags {
+  &.header {
+    margin-bottom: 32px;
+    padding-bottom: 8px;
+    text-align: center;
+
+    @include media-query($on-tablet) {
+      h2 {
+        display: none;
+      };
+    }
+  }
+
+  .tag {
+    text-wrap: nowrap;
+  }
+
+  a {
+    text-decoration: none;
+    font-style: italic;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  span::after {
+    content: ' ·';
+  }
+
+  span:last-child::after {
+    content: '';
+  }
 }

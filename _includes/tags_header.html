@@ -1,0 +1,6 @@
+<div class="tags header">
+  {% assign sorted_tags = site.tags | sort %}
+  {% for tag in sorted_tags %}
+    {% include tag_link.html tag=tag %}
+  {% endfor %}
+</div>

@@ -2,9 +2,9 @@
 layout: post
 title:  "Systems Thinking for Management"
 date:   2023-03-05
-category: teamwork
 tags:
   - systems thinking
+  - lean thinking
 ---
 
 For anyone in a position of management or team leadership, the discipline of _systems thinking_ offers some important and useful mental models.

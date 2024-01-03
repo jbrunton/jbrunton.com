@@ -8,8 +8,10 @@ layout: default
     
     <time>{{ page.date | date: "%B %-d, %Y" }}</time>
 
-    <div>
-      Category: {% include category_link.html category=page.category %}
+    <div class="tags">
+      {% for tag in page.tags %}
+        <span class="tag"><a href="/topics/{{ tag | hyphenize }}">{{tag}}</a></span>
+      {% endfor %}
     </div>
   </header>
 

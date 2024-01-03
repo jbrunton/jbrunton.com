@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% include tags_header.html %}
+
 {% for post in site.posts %}
   {% include post_link.html post=post %}
 {% endfor %}
