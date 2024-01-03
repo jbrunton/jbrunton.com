@@ -12,12 +12,10 @@ description: > # this means to ignore newlines until "baseurl:"
   teams. Sustainable development (i.e. the continuous delivery of value) is what
   happens when you get these things right.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.jbrunton.com" # the base hostname & protocol for your site
+url: "https://www.jbrunton.com" # the base hostname & protocol for your site
 github_username:  jbrunton
-
-category_names:
-  lean: Lean Thinking
-  teamwork: Teamwork
+plugins:
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
