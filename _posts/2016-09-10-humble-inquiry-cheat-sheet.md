@@ -10,10 +10,10 @@ I created a 'cheat sheet' for the excellent [Helping: How to Offer, Give, and Re
 
 It's tough to distil everything in the book down to two sides of A4, but I find this makes for a useful reference and reminder.
 
-You can download the PDF [here](https://github.com/jbrunton/HumbleInquiryCheatSheet/raw/master/Humble_Inquiry_Cheat_Sheet.pdf).
+You can download the PDF [here](https://jbrunton.github.io/cheat-sheets/humble-inquiry.pdf).
 
 <object
-  data="/assets/humble-inquiry/Humble_Inquiry_Cheat_Sheet.pdf"
+  data="https://jbrunton.github.io/cheat-sheets/humble-inquiry.pdf"
   type="application/pdf"
   style="width:100%; height: 600px;" frameborder="0">
 </object>
