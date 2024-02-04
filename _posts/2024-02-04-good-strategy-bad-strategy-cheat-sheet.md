@@ -5,6 +5,7 @@ date:   2024-02-04
 tags:
   - strategy
   - systems thinking
+  - cheat sheets
 ---
 A 'cheat sheet' for [Good Strategy/Bad Strategy: The Difference and Why It Matters](https://www.goodreads.com/en/book/show/11721966) by Richard P. Rumelt.
 
