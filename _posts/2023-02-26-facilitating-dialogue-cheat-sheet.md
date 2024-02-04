@@ -8,10 +8,10 @@ tags:
 ---
 A short 'cheat sheet' for a couple of frameworks I find helpful for facilitating difficult discussions and keeping participiants 'in dialogue'. It summarises Kantor's 'Four Player' model and Bohm's 'On Dialogue'.
 
-You can download the PDF [here](https://github.com/jbrunton/FacilitatingDialogueCheatSheet/raw/master/Facilitating_Dialogue_Cheat_Sheet.pdf).
+You can download the PDF [here](https://jbrunton.github.io/cheat-sheets/facilitating-dialogue.pdf).
 
 <object
-  data="/assets/facilitating-dialogue/Facilitating_Dialogue_Cheat_Sheet.pdf"
+  data="https://jbrunton.github.io/cheat-sheets/facilitating-dialogue.pdf"
   type="application/pdf"
   style="width:100%; height: 600px;" frameborder="0">
 </object>
