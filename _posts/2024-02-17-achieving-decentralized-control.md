@@ -3,10 +3,9 @@ layout: post
 title:  "Achieving Decentralized Control"
 date:   2024-02-17
 tags:
-  - systems thinking
+  - self-organising teams
   - lean thinking
   - cheat sheets
-  - self-organising teams
 ---
 A 'cheat sheet' for Chapter 9: Achieving Decentralized Control from [The Principles of Product Development Flow](https://www.goodreads.com/en/book/show/6278270) by Donald Reinertsen.
 
