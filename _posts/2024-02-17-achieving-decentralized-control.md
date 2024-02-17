@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Achieveing Decentralized Control"
+title:  "Achieving Decentralized Control"
 date:   2024-02-17
 tags:
   - systems thinking
