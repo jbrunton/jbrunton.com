@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Achieving Decentralized Control"
+title:  "Achieving Decentralized Control Cheat Sheet"
 date:   2024-02-17
 tags:
   - self-organising teams
