@@ -1,12 +1,13 @@
 ---
 layout: post
-title:  "Achieving Decentralized Control Cheat Sheet"
-date:   2024-02-17
+title: "Key Figures in Lean Manufacturing in Post-War Japan"
+date: 2024-02-17
 tags:
   - self-organising teams
   - lean thinking
   - cheat sheets
 ---
+
 A 'cheat sheet' for Chapter 9: Achieving Decentralized Control from [The Principles of Product Development Flow](https://www.goodreads.com/en/book/show/6278270) by Donald Reinertsen.
 
 You can download the PDF [here](https://jbrunton.github.io/cheat-sheets/decentralized-control.pdf).
