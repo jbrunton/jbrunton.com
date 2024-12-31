@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What We Should Mean by 'Accountability'"
-date: 2024-01-01
+date: 2024-12-31
 tags:
   - self-organising teams
   - group dynamics
@@ -69,7 +69,7 @@ Amy Edmondson [2018] provides helpful guidance for leadership to build and susta
     <thead>
       <tr>
         <th>Category</th>
-        <th style="width: 30%">Setting the stage</th>
+        <th style="width: 30%">Setting the Stage</th>
         <th style="width: 30%">Inviting Participation</th>
         <th style="width: 30%">Responding Productively</th>
       </tr>
