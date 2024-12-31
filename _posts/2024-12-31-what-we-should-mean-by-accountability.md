@@ -23,7 +23,7 @@ In different contexts, interpretations of ‘accountability’ may include the f
 
 # A better approach
 
-Sydney Dekker [2014] suggests we should interpret ‘accountability’ literally:
+Sidney Dekker [2014] suggests we should interpret ‘accountability’ literally:
 
 > ### You can hold people accountable by letting them tell their story, literally “giving their account.”
 
