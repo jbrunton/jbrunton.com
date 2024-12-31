@@ -1,22 +1,24 @@
 ---
 layout: post
-title: "What we should mean by 'accountability'"
-date: 2025-01-01
+title: "What We Should Mean by 'Accountability'"
+date: 2024-01-01
 tags:
   - self-organising teams
   - group dynamics
 ---
 
-The term ‘accountability’ is frequently used in the context of teams and organizations, but it is often deployed in ways that are vague, contradictory or counterproductive. Indeed, we sometimes define the term simply through its absence: it’s not uncommon for teams or organisations to identify a ‘lack of accountability’ as a problem, without clearly articulating how this void should be filled. This article surveys some of the more productive notions of accountability from the literature, and the role of management in implementing them.
+The term ‘accountability’ is frequently used in the context of teams and organizations, but it is often deployed in ways that are vague, contradictory or counterproductive.
+
+In fact, we sometimes define the term simply through its absence: it’s not uncommon for teams or organisations to identify a ‘lack of accountability’ as a problem, without clearly articulating how this void should be filled. This article surveys some of the more productive notions of accountability from the literature, and the role of management in implementing them.
 
 # Common interpretations
 
 In different contexts, interpretations of ‘accountability’ may include the following.
 
-1. Formal performance management processes, e.g. performance reviews and employee gradings/rankings. These are known to frequently be counterproductive due to delayed feedback, unfair review processes, and a focus on criticism [Carucci 2020]. While managers should facilitate useful, frequent feedback to support personal development, an annual performance review is no good as a mechanism for accountability.
-2. Holding someone “accountable” is sometimes a euphemism for finding someone to publicly blame. It’s well known that such a punitive approach undermines psychological safety, engendering a culture in which problems are hidden rather than acknowledged and learned from [Edmondson 2018].
-3. Sometimes the term is simply conflated with “responsibility”, or used as the term for the key decision-maker (e.g. in a RACI matrix). This may tell us who is accountable, but it doesn’t tell us what accountability should look like.
-4. We also speak of accountability for serious transgressions (e.g. behaviours which contribute towards a toxic workplace culture, or which may even be illegal). These cases are important to deal with quickly [Felps 2006] but should be distinguished from accountability in a complex dynamic system, in which failures can occur despite the best efforts of all.
+1. **Formal performance management processes**, e.g. performance reviews and employee gradings/rankings. These are known to frequently be counterproductive due to delayed feedback, unfair review processes, and a focus on criticism [Carucci 2020]. While managers should facilitate useful, frequent feedback to support personal development, an annual performance review is no good as a mechanism for accountability.
+2. Holding someone “accountable” is sometimes **a euphemism for finding someone to publicly blame**. It’s well known that such a punitive approach undermines psychological safety, engendering a culture in which problems are hidden rather than acknowledged and learned from [Edmondson 2018].
+3. Sometimes the term is simply **conflated with “responsibility”**, or used as the term for the key decision-maker (e.g. in a RACI matrix). This may tell us who is accountable, but it doesn’t tell us what accountability should look like.
+4. We also speak of accountability for **serious transgressions** (e.g. behaviours which contribute towards a toxic workplace culture, or which may even be illegal). These cases are important to deal with quickly [Felps 2006] but should be distinguished from accountability in a complex dynamic system, in which failures can occur despite the best efforts of all.
 5. Tiresomely, the term has also become one of those words co-opted from therapists to gaslight an audience into thinking a mistake has been recognised. When a YouTuber promises to “take accountability” for their latest crypto scam, you know you’re witnessing a PR manoeuvre and that zero consequences will follow.
 
 # A better approach
@@ -43,11 +45,15 @@ Giving frontline staff a voice to tell their stories may be a necessity, but the
 
 ## Authority
 
-Dekker calls out the “authority–responsibility mismatch” as a common problem: “It is impossible to hold somebody accountable for something over which that person had no authority.” He observes that in most safety-critical applications, operators must continually balance competing demands for efficiency and thoroughness. If an organisation doesn’t create time and space for operators to be thorough, if it doesn’t grant them the authority “to live up to the responsibility” asked of them, then the operators cannot be held accountability. The organisation must first reform itself.
+Dekker calls out the “authority–responsibility mismatch” as a common problem:
+
+> It is impossible to hold somebody accountable for something over which that person had no authority.
+
+He observes that in most safety-critical applications, operators must continually balance competing demands for efficiency and thoroughness. If an organisation doesn’t create time and space for operators to be thorough, if it doesn’t grant them the authority “to live up to the responsibility” asked of them, then the operators cannot be held accountability. The organisation must first reform itself.
 
 ## Other team capabilities
 
-Kimball Fisher [2000] provides a helpful model for thinking about self-organising teams: in his ARIA (Authority, Resources, Information, Accountability) model he suggests that in addition to authority and accountability, teams also require the resources (i.e. skills, personnel, tools) to do their job well, and relevant information to make informed decisions. It is management’s job to develop these capabilities in order to grow the boundaries within which the team can operate with accountability.
+Kimball Fisher [2000] provides a helpful model for thinking about self-organising teams: using the mnemonic ARIA (Authority, Resources, Information, Accountability) he suggests that in addition to authority and accountability, teams also require the resources (i.e. skills, personnel, tools) to do their job well, and relevant information to make informed decisions. It is management’s job to develop these capabilities in order to grow the boundaries within which the team can operate with accountability.
 
 ## Psychological safety
 
@@ -57,7 +63,9 @@ Another important prerequisite to a learning/safety culture (and therefore to a 
 
 Amy Edmondson [2018] provides helpful guidance for leadership to build and sustain psychological safety. She summarises the activities leaders should engage in across three categories of work (“setting the stage”, “inviting participation” and “responding productively”).
 
-The Leader’s Tool Kit for Building Psychogical Safety (from The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth, Chapter 7)
+![The Leader's Tool Kit for Building Psychological Safety](/assets/accountability/edmondson-leaders-toolkit.png)
+
+<sub><sup>The Leader’s Tool Kit for Building Psychogical Safety (from The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth, Chapter 7)</sup></sub>
 
 ## Structuring accounts
 
@@ -87,13 +95,13 @@ Once management are continuously practicing these steps then, and only then, can
 
 # References
 
-* Carucci 2020 https://hbr.org/2020/11/how-to-actually-encourage-employee-accountability
+* Carucci 2020, [How to Actually Encourage Employee Accountability](https://hbr.org/2020/11/how-to-actually-encourage-employee-accountability)
 * Edmondson, 2018, The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth
 * Dekker, 2014, The Field Guide to Understanding Human Error (3rd Edition)
 * Dekker, 2011, Drift into Failure
-* Felps 2006,  How, When, and Why Bad Apples Spoil the Barrel: Negative Group Members and Dysfunctional Groups https://www.sciencedirect.com/science/article/abs/pii/S0191308506270059
-* Allspaw 2012, Each Necessary but only Jointly Sufficient https://www.kitchensoap.com/2012/02/10/each-necessary-but-only-jointly-sufficient/
-* Mastiglio et al 2011, Current Practice and Theoretical Foundations of the After Action Review, https://www.researchgate.net/publication/235169250_Current_Practice_and_Theoretical_Foundations_of_the_After_Action_Review
-* US Army 1993, A LEADER'S GUIDE TO AFTER-ACTION REVIEWS, https://docs.adaptdev.info/lib/7F4R6NLI
-* Darling et al 2005, https://hbr.org/2005/07/learning-in-the-thick-of-it
+* Felps 2006, [How, When, and Why Bad Apples Spoil the Barrel: Negative Group Members and Dysfunctional Groups](https://www.sciencedirect.com/science/article/abs/pii/S0191308506270059)
+* Allspaw 2012, [Each Necessary but only Jointly Sufficient](https://www.kitchensoap.com/2012/02/10/each-necessary-but-only-jointly-sufficient/)
+* Mastiglio et al 2011, [Current Practice and Theoretical Foundations of the After Action Review](https://www.researchgate.net/publication/235169250_Current_Practice_and_Theoretical_Foundations_of_the_After_Action_Review)
+* US Army 1993, [A Leader's Guide To After-Action Reviews](https://docs.adaptdev.info/lib/7F4R6NLI)
+* Darling et al 2005, [Learning in the Thick of It](https://hbr.org/2005/07/learning-in-the-thick-of-it)
 * Fisher 2000, Leading Self-Directed Work Teams
