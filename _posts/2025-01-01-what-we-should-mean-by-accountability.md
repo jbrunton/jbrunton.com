@@ -63,9 +63,72 @@ Another important prerequisite to a learning/safety culture (and therefore to a 
 
 Amy Edmondson [2018] provides helpful guidance for leadership to build and sustain psychological safety. She summarises the activities leaders should engage in across three categories of work (“setting the stage”, “inviting participation” and “responding productively”).
 
-![The Leader's Tool Kit for Building Psychological Safety](/assets/accountability/edmondson-leaders-toolkit.png)
+<div class="full-width">
 
-<sub><sup>The Leader’s Tool Kit for Building Psychogical Safety (from The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth, Chapter 7)</sup></sub>
+  <table>
+    <thead>
+      <tr>
+        <th>Category</th>
+        <th style="width: 30%">Setting the stage</th>
+        <th style="width: 30%">Inviting Participation</th>
+        <th style="width: 30%">Responding Productively</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Leadership tasks</th>
+        <td>
+          Frame the Work
+          <ul>
+            <li>Set expectations about failure, uncertainty, and interdependence to clarify the need for voice</li>
+          </ul>
+          Emphasize Purpose
+          <ul>
+            <li>Identify what's at stake, why it matters, and for whom</li>
+          </ul>
+        </td>
+        <td>
+          Demonstrate Situational Humility
+          <ul>
+            <li>Acknowledge gaps</li>
+          </ul>
+          Practice Inquiry
+          <ul>
+            <li>Ask good questions</li>
+            <li>Model intense listening</li>
+          </ul>
+          Set up Structures and Processes
+          <ul>
+            <li>Create forums for input Provide guidelines for discussion</li>
+          </ul>
+        </td>
+        <td>
+          Express Appreciation
+          <ul>
+            <li>Listen</li>
+            <li>Acknowledge and thank</li>
+          </ul>
+          Destigmatize Failure
+          <ul>
+            <li>Look forward</li>
+            <li>Offer help</li>
+            <li>Discuss, consider, and brainstorm next steps</li>
+          </ul>
+          Sanction Clear Violations
+        </td>
+      </tr>
+      <tr>
+        <th>Accomplishes</th>
+        <td>Shared expectations and meaning</td>
+        <td>Confidence that voice is welcome</td>
+        <td>Orientation toward continuous learning</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <span class="label">The Leader’s Tool Kit for Building Psychogical Safety [Edmondon 2018, Chapter 7]</span>
+
+</div>
 
 ## Structuring accounts
 

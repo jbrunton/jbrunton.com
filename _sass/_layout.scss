@@ -273,3 +273,11 @@
     content: '';
   }
 }
+
+.full-width {
+  margin: 20px 0 20px -50%;
+
+  @include media-query($on-tablet) {
+    margin-left: 0;
+  }
+}
