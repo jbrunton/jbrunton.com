@@ -9,39 +9,105 @@ tags:
 
 The term ‘accountability’ is frequently used in the context of teams and organizations, but it is often deployed in ways that are vague, contradictory or counterproductive.
 
-In fact, we sometimes define the term simply through its absence: it’s not uncommon for teams or organisations to identify a ‘lack of accountability’ as a problem, without clearly articulating how this void should be filled. This article surveys some of the more productive notions of accountability from the literature, and the role of management in implementing them.
+In fact, we sometimes define the term simply through its absence: it’s not uncommon for teams or organisations to identify a ‘lack of accountability’ as a problem, without clearly articulating how this void should be filled. This blog post surveys some of the more productive notions of accountability from the literature, and the role of management in implementing them.
 
-# Common interpretations
+# Classifying organisational cultures
 
-In different contexts, interpretations of ‘accountability’ may include the following.
+Before discussing accountability, we must be clear what a high performance culture looks like in order to assess the suitability of our preferred definition (and to see why some culturally ingrained definitions should be discarded). A helpful model for our purposes is the organisational typology proposed by Ron Westrum (2004), which defines three distinct organisational climates in terms of how information flows.
 
-1. **Formal performance management processes**, e.g. performance reviews and employee gradings/rankings. These are known to frequently be counterproductive due to delayed feedback, unfair review processes, and a focus on criticism [Carucci, 2020]. While managers should facilitate useful, frequent feedback to support personal development, an annual performance review is no good as a mechanism for accountability.
-2. Holding someone “accountable” is sometimes **a euphemism for finding someone to publicly blame**. It’s well known that such a punitive approach undermines psychological safety, engendering a culture in which problems are hidden rather than acknowledged and learned from [Edmondson, 2018].
-3. Sometimes the term is simply **conflated with “responsibility”**, or used as the term for the key decision-maker (e.g. in a RACI matrix). This may tell us who is accountable, but it doesn’t tell us what accountability should look like.
-4. We also speak of accountability for **serious transgressions** (e.g. behaviours which contribute towards a toxic workplace culture, or which may even be illegal). These cases are important to deal with quickly [Felps, 2006] but should be distinguished from accountability in a complex dynamic system, in which failures can occur despite the best efforts of all.
-5. Tiresomely, the term has also become one of those words co-opted from therapists to gaslight an audience into thinking a mistake has been recognised. When a YouTuber promises to “take accountability” for their latest crypto scam, you know you’re witnessing a PR manoeuvre and that zero consequences will follow.
+<table>
+  <thead>
+    <th>Pathological<br>(power-oriented)</th>
+    <th>Bureaucratic<br>(rule-oriented)</th>
+    <th>Generative<br>(performance-oriented)</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Messengers “shot”</td>
+      <td>Messengers neglected</td>
+      <td>Messengers trained</td>
+    </tr>
+    <tr>
+      <td>Failure leads to scapegoating</td>
+      <td>Failure leads to ‘justice’</td>
+      <td>Failure leads to inquiry</td>
+    </tr>
+    <tr>
+      <td>Low cooperation</td>
+      <td>Modest cooperation</td>
+      <td>High cooperation</td>
+    </tr>
+    <tr>
+      <td>Bridging discouraged</td>
+      <td>Bridging tolerated</td>
+      <td>Bridging encouraged</td>
+    </tr>
+    <tr>
+      <td>Responsibilities shirked</td>
+      <td>Narrow responsibilities</td>
+      <td>Risks are shared</td>
+    </tr>
+    <tr>
+      <td>Novelty crushed</td>
+      <td>Novelty leads to problems</td>
+      <td>Novelty implemented</td>
+    </tr>
+  </tbody>
+</table>
+
+There is a growing body of evidence that these cultural climates predict organisational performance, and that generative cultures outperform others in a great many contexts (Westrum 2004; Edmondson 1996; Forsgren, N. and Humble, J. 2016). As Westrum observes: 
+
+> The effects of information flow climate are pervasive. And they are pervasive because the climate shapes three key variables: alignment, awareness, and empowerment.
+
+Literature on safety-critical industries, in which failure may lead to injury or fatality, will often examine ‘safety cultures’. Organisational development theorists and human resources professionals in other forms of knowledge work may speak of ‘learning cultures’. Regardless, while the impact of failure may vary across industries, a generative culture typically predicts organisational performance, and the methods by which we achieve one are broadly consistent. Therefore, this post uses the terms ‘generative culture’, ‘safety culture’ and ‘learning culture’ somewhat interchangeably.
+
+A final note on terminology: some of the authors cited focus their work on self-organising teams or safety-critical industries in which individuals act relatively autonomously. My view is that we should apply these definitions widely: a customer call centre agent with structured scripts to follow must still make independent decisions (e.g. when to escalate a customer complaint) and is operating within a complex wider system consisting of department processes, customer interactions, competing business priorities, market competition, etc. The number of jobs in which the work is both completely and coherently defined, and also completely isolated from complex wider systems, are vanishingly few.
+
+# Flawed interpretations of ‘accountability’
+
+In different contexts, ‘accountability’ may be used in the following ways.
+
+1. **Formal performance management processes**, such as performance reviews, promotions and employee gradings/rankings, may be seen to provide some degree of accountability: in theory, good performance is recognised and underperformance is sanctioned. Moreover, if someone is over-promoted despite (perceived) poor performance then this may be seen as a ‘lack of accountability’ (even if we have not yet defined what accountability should be). However, formal HR processes like annual reviews and rankings are known to often be counterproductive due to delayed feedback, unfair review processes, and a focus on criticism [Carucci 2020]. While managers should facilitate useful, frequent feedback to support personal development, an annual performance review is no good as a mechanism for accountability.
+
+2. Holding someone “accountable” is sometimes **a euphemism for finding someone to publicly blame**. It is well known that such a punitive approach undermines psychological safety, fostering a culture in which problems are hidden rather than acknowledged and learned from [Edmondson 2018]. Thus, punitive approaches diminish efforts to build a generative culture.
+3. Sometimes the term is used to **distinguish the key decision-maker** from others responsible for doing the work (e.g. in a RACI matrix). This may tell us who is accountable, but it doesn’t tell us what accountability should look like.
+4. Sometimes “accountable” is used as a **synonym for “responsible”** (e.g. Fisher, 2000). Certainly, accountability implies a responsibility to our work commitments, and this view may even be sufficient when things are going well, but without also examining how we deal with failure (and especially how we learn from it), we are still missing something important.
+5. We also speak of accountability for **serious transgressions** (e.g. behaviours which contribute towards a toxic workplace culture, or which may even be illegal). These cases are important to deal with quickly [Felps 2006] but should be distinguished from cases in which failures can occur despite the best efforts of all. Treating every failure as a preventable error or a moral failure of character to be sanctioned will engender a pathological culture.
+6. Tiresomely, the term has also been co-opted from the language of therapy to gaslight an audience into thinking a mistake has been recognised. When a YouTuber promises to “take accountability” for their latest crypto scam, you know you’re witnessing a PR manoeuvre and that zero consequences will follow.
 
 # A better approach
 
-Sidney Dekker [2014] suggests we should interpret ‘accountability’ literally:
+To improve upon these limited approaches, we can take inspiration from two complementary views on what ‘accountability’ should be in high performing organisations.
 
-> ### You can hold people accountable by letting them tell their story, literally “giving their account.”
+## ‘Accountability’ as responsibility
+
+Intuitively, accountability implies responsibility. As Kimball Fisher (2000) points out, individual clarity on roles is necessary to avoid ‘social loafing’. Management must ensure ownership and responsibilities are clear within and across teams. Fisher also recommends individuals should be responsible for both tasks (the work being done) and results (the outcome of the work). OKRs are a popular method for implementing such systems of accountability today. Responsibility in this sense is a consequence of role clarity and transparency. It should be clear what each team member is working on, how these tasks contribute towards expected outcomes, the status of current work, and measures of results.
+
+However, we could do all of this and still respond unproductively when things go wrong. We might regress to punitive measures, undermining efforts to build a generative culture. We might assume everyone did their best and move on, ignoring opportunities for learning. Or management might intervene directly, undermining team autonomy and failing to engage frontline staff (thus missing important learning opportunities).
+
+## ‘Accountability’ for learning
+
+In the context of failure, Sidney Dekker [2014] suggests we should interpret ‘accountability’ literally:
+
+> You can hold people accountable by letting them tell their story, literally “giving their account.”
 
 In other words, let people explain what happened, what should be done to fix things, and (ideally) how to improve in future. Accountability of this kind can be a great catalyst for learning.
 
-This approach has other multiplicative benefits which are suppressed by punitive and bureaucratic interpretations:
+This approach has other multiplicative benefits which are suppressed by punitive and bureaucratic interpretations of accountability:
 
 1. As Dekker observes, “Storytelling is a powerful mechanism for others to learn vicariously from trouble.” Personal stories resonate with peers more strongly than any process change or training video ever could.
+
 2. It engages frontline staff in identifying problems, from which it is a small step (with the right supporting structures) to have teams drive meaningful improvements to their own processes.
-3. It contributes to a culture of psychological safety (more on which below), improving information flow, a prerequisite for a safety culture. In general, it’s critical not to stigmatise failure: if you do, opportunities for learning will disappear.
+
+3. It contributes to a culture of psychological safety (in which individuals feel confident to speak up and volunteer information), improving information flow. In general, we must strive not to stagmatise failure, or else opportunities for learning will disappear.
 
 ## Systems and the myth of ‘human error’
 
-Dekker recommends that we take a systems view of team performance. While failures may naively be blamed on mistakes or ‘human error’, most organisational systems are driven close to the limits of what they can safely deliver (and often beyond). Deadlines, competing priorities and brittle processes requiring workarounds all contribute to conditions in which failures aren’t due to personal mistakes or ‘human error’. Instead, they are merely a consequence of the organisational constraints and pressures which staff do their best to navigate with the limited information available to them in the moment. In this context, failure is not a moral deficiency but a product of dynamic complexity. Our job is to find ways to manage this complexity in order to reduce the prevalence or scale of failure.
+Dekker also recommends that we take a systems view of team performance. While failures may naively be blamed on mistakes or ‘human error’, most organisational systems are driven close to the limits of what they can safely deliver (and often beyond). Deadlines, competing priorities and brittle processes requiring workarounds all contribute to conditions in which failures aren’t due to personal mistakes or ‘human error’. Instead, they are merely a consequence of the organisational constraints and pressures which staff do their best to navigate with the limited information available to them in the moment. In this context, failure is not a moral deficiency but a product of systems complexity. Our job is to find ways to manage this complexity in order to reduce the prevalence or scale of failure.
 
 # Preconditions for accountability
 
-Giving frontline staff a voice to tell their stories may be a necessity, but there are other prerequisites to accountability and sustaining an effective learning culture.
+Giving frontline staff a voice to tell their stories is a necessity, but there are other prerequisites to accountability if we wish to sustain a generative culture.
 
 ## Authority
 
@@ -49,22 +115,23 @@ Dekker calls out the “authority–responsibility mismatch” as a common probl
 
 > It is impossible to hold somebody accountable for something over which that person had no authority.
 
-He observes that in most safety-critical applications, operators must continually balance competing demands for efficiency and thoroughness. If an organisation doesn’t create time and space for operators to be thorough, if it doesn’t grant them the authority “to live up to the responsibility” asked of them, then the operators cannot be held accountability. The organisation must first reform itself.
+He observes that in most safety-critical applications, operators must continually balance competing demands for efficiency and thoroughness. If an organisation doesn’t create time and space for operators to be thorough, if it doesn’t grant them the authority “to live up to the responsibility” asked of them, then the operators cannot be held accountable. The organisation must first reform itself.
 
-## Other team capabilities
+## Team capabilities
 
-Kimball Fisher [2000] provides a helpful model for thinking about self-organising teams: using the mnemonic ARIA (Authority, Resources, Information, Accountability) he suggests that in addition to authority and accountability, teams also require the resources (i.e. skills, personnel, tools) to do their job well, and relevant information to make informed decisions. It is management’s job to develop these capabilities in order to grow the boundaries within which the team can operate with accountability.
+Fisher (2000) provides a helpful model for thinking about self-organising teams: he suggests that in addition to authority and accountability, teams also require the resources (i.e. skills, personnel, tools) to do their job well, and relevant information to make informed decisions. (These four requirements - Authority, Resources, Information, Accountability - can be recalled with the mnemonic ARIA.) It is management’s job to develop these capabilities in order to grow the boundaries within which the team can operate with accountability.
 
 ## Psychological safety
 
-Another important prerequisite to a learning/safety culture (and therefore to a just accountability culture) is psychological safety. As Dekker [2014] observes:
+Another important prerequisite to a learning/safety culture is psychological safety. Writing about the crash of Valujet flight 592 in Miami and the corporate conditions which contributed to safety failures, Dekker (2014) observes:
 
 > Fear of prosecution stifles the flow of information about such conditions. And information is the prime asset that makes a safety culture work.
 
-Amy Edmondson [2018] provides helpful guidance for leadership to build and sustain psychological safety. She summarises the activities leaders should engage in across three categories of work (“setting the stage”, “inviting participation” and “responding productively”).
+Without psychological safety, information won’t flow and efforts to build a generative culture will fail. Punitive forms of accountability revolving around sanctions and discipline will undermine these efforts.
+
+Amy Edmondson (2018) provides helpful guidance for leadership to build and sustain psychological safety. She summarises the activities leaders should engage in across three categories of work (“setting the stage”, “inviting participation” and “responding productively”). 
 
 <div class="full-width">
-
   <table>
     <thead>
       <tr>
@@ -126,35 +193,44 @@ Amy Edmondson [2018] provides helpful guidance for leadership to build and susta
     </tbody>
   </table>
 
-  <span class="label">The Leader’s Tool Kit for Building Psychogical Safety [Edmondon 2018, Chapter 7]</span>
+  <p class="label">The Leader’s Tool Kit for Building Psychogical Safety [Edmondon 2018, Chapter 7]</p>
 
 </div>
 
-## Structuring accounts
+While sanctioning clear violations of agreed standards is sometimes necessary, management must make every possible effort to determine no other factors are contributing to the problem.
 
-Finally, while giving frontline staff the opportunity to give their own accounts of events is important, we must take care over how we draw conclusions from these accounts.
+How do we know when to sanction violations of standards? How should we reason about other contributing factors? To answer these questions we need to understand the nature of dynamic complexity.
 
-When reasoning about outcomes in a complex dynamic system, we often erroneously assume what Dekker [2011] refers to as “linear, Newtonian-Cartesian logic” – that is, we view an outcome are a product of a linear chain of events with a “root cause”. Allspaw [2012] points out that such linear thinking “validates hindsight and outcome bias”. In fact, failure in complex systems is typically the result of “multiple contributing factors, each necessary but only jointly sufficient”. Therefore, when we analyse and synthesise recommendations from the accounts we hear of what happened, we must guard against linear thinking. Learning from failure in dynamic systems requires diligence and structure to overcome human cognitive limitations in the face of systems complexity.
+## Navigating dynamic complexity
 
-An examination of the techniques available to accomplish this goal is beyond the scope of this article, but one well-researched example is the US military’s approach to conducting after-action reviews (AARs). The following points are worth highlighting because they contrast with the relative lack of effort often put into “Agile” retrospectives:
+While giving frontline staff the opportunity to give their own accounts of events is important, we must take care to draw appropriate conclusions from these accounts, since individuals are unlikely to have the full picture. To that end, we must learn how to distinguish different categories of failure.
 
-1. The role of the AAR facilitator is clear and demanding. Facilitators are trained in how to conduct AARs. Doctrine is clear that facilitators should plan, prepare and rehearse AARs to be effective [US Army 1993].
-2. AARs are a “knowledge management challenge” [Morrison 1999]. Data are derived from personal observations from personnel, local leaders and the facilitator; from informal discussions; through interactions in the AAR; from operational models; and from analysed outcomes. The facilitator should “filter and organize the data and then prepare to present it in the AAR”.
-3. AARs should be held in a timely fashion while events are fresh in memory. Moreover, AARs are embedded into structured Deming/PDCA cycles [Darling et al 2005] in order to “connect past experience with future actions” – i.e. to operationalise learning. (Contrast this with Agile retrospectives which are often held on an arbitrary cadence, and become merely a routine.)
-4. Formal AARs may still be complemented with frequent, informal discussions for realtime feedback (“hot washes”) as or immediately after events occur [Morrison 1999].
+When reasoning about outcomes in a complex dynamic system, we often erroneously assume what Dekker [2011] refers to as “linear, Newtonian-Cartesian logic” – that is, we view an outcome as the product of a linear chain of events with a “root cause”. Allspaw [2012] points out that such linear thinking “validates hindsight and outcome bias”. Instead, failure in complex systems is typically the result of “multiple contributing factors, each necessary but only jointly sufficient”. Therefore, when we analyse and synthesise recommendations from the accounts we hear of what happened, we must guard against linear thinking. Learning from failure in dynamic systems requires diligence and structured methods to overcome human cognitive limitations in the face of systems complexity.
 
-# The role of management
+Edmondson offers three failure categories which we can use to orient ourselves in order to respond productively based on the nature of the failure.
 
-To summarise, management should take the following steps:
+An examination of the techniques available to learn from ‘complex’ and ‘intelligent’ failures is beyond the scope of this article, but one well-researched example is the US military’s approach to conducting after-action reviews (AARs). The following points are worth highlighting because they contrast with the relative lack of effort some of us have probably experienced in “post-mortems” or “Agile” retrospectives.
 
-1. Clarify roles (i.e. what individuals have authority over and what they will be accountable for).
-2. Empower teams to do their jobs well by building capabilities (e.g. Fisher’s ARIA model for self-directed teams).
-3. Create opportunities for individuals to give their account when failures occur.
-4. Create time and space for staff to learn, implement recommendations and improve how they work. (To do this effectively in complex dynamic systems, it’s important to manage information and structure learning activities to guard against linear thinking.)
-5. Sustain a culture of psychological safety.
-6. Manage toxic and counterproductive behaviours quickly, fairly and safely.
+1. The role of the AAR facilitator is well defined and demanding. Facilitators are trained in how to conduct AARs. Doctrine is clear that facilitators should plan, prepare and rehearse AARs to be effective (US Army 1993).
 
-Once management are continuously practicing these steps then, and only then, can they meaningfully talk about accountability.
+2. AARs are a “knowledge management challenge” (Morrison 1999). Data are derived from personal observations from frontline personnel, local leaders and the facilitator; from informal discussions; through interactions in the AAR; from operational models; and from analysed outcomes. The facilitator should “filter and organize the data and then prepare to present it in the AAR”.
+
+3. AARs should be held in a timely fashion while events are fresh in memory. Moreover, AARs are embedded into structured Deming/PDCA cycles (Darling et al 2005) in order to “connect past experience with future actions” – i.e. to operationalise learning. (Contrast this with how some organisations run Agile retrospectives, which are often held on an arbitrary cadence and become merely a routine.)
+
+4. Formal AARs may still be complemented with frequent, informal discussions for realtime feedback (“hot washes”) as or immediately after events occur (Morrison 1999).
+
+
+# A complete definition
+
+Having considered a number of perspectives and models in literature, we can now complete our definition.
+
+> Accountability entails accepting responsibility for the **tasks** we perform, the **outcomes** of our work, and for **learning** from those outcomes.
+
+It is achieved by letting those doing the work **give their account** when failures occur. This transparency lets individuals and teams demonstrate ownership, and is an effective means to implement organisational learning through the power of personal stories.
+
+Prerequisites include **authority**, **team capabilities** (including resources and information) sufficient to do the work, and **psychological safety**.
+
+Management should support learning and improvement actions based on the category of the domain, taking particular care not to conflate **complex**, **intelligent** and **preventable** failures in order to sustain a generative culture. In complex dynamic systems this must include structured learning activities so that complex failures can be reasoned about.
 
 # References
 
