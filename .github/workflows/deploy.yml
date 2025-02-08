@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - upgrade-deploy
   workflow_dispatch:
 
 permissions:
@@ -28,9 +29,9 @@ jobs:
           bundler-cache: true
       - name: Build
         run: bundle exec jekyll build
-      - uses: actions/configure-pages@v2
-      - uses: actions/upload-pages-artifact@v1
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: './_site/'
-      - uses: actions/deploy-pages@v1
+      - uses: actions/deploy-pages@v4
         id: deployment
