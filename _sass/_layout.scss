@@ -188,6 +188,7 @@
 
   h1 {
     text-align: right;
+    text-wrap: balance;
   }
 
   @include media-query($on-tablet) {
