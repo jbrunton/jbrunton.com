@@ -15,6 +15,7 @@ In fact, we sometimes define the term simply through its absence: it’s not unc
 
 Before discussing accountability, we must be clear what a high performance culture looks like in order to assess the suitability of our preferred definition (and to see why some culturally ingrained definitions should be discarded). A helpful model for our purposes is the organisational typology proposed by Ron Westrum (2004), which defines three distinct organisational climates in terms of how information flows.
 
+<div class="scroll">
 <table>
   <thead>
     <th>Pathological<br>(power-oriented)</th>
@@ -54,6 +55,7 @@ Before discussing accountability, we must be clear what a high performance cultu
     </tr>
   </tbody>
 </table>
+</div>
 
 There is a growing body of evidence that these cultural climates predict organisational performance, and that generative cultures outperform others in a great many contexts (Westrum 2004; Edmondson 1996; Forsgren, N. and Humble, J. 2016). As Westrum observes: 
 
@@ -215,6 +217,7 @@ When reasoning about outcomes in a complex dynamic system, we often erroneously 
 
 Edmondson offers three failure categories which we can use to orient ourselves in order to respond productively based on the nature of the failure.
 
+<div class="scroll">
 <table>
   <thead>
     <th></th>
@@ -243,6 +246,7 @@ Edmondson offers three failure categories which we can use to orient ourselves i
     </tr>
   </tbody>
 </table>
+</div>
 
 An examination of the techniques available to learn from ‘complex’ and ‘intelligent’ failures is beyond the scope of this article, but one well-researched example is the US military’s approach to conducting after-action reviews (AARs). The following points are worth highlighting because they contrast with the relative lack of effort some of us have probably experienced in “post-mortems” or “Agile” retrospectives.
 
