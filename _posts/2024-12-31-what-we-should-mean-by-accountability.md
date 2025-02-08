@@ -209,6 +209,35 @@ When reasoning about outcomes in a complex dynamic system, we often erroneously 
 
 Edmondson offers three failure categories which we can use to orient ourselves in order to respond productively based on the nature of the failure.
 
+<table>
+  <thead>
+    <th></th>
+    <th>Preventable</th>
+    <th>Complex</th>
+    <th>Intelligent</th>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Definition</th>
+      <td>Deviations from known processes that product unwanted outcomes</td>
+      <td>Unique and novel combinations of events and actions that give ruse to unwanted outcomes</td>
+      <td>Novel forays into new territory that lead to unwanted outcomes</td>      
+    </tr>
+    <tr>
+      <th>Common Causes</th>
+      <td>Behavior, skill, and attention deficiencies</td>
+      <td>Complexity, veriability, and novel factors imposed on familiar situations</td>
+      <td>Uncertainity, experimentation, and risk taking</td>
+    </tr>
+    <tr>
+      <th>Descriptive Term</th>
+      <td>Process deviation</td>
+      <td>System breakdown</td>
+      <td>Unsuccessful trial</td>
+    </tr>
+  </tbody>
+</table>
+
 An examination of the techniques available to learn from ‘complex’ and ‘intelligent’ failures is beyond the scope of this article, but one well-researched example is the US military’s approach to conducting after-action reviews (AARs). The following points are worth highlighting because they contrast with the relative lack of effort some of us have probably experienced in “post-mortems” or “Agile” retrospectives.
 
 1. The role of the AAR facilitator is well defined and demanding. Facilitators are trained in how to conduct AARs. Doctrine is clear that facilitators should plan, prepare and rehearse AARs to be effective (US Army 1993).
