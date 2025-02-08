@@ -70,9 +70,13 @@ In different contexts, ‘accountability’ may be used in the following ways.
 1. **Formal performance management processes**, such as performance reviews, promotions and employee gradings/rankings, may be seen to provide some degree of accountability: in theory, good performance is recognised and underperformance is sanctioned. Moreover, if someone is over-promoted despite (perceived) poor performance then this may be seen as a ‘lack of accountability’ (even if we have not yet defined what accountability should be). However, formal HR processes like annual reviews and rankings are known to often be counterproductive due to delayed feedback, unfair review processes, and a focus on criticism [Carucci 2020]. While managers should facilitate useful, frequent feedback to support personal development, an annual performance review is no good as a mechanism for accountability.
 
 2. Holding someone “accountable” is sometimes **a euphemism for finding someone to publicly blame**. It is well known that such a punitive approach undermines psychological safety, fostering a culture in which problems are hidden rather than acknowledged and learned from [Edmondson 2018]. Thus, punitive approaches diminish efforts to build a generative culture.
+
 3. Sometimes the term is used to **distinguish the key decision-maker** from others responsible for doing the work (e.g. in a RACI matrix). This may tell us who is accountable, but it doesn’t tell us what accountability should look like.
+
 4. Sometimes “accountable” is used as a **synonym for “responsible”** (e.g. Fisher, 2000). Certainly, accountability implies a responsibility to our work commitments, and this view may even be sufficient when things are going well, but without also examining how we deal with failure (and especially how we learn from it), we are still missing something important.
+
 5. We also speak of accountability for **serious transgressions** (e.g. behaviours which contribute towards a toxic workplace culture, or which may even be illegal). These cases are important to deal with quickly [Felps 2006] but should be distinguished from cases in which failures can occur despite the best efforts of all. Treating every failure as a preventable error or a moral failure of character to be sanctioned will engender a pathological culture.
+
 6. Tiresomely, the term has also been co-opted from the language of therapy to gaslight an audience into thinking a mistake has been recognised. When a YouTuber promises to “take accountability” for their latest crypto scam, you know you’re witnessing a PR manoeuvre and that zero consequences will follow.
 
 # A better approach
@@ -81,13 +85,15 @@ To improve upon these limited approaches, we can take inspiration from two compl
 
 ## ‘Accountability’ as responsibility
 
-Intuitively, accountability implies responsibility. As Kimball Fisher (2000) points out, individual clarity on roles is necessary to avoid ‘social loafing’. Management must ensure ownership and responsibilities are clear within and across teams. Fisher also recommends individuals should be responsible for both tasks (the work being done) and results (the outcome of the work). OKRs are a popular method for implementing such systems of accountability today. Responsibility in this sense is a consequence of role clarity and transparency. It should be clear what each team member is working on, how these tasks contribute towards expected outcomes, the status of current work, and measures of results.
+Intuitively, accountability implies responsibility. As Kimball Fisher (2000) points out, individual clarity on roles is necessary to avoid ‘social loafing’. Management must ensure ownership and responsibilities are clear within and across teams.
+
+Fisher also recommends individuals should be responsible for both tasks (the work being done) and results (the outcome of the work). OKRs are a popular method for implementing such systems of accountability today. Responsibility in this sense is a consequence of role clarity and transparency. It should be clear what each team member is working on, how these tasks contribute towards expected outcomes, the status of current work, and measures of results.
 
 However, we could do all of this and still respond unproductively when things go wrong. We might regress to punitive measures, undermining efforts to build a generative culture. We might assume everyone did their best and move on, ignoring opportunities for learning. Or management might intervene directly, undermining team autonomy and failing to engage frontline staff (thus missing important learning opportunities).
 
 ## ‘Accountability’ for learning
 
-In the context of failure, Sidney Dekker [2014] suggests we should interpret ‘accountability’ literally:
+In the context of failure, Sidney Dekker (2014) suggests we should interpret ‘accountability’ literally:
 
 > You can hold people accountable by letting them tell their story, literally “giving their account.”
 
@@ -257,9 +263,9 @@ Having considered a number of perspectives and models in literature, we can now 
 
 It is achieved by letting those doing the work **give their account** when failures occur. This transparency lets individuals and teams demonstrate ownership, and is an effective means to implement organisational learning through the power of personal stories.
 
-Prerequisites include **authority**, **team capabilities** (including resources and information) sufficient to do the work, and **psychological safety**.
+Prerequisites include **authority**, **team capabilities** (including skills, resources and information) sufficient to do the work, and **psychological safety**.
 
-Management should support learning and improvement actions based on the category of the domain, taking particular care not to conflate **complex**, **intelligent** and **preventable** failures in order to sustain a generative culture. In complex dynamic systems this must include structured learning activities so that complex failures can be reasoned about.
+Management should support learning and improvement actions based on the category of the domain, taking particular care not to conflate **complex**, **intelligent** and **preventable** failures. In most organisations this must include structured learning activities so that complex failures can be reasoned about.
 
 # References
 
