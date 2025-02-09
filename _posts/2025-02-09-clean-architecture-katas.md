@@ -6,7 +6,7 @@ tags:
   - software design
 ---
 
-It's always a good idea to practice. Here are a few references to katas for practicing [clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) ideas, including one I created for my own practice purposes.
+It's always a good idea to practice. Here are a few links to katas for practicing [clean architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html) ideas, including one I created for my own practice purposes.
 
 ## Game of Life kata
 
