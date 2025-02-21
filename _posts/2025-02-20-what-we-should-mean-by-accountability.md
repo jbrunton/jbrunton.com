@@ -282,7 +282,7 @@ Management should support learning and improvement actions based on the category
 * Darling, M. et al. (2005). *[Learning in the Thick of It](https://hbr.org/2005/07/learning-in-the-thick-of-it)*
 * Dekker, S. (2011). *Drift into Failure*
 * Dekker, S. (2014). *The Field Guide to Understanding Human Error (3rd Edition)*
-* Edmondson, A. (2006). *[Learning from Mistakes Is Easier Said Than Done: Group and Organizational Influences on the Detection and Correction of Human Error](https://www.researchgate.net/publication/250959492_Learning_from_Mistakes_Is_Easier_Said_Than_Done_Group_and_Organizational_Influences_on_the_Detection_and_Correction_of_Human_Error)*
+* Edmondson, A. (1996). *[Learning from Mistakes Is Easier Said Than Done: Group and Organizational Influences on the Detection and Correction of Human Error](https://www.researchgate.net/publication/250959492_Learning_from_Mistakes_Is_Easier_Said_Than_Done_Group_and_Organizational_Influences_on_the_Detection_and_Correction_of_Human_Error)*
 * Edmondson, A. (2018). *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth*
 * Felps, W. et al. (2006). *[How, When, and Why Bad Apples Spoil the Barrel: Negative Group Members and Dysfunctional Groups](https://www.researchgate.net/publication/237683988_How_When_and_Why_Bad_Apples_Spoil_the_Barrel_Negative_Group_Members_and_Dysfunctional_Groups)*
 * Fisher, K. (2000). *Leading Self-Directed Work Teams*
