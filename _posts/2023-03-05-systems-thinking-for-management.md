@@ -15,7 +15,7 @@ In the context of systems thinking:
 
 > A system is a set of interconnected elements with a purpose.
 
-This includes everything from cells to organs and entire animals, from families to organisations and societies, from central heating to bathtubs. Systems thinking is simply the discipline of understanding interconnected systems and their behavior.
+This includes everything from cells to organs and entire animals, from families to organizations and societies, from central heating to bathtubs. Systems thinking is simply the discipline of understanding interconnected systems and their behavior.
 
 The literature is expansive, but there are two flavours I tend to take interest in:
 
@@ -68,4 +68,4 @@ Some of the books I've found helpful as an introduction to this field:
 
 4. *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth* by Amy Edmondson shows the importance of a blameless culture and the role leaders should play in building one.
 
-5. *The Fifth Discipline* by Peter Senge. A well known book that draws insightful connections between systems thinking and other key 'disciplines' that Senge argues are necessary to build learning organisations. It is, however, a long read, and arguably the literature on learning organisations has evolved since it was written.
+5. *The Fifth Discipline* by Peter Senge. A well known book that draws insightful connections between systems thinking and other key 'disciplines' that Senge argues are necessary to build learning organizations. It is, however, a long read, and arguably the literature on learning organizations has evolved since it was written.
