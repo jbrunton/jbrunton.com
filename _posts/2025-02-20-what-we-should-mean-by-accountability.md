@@ -214,7 +214,7 @@ How do we know when to sanction violations of standards? How should we reason ab
 
 While giving frontline staff the opportunity to give their own accounts of events is important, we must take care to draw appropriate conclusions from these accounts, since individuals are unlikely to have the full picture. To that end, we must learn how to distinguish different categories of failure.
 
-When reasoning about outcomes in a complex dynamic system, we often erroneously deploy what Dekker (2011) refers to as “linear, Newtonian-Cartesian logic” &mdash; that is, we view an outcome as the product of a linear chain of events with a “root cause”.
+When reasoning about outcomes in a complex dynamic system, we often erroneously apply what Dekker (2011) refers to as “linear, Newtonian-Cartesian logic” &mdash; that is, we view an outcome as the product of a linear chain of events with a “root cause”.
 
 Allspaw (2012) points out that such linear thinking “validates hindsight and outcome bias”. Instead, failure in complex systems is typically the result of “multiple contributing factors, each necessary but only jointly sufficient”. Therefore, when we analyse and synthesise recommendations from the accounts we hear, we must guard against linear thinking. Learning from failure in dynamic systems requires diligence and structured methods to overcome human cognitive limitations in the face of systems complexity.
 
