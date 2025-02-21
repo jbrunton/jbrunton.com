@@ -202,7 +202,7 @@ Amy Edmondson (2018) provides helpful guidance for leadership to build and susta
     </tbody>
   </table>
 
-  <p class="label">The Leader’s Tool Kit for Building Psychogical Safety [Edmondson 2018, Chapter 7]</p>
+  <p class="label">The Leader’s Tool Kit for Building Psychogical Safety (Edmondson 2018, Chapter 7)</p>
 
 </div>
 
@@ -221,34 +221,35 @@ Allspaw (2012) points out that such linear thinking “validates hindsight and o
 Edmondson offers three failure categories which we can use to orient ourselves in order to respond productively based on the nature of the failure.
 
 <div class="scroll">
-<table>
-  <thead>
-    <th></th>
-    <th>Preventable</th>
-    <th>Complex</th>
-    <th>Intelligent</th>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Definition</th>
-      <td>Deviations from known processes that produce unwanted outcomes</td>
-      <td>Unique and novel combinations of events and actions that give rise to unwanted outcomes</td>
-      <td>Novel forays into new territory that lead to unwanted outcomes</td>      
-    </tr>
-    <tr>
-      <th>Common Causes</th>
-      <td>Behavior, skill, and attention deficiencies</td>
-      <td>Complexity, variability, and novel factors imposed on familiar situations</td>
-      <td>Uncertainity, experimentation, and risk taking</td>
-    </tr>
-    <tr>
-      <th>Descriptive Term</th>
-      <td>Process deviation</td>
-      <td>System breakdown</td>
-      <td>Unsuccessful trial</td>
-    </tr>
-  </tbody>
-</table>
+  <table>
+    <thead>
+      <th></th>
+      <th>Preventable</th>
+      <th>Complex</th>
+      <th>Intelligent</th>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Definition</th>
+        <td>Deviations from known processes that produce unwanted outcomes</td>
+        <td>Unique and novel combinations of events and actions that give rise to unwanted outcomes</td>
+        <td>Novel forays into new territory that lead to unwanted outcomes</td>      
+      </tr>
+      <tr>
+        <th>Common Causes</th>
+        <td>Behavior, skill, and attention deficiencies</td>
+        <td>Complexity, variability, and novel factors imposed on familiar situations</td>
+        <td>Uncertainity, experimentation, and risk taking</td>
+      </tr>
+      <tr>
+        <th>Descriptive Term</th>
+        <td>Process deviation</td>
+        <td>System breakdown</td>
+        <td>Unsuccessful trial</td>
+      </tr>
+    </tbody>
+  </table>
+  <p class="label">Productive Responses to Different Types of Failure (Edmondson 2018, Chapter 7)</p>
 </div>
 
 An examination of the techniques available to learn from ‘complex’ and ‘intelligent’ failures is beyond the scope of this post, but one well-researched example is the US military’s approach to conducting after-action reviews (AARs). The following points are worth highlighting because they contrast with the relative lack of effort some of us have probably experienced in “post-mortems” or “Agile” retrospectives.
