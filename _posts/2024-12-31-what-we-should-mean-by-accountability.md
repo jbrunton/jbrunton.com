@@ -231,14 +231,14 @@ Edmondson offers three failure categories which we can use to orient ourselves i
   <tbody>
     <tr>
       <th>Definition</th>
-      <td>Deviations from known processes that product unwanted outcomes</td>
-      <td>Unique and novel combinations of events and actions that give ruse to unwanted outcomes</td>
+      <td>Deviations from known processes that produce unwanted outcomes</td>
+      <td>Unique and novel combinations of events and actions that give rise to unwanted outcomes</td>
       <td>Novel forays into new territory that lead to unwanted outcomes</td>      
     </tr>
     <tr>
       <th>Common Causes</th>
       <td>Behavior, skill, and attention deficiencies</td>
-      <td>Complexity, veriability, and novel factors imposed on familiar situations</td>
+      <td>Complexity, variability, and novel factors imposed on familiar situations</td>
       <td>Uncertainity, experimentation, and risk taking</td>
     </tr>
     <tr>
@@ -251,7 +251,7 @@ Edmondson offers three failure categories which we can use to orient ourselves i
 </table>
 </div>
 
-An examination of the techniques available to learn from ‘complex’ and ‘intelligent’ failures is beyond the scope of this article, but one well-researched example is the US military’s approach to conducting after-action reviews (AARs). The following points are worth highlighting because they contrast with the relative lack of effort some of us have probably experienced in “post-mortems” or “Agile” retrospectives.
+An examination of the techniques available to learn from ‘complex’ and ‘intelligent’ failures is beyond the scope of this post, but one well-researched example is the US military’s approach to conducting after-action reviews (AARs). The following points are worth highlighting because they contrast with the relative lack of effort some of us have probably experienced in “post-mortems” or “Agile” retrospectives.
 
 1. The role of the AAR facilitator is well defined and demanding. Facilitators are trained in how to conduct AARs. Doctrine is clear that facilitators should plan, prepare and rehearse AARs to be effective (US Army 1993).
 
@@ -282,7 +282,9 @@ Management should support learning and improvement actions based on the category
 * Dekker, S. (2011). *Drift into Failure*
 * Dekker, S. (2014). *The Field Guide to Understanding Human Error (3rd Edition)*
 * Edmondson, A. (2018). *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth*
-* Felps, W. et al. (2006). *[How, When, and Why Bad Apples Spoil the Barrel: Negative Group Members and Dysfunctional Groups](https://www.sciencedirect.com/science/article/abs/pii/S0191308506270059)*
+* Felps, W. et al. (2006). *[How, When, and Why Bad Apples Spoil the Barrel: Negative Group Members and Dysfunctional Groups](https://www.researchgate.net/publication/237683988_How_When_and_Why_Bad_Apples_Spoil_the_Barrel_Negative_Group_Members_and_Dysfunctional_Groups)*
 * Fisher, K. (2000). *Leading Self-Directed Work Teams*
 * Mastiglio, T. et al. (2011). *[Current Practice and Theoretical Foundations of the After Action Review](https://www.researchgate.net/publication/235169250_Current_Practice_and_Theoretical_Foundations_of_the_After_Action_Review)*
 * US Army (1993). *[A Leader's Guide To After-Action Reviews](https://docs.adaptdev.info/lib/7F4R6NLI)*
+* Westrum, R. (2004). *[A Typology of Organisational Cultures](https://www.researchgate.net/publication/8150380_A_Typology_of_Organisational_Cultures)*
+
