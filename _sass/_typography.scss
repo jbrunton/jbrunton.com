@@ -7,11 +7,17 @@ blockquote {
   border-left: 4px solid $grey-color-light;
   padding-left: calc($spacing-unit / 2);
   padding-right: calc($spacing-unit / 2);
-  font-size: $base-font-size;
+  font-size: calc($base-font-size * 1.2);
   letter-spacing: 0;
   font-style: italic;
 
   > :last-child {
       margin-bottom: 0;
   }
+}
+
+.label {
+  font-size: 85%;
+  font-style: italic;
+  margin-top: -8px; // things with labels have a bottom margin of 16
 }

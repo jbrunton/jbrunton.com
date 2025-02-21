@@ -1,0 +1,23 @@
+
+table {
+  margin-bottom: 16px;
+  overflow: scroll;
+}
+
+table, th, td {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 0 4px;
+  text-align: left;
+  font-size: 90%;
+
+  ul {
+    li {
+      margin-bottom: 0;
+    }
+  }
+}

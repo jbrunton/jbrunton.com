@@ -1,0 +1,30 @@
+.toc::before {
+  content: "Page contents";
+  font-weight: bold;
+}
+
+// .toc::after {
+//   content: "***";
+//   font-weight: bold;
+// }
+
+
+// Using numbers instead of bullets for listing
+.toc ul {
+  list-style: decimal;
+  margin-left: 0.5em;
+}
+
+.toc li {
+  margin-bottom: 4px;
+  margin-left: 1em;
+}
+
+.toc {
+  font-size: 90%;
+  border: 1px solid #aaa;
+  padding: 0.5em;
+  list-style: decimal;
+  display: inline-block;
+  margin: 0 0 16px 0;
+}

@@ -157,7 +157,7 @@
  * Page content
  */
 .page-content {
-    padding: 0 0 $spacing-unit 0;
+  padding: 0 0 $spacing-unit 0;
 }
 
 @mixin two-column-grid($columns) {
@@ -197,12 +197,16 @@
 
     h1 {
       text-align: left;
-    };
+    }
   }
 }
 
 .post-content {
   margin-bottom: $spacing-unit;
+
+  // Fixes layout issues on mobile safari, on which text becomes the width of the widest table or
+  // other block element, spilling off the right-hand side of the page.
+  width: 100%;
 }
 
 .post-meta {
@@ -272,5 +276,18 @@
 
   span:last-child::after {
     content: '';
+  }
+}
+
+.scroll {
+  overflow-x: auto;
+}
+
+.full-width {
+  margin: 20px 0 20px -50%;
+  overflow-x: auto;
+
+  @include media-query($on-tablet) {
+    margin-left: 0;
   }
 }
