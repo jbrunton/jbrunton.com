@@ -9,11 +9,11 @@ tags:
 
 The term ‘accountability’ is frequently used in the context of teams and organizations, but it is often deployed in ways that are vague, contradictory or counterproductive.
 
-In fact, we sometimes define the term simply through its absence: it’s not uncommon for teams or organisations to identify a ‘lack of accountability’ as a problem, without clearly articulating how this void should be filled. This blog post surveys some of the more productive notions of accountability from the literature, and the role of management in implementing them.
+In fact, we sometimes define the term simply through its absence: it’s not uncommon for teams or organizations to identify a ‘lack of accountability’ as a problem, without clearly articulating how this void should be filled. This blog post surveys some of the more productive notions of accountability from the literature, and the role of management in implementing them.
 
-# Classifying organisational cultures
+# Classifying organizational cultures
 
-Before discussing accountability, we must be clear what a high performance culture looks like in order to assess the suitability of our preferred definition (and to see why some culturally ingrained definitions should be discarded). A helpful model for this purpose is the organisational typology proposed by Ron Westrum (2004), which defines three distinct organisational climates in terms of how information flows.
+Before discussing accountability, we must be clear what a high performance culture looks like in order to assess the suitability of our preferred definition (and to see why some culturally ingrained definitions should be discarded). A helpful model for this purpose is the organizational typology proposed by Ron Westrum (2004), which defines three distinct organizational climates in terms of how information flows.
 
 <div class="scroll">
 <table>
@@ -58,11 +58,11 @@ Before discussing accountability, we must be clear what a high performance cultu
 <p class="label">Westrum organizational typology model (Westrum 2004)</p>
 </div>
 
-There is a growing body of evidence that these cultural climates predict organisational performance, and that generative cultures outperform others in a great many contexts (Westrum 2004; Edmondson 1996; Forsgren, N. and Humble, J. 2016). As Westrum observes: 
+There is a growing body of evidence that these cultural climates predict organizational performance, and that generative cultures outperform others in a great many contexts (Westrum 2004; Edmondson 1996; Forsgren, N. and Humble, J. 2016). As Westrum observes: 
 
 > The effects of information flow climate are pervasive. And they are pervasive because the climate shapes three key variables: alignment, awareness, and empowerment.
 
-Literature on safety-critical industries, in which failure may lead to injury or fatality, will often examine ‘safety cultures’. Organisational development theorists and human resources professionals in other forms of knowledge work may speak of ‘learning cultures’. Regardless, while the impact of failure may vary across industries, a generative culture typically predicts organisational performance, and the methods by which we achieve one are broadly consistent. Therefore, this post uses the terms ‘generative culture’, ‘safety culture’ and ‘learning culture’ somewhat interchangeably.
+Literature on safety-critical industries, in which failure may lead to injury or fatality, will often examine ‘safety cultures’. Organizational development theorists and human resources professionals in other forms of knowledge work may speak of ‘learning cultures’. Regardless, while the impact of failure may vary across industries, a generative culture typically predicts organizational performance, and the methods by which we achieve one are broadly consistent. Therefore, this post uses the terms ‘generative culture’, ‘safety culture’ and ‘learning culture’ somewhat interchangeably.
 
 A final note on terminology: some of the authors cited focus their work on self-organising teams or safety-critical industries in which individuals act relatively autonomously. My view is that we should apply these definitions widely: a customer call centre agent with structured scripts to follow must still make independent decisions (e.g. when to escalate a customer complaint) and is operating within a complex wider system consisting of department processes, customer interactions, competing business priorities, market competition, etc. The number of jobs in which the work is both completely and coherently defined, and also completely isolated from complex wider systems, are vanishingly few.
 
@@ -84,7 +84,7 @@ In different contexts, ‘accountability’ may be used in the following ways.
 
 # A better approach
 
-To improve upon these limited approaches, we can take inspiration from two complementary views on what ‘accountability’ should look like in high performing organisations. We will then discuss the preconditions which management must institute in order for this approach to be effective.
+To improve upon these limited approaches, we can take inspiration from two complementary views on what ‘accountability’ should look like in high performing organizations. We will then discuss the preconditions which management must institute in order for this approach to be effective.
 
 ## ‘Accountability’ as responsibility
 
@@ -112,7 +112,7 @@ This approach has other multiplicative benefits which are suppressed by punitive
 
 ## Systems and the myth of ‘human error’
 
-Dekker also recommends that we take a systems view of team performance. While failures may naively be blamed on mistakes or ‘human error’, most organisational systems are driven close to the limits of what they can safely deliver (and often beyond). Deadlines, competing priorities and brittle processes requiring workarounds all contribute to conditions in which failures aren’t due to personal mistakes or ‘human error’. Instead, they are merely a consequence of the organisational constraints and pressures which staff do their best to navigate with the limited information available to them in the moment. In this context, failure is not a moral deficiency but a product of systems complexity. Our job is to find ways to manage this complexity in order to reduce the prevalence or scale of failure, as outlined below.
+Dekker also recommends that we take a systems view of team performance. While failures may naively be blamed on mistakes or ‘human error’, most organizational systems are driven close to the limits of what they can safely deliver (and often beyond). Deadlines, competing priorities and brittle processes requiring workarounds all contribute to conditions in which failures aren’t due to personal mistakes or ‘human error’. Instead, they are merely a consequence of the organizational constraints and pressures which staff do their best to navigate with the limited information available to them in the moment. In this context, failure is not a moral deficiency but a product of systems complexity. Our job is to find ways to manage this complexity in order to reduce the prevalence or scale of failure, as outlined below.
 
 # Preconditions for accountability
 
@@ -124,7 +124,7 @@ Dekker calls out the “authority–responsibility mismatch” as a common probl
 
 > It is impossible to hold somebody accountable for something over which that person had no authority.
 
-He observes that in most safety-critical applications, operators must continually balance competing demands for efficiency and thoroughness. If an organisation doesn’t create time and space for staff to be thorough, if it doesn’t grant them the authority “to live up to the responsibility” asked of them, then the staff cannot be held accountable. The organisation must first reform itself.
+He observes that in most safety-critical applications, operators must continually balance competing demands for efficiency and thoroughness. If an organization doesn’t create time and space for staff to be thorough, if it doesn’t grant them the authority “to live up to the responsibility” asked of them, then the staff cannot be held accountable. The organization must first reform itself.
 
 ## Team capabilities
 
@@ -258,7 +258,7 @@ An examination of the techniques available to learn from ‘complex’ and ‘in
 
 2. AARs are a “knowledge management challenge” (Morrison 1999). Data are derived from personal observations from frontline personnel, local leaders and the facilitator; from informal discussions; through interactions in the AAR; from operational models; and from analysed outcomes. The facilitator should “filter and organize the data and then prepare to present it in the AAR”.
 
-3. AARs should be held in a timely fashion while events are fresh in memory. Moreover, AARs are embedded into structured Deming/PDCA cycles (Darling et al 2005) in order to “connect past experience with future actions” &mdash; i.e. to operationalise learning. (Contrast this with how some organisations run Agile retrospectives, which are often held on an arbitrary cadence and become merely a routine.)
+3. AARs should be held in a timely fashion while events are fresh in memory. Moreover, AARs are embedded into structured Deming/PDCA cycles (Darling et al 2005) in order to “connect past experience with future actions” &mdash; i.e. to operationalise learning. (Contrast this with how some organizations run Agile retrospectives, which are often held on an arbitrary cadence and become merely a routine.)
 
 4. Formal AARs may still be complemented with frequent, informal discussions for realtime feedback (“hot washes”) as or immediately after events occur (Morrison 1999).
 
@@ -269,11 +269,11 @@ Having considered a number of perspectives and models in literature, we can now 
 
 > Accountability entails accepting responsibility for the **tasks** we perform, the **outcomes** of our work, and for **learning** from those outcomes.
 
-It is achieved by letting those doing the work **give their account** when failures occur. This transparency lets individuals and teams demonstrate ownership, and is an effective means to implement organisational learning through the power of personal stories.
+It is achieved by letting those doing the work **give their account** when failures occur. This transparency lets individuals and teams demonstrate ownership, and is an effective means to implement organizational learning through the power of personal stories.
 
 Prerequisites include **authority**, **team capabilities** (including skills, resources and information) sufficient to do the work, and **psychological safety**.
 
-Management should support learning and improvement actions based on the category of the domain, taking particular care not to conflate **complex**, **intelligent** and **preventable** failures. In most organisations this must include structured learning activities so that complex failures can be reasoned about.
+Management should support learning and improvement actions based on the category of the domain, taking particular care not to conflate **complex**, **intelligent** and **preventable** failures. In most organizations this must include structured learning activities so that complex failures can be reasoned about.
 
 # References
 
