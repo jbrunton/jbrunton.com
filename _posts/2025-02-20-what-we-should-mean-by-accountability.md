@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What We Should Mean by 'Accountability'"
+title: "What We Should Mean by ‘Accountability’"
 date: 2025-02-20
 tags:
   - self-organising teams
