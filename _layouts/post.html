@@ -15,11 +15,9 @@ layout: default
       >
       {% endfor %}
     </div>
+
+    <div>{% include toc.html html=content class="toc" title="Contents" %}</div>
   </header>
 
-  <div class="post-content col-body" itemprop="articleBody">
-    <div>{% include toc.html html=content class="toc" title="Contents" %}</div>
-
-    {{ content }}
-  </div>
+  <div class="post-content col-body" itemprop="articleBody">{{ content }}</div>
 </article>

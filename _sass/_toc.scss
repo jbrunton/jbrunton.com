@@ -5,11 +5,16 @@ ul.toc::before {
 
 ul.toc {
   font-size: 90%;
-  border: 1px solid #aaa;
-  padding: 0.5em;
+  border-top: 1px solid #aaa;
+  padding: 0.5em 0;
   list-style: decimal;
   display: inline-block;
-  margin: 0 0 16px 0;
+  margin: 32px 0 0 0;
+
+  @include media-query($on-tablet) {
+    margin: 16px 0 16px 0;
+    border-bottom: 1px solid #aaa;
+  }
 
   li {
     margin-bottom: 4px;
