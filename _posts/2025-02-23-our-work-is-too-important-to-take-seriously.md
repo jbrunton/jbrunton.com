@@ -4,17 +4,20 @@ title: "“Our Work is Too Important to Take Seriously”"
 date: 2025-02-23
 tags:
   - group dynamics
+excerpt_separator: <!--end-excerpt-->
 ---
 
-This quote, suggested as a motto for setting the atmosphere for effective feedback by the authors of *What Did You Say? The Art of Giving and Receiving Feedback*, has stayed with me.
+This quote, suggested as a motto for setting the atmosphere for effective feedback by the authors of *What Did You Say? The Art of Giving and Receiving Feedback*, has stayed with me:
 
 > Our work is too important to take seriously.
 
 How can this be? Surely the seriousness of our work should reflect the importance we attach to it?
 
+<!--end-excerpt-->
+
 # The importance of good humour
 
-Clearly the authors anticipated the concept of psychological safety (though at the time this book was first published I believe the concept, though known, was yet to be popularised in management theory).
+Clearly the authors anticipated the concept of psychological safety (though at the time this book was first published I believe the concept, while known, was yet to be popularised in management theory).
 
 As Amy Edmondson observes in *Right Kind of Wrong: The Science of Failing Well*:
 
@@ -39,4 +42,4 @@ Of course, this is easier said than done in the face of typical work stressors: 
 
 A manager who is always serious may be failing at their job.
 
-This doesn't mean managers should be telling jokes (that could be terrible for everyone involved) &mdash; and it certainly doesn't mean they should be laughing _at_ you &mdash; but it does mean they should be willing to laugh at themselves, and to find grace and humour in the difficult situations we inevitably find ourselves in (especially failures).
+This doesn't mean managers should always be telling jokes (that could be terrible for everyone involved) &mdash; and it certainly doesn't mean they should be laughing _at_ you &mdash; but it does mean they should be willing to laugh at themselves, and to find grace and humour in the difficult situations (especially failures) which we inevitably find ourselves in.
