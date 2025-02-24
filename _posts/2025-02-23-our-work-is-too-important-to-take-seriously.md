@@ -6,13 +6,13 @@ tags:
   - group dynamics
 ---
 
-# The importance of good humour
-
-This quote, suggested as a motto for setting the atmosphere for effective feedback by the authors of *What Did You Say? The Art of Giving and Receiving Feedback*, has stayed with me:
+This quote, suggested as a motto for setting the atmosphere for effective feedback by the authors of *What Did You Say? The Art of Giving and Receiving Feedback*, has stayed with me.
 
 > Our work is too important to take seriously.
 
-Why? Surely the seriousness of our work should reflect the importance we attach to it?
+How can this be? Surely the seriousness of our work should reflect the importance we attach to it?
+
+# The importance of good humour
 
 Clearly the authors anticipated the concept of psychological safety (though at the time this book was first published I believe the concept, though known, was yet to be popularised in management theory).
 
