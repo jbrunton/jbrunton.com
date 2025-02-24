@@ -6,13 +6,13 @@ tags:
   - group dynamics
 ---
 
-This quote, suggested by the authors of *What Did You Say? The Art of Giving and Receiving Feedback* as a motto for setting the atmosphere for effective feedback, has stayed with me:
+This quote, suggested as a motto for setting the atmosphere for effective feedback by the authors of *What Did You Say? The Art of Giving and Receiving Feedback*, has stayed with me:
 
 > Our work is too important to take seriously.
 
-Why? Surely important work should be taken seriously?
+Why? Surely the seriousness of our work should reflect the importance we attach to it?
 
-Clearly the authors anticipated the concept of psychological safety, though at the time this book was first published I believe the concept, though known, was yet to be popularised in management theory.
+Clearly the authors anticipated the concept of psychological safety (though at the time this book was first published I believe the concept, though known, was yet to be popularised in management theory).
 
 As Amy Edmondson observes in *Right Kind of Wrong: The Science of Failing Well*:
 
