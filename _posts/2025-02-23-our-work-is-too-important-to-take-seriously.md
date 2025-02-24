@@ -28,3 +28,5 @@ So while it's _possible_ to [write a lengthy essay on the theories of accountabi
 
 1. **Be good humored in the face of failure.**
 2. **Admit your own mistakes first.**
+
+Of course, this is easier said than done in the face of typical work stressors: competing priorities, pressure to deliver, too many meetings and interruptions, and so on. But we should be clear which  behaviours we wish to model &mdash; and if we fail to live up to our ideals then, well, then we should acknowledge our mistakes, and we should do so with good humour!
