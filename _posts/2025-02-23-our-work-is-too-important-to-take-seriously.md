@@ -11,7 +11,7 @@ This quote, suggested as a motto for setting the atmosphere for effective feedba
 
 > Our work is too important to take seriously.
 
-How can this be? Surely the seriousness of our work should reflect the importance we attach to it?
+How can this be? Surely we should take our work as seriously as the importance we attach to it?
 
 <!--end-excerpt-->
 
