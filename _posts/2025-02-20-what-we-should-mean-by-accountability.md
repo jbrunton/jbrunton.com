@@ -175,7 +175,8 @@ Amy Edmondson (2018) provides helpful guidance for leadership to build and susta
           </ul>
           Set up Structures and Processes
           <ul>
-            <li>Create forums for input Provide guidelines for discussion</li>
+            <li>Create forums for input</li>
+            <li>Provide guidelines for discussion</li>
           </ul>
         </td>
         <td>
