@@ -274,7 +274,7 @@ It is achieved by letting those doing the work **give their account** when failu
 
 Prerequisites include **authority**, **team capabilities** (including skills, resources and information) sufficient to do the work, and **psychological safety**.
 
-Management should support learning and improvement actions based on the category of the domain, taking particular care not to conflate **complex**, **intelligent** and **preventable** failures. In most organizations this must include structured learning activities so that complex failures can be reasoned about.
+Management should support learning and improvement actions based on the category of the domain, taking particular care not to conflate **complex**, **intelligent** and **preventable** failures. In most organizations this must include structured learning activities (such as timely after-action reviews) so that complex failures can be reasoned about.
 
 # References
 
