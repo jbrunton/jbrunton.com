@@ -287,6 +287,7 @@ Management should support learning and improvement actions based on the category
 * Edmondson, A. (2018). *The Fearless Organization: Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth*
 * Felps, W. et al. (2006). *[How, When, and Why Bad Apples Spoil the Barrel: Negative Group Members and Dysfunctional Groups](https://www.researchgate.net/publication/237683988_How_When_and_Why_Bad_Apples_Spoil_the_Barrel_Negative_Group_Members_and_Dysfunctional_Groups)*
 * Fisher, K. (2000). *Leading Self-Directed Work Teams*
+* Forsgren, N. and Humble, J. (2016). *[DevOps: Profiles in ITSM Performance and Contributing Factors](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2681906)*
 * Mastiglio, T. et al. (2011). *[Current Practice and Theoretical Foundations of the After Action Review](https://www.researchgate.net/publication/235169250_Current_Practice_and_Theoretical_Foundations_of_the_After_Action_Review)*
 * US Army (1993). *[A Leader's Guide To After-Action Reviews](https://docs.adaptdev.info/lib/7F4R6NLI)*
 * Westrum, R. (2004). *[A Typology of Organisational Cultures](https://www.researchgate.net/publication/8150380_A_Typology_of_Organisational_Cultures)*
