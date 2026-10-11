@@ -9,7 +9,7 @@ tags:
 
 The term ‘accountability’ is frequently used in the context of teams and organizations, but it is often deployed in ways that are vague, contradictory or counterproductive.
 
-In fact, we sometimes define the term simply through its absence: it’s not uncommon for teams or organizations to identify a ‘lack of accountability’ as a problem, without clearly articulating how this void should be filled. This blog post surveys some of the more productive notions of accountability from the literature, and the role of management in implementing them.
+In fact, we sometimes define the term simply through its absence: it’s not uncommon for teams or organizations to identify a ‘lack of accountability’ as a problem, without clearly articulating how this void should be filled. This blog post surveys some of the more constructive notions of accountability from the literature, and the role of management in implementing them.
 
 # Classifying organizational cultures
 
